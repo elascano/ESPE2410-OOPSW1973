@@ -1,6 +1,4 @@
 # ESPE2410-OOPSW1973
-
-# ESPE2410-AWDSW2296
 Repository for the class of Object-Oriented Programming at ESPE in 2024-10-28
 
 - Homework
