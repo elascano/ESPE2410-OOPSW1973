@@ -1,0 +1,1 @@
+# Create the draft and in Visual Paradigm Community Edition, the class diagram for product
