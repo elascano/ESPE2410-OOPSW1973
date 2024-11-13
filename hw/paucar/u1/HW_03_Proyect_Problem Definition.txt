@@ -1,0 +1,19 @@
+Workshop: Project Management System
+
+Problem
+Currently, the flow of projects within the implementation to billing process within a telecommunications company presents deficiencies due to the use of a manual system for the generation of payments, which affects the accuracy, efficiency of the monitoring process or changes during the course of a project. This system must include an automated manager for saving data records, as well as the generation and monitoring of detailed reports of projects already invoiced or in the billing process in order to record past or future projects, as well as whether they are in the execution stages, awaiting billing, or billed and paid. In order to minimize problems related to the status of unpaid projects or late billing, which occur when using the manual billing process.
+
+Overview
+In the telecommunications field, there are several areas, but this project will focus on a project manager. The automation of project scheduling and the generation of comprehensive reports about one or more projects are vital for management and executives in the telecommunications company to make better decisions. In addition, these reports are useful for tracking the status of projects, from sending prototypes and budgets to the client, to invoicing and potential project follow-up.
+Background
+Ascatec is a family-owned business founded in 2014, specializing in providing comprehensive solutions in the field of networking and telecommunications. Since its inception, Ascatec has excelled in designing and implementing network infrastructure, covering all stages of engineering required to develop robust and efficient projects. In addition to design services, Ascatec offers technical support in technology and networking, ensuring continuous and reliable communication for its clients.
+The company focuses on meeting the needs of educational institutions, private companies, and public sector entities, serving a broad range of clients who require tailored connectivity solutions for their specific environments and demands. With a team of highly skilled and dedicated professionals, Ascatec stands out in the market for its commitment to executing high-quality projects, prioritizing design efficiency, and optimizing costs to offer a competitive and accessible service.
+Ascatec’s vision is to continue its sustainable growth, increasing its capacity to handle a higher volume of projects without compromising quality. To achieve this, the company seeks to continuously recruit and train top-tier professionals, who are key to its commitment to providing innovative and scalable networking solutions. Ascatec aims to establish itself as a leader in the telecommunications and networking sector, always maintaining the trust and satisfaction of its clients.
+ 
+
+Theme
+Software development project management is a complex process that involves optimizing resources, ensuring customer satisfaction, and delivering high-quality products within established timeframes and budgets. To achieve this, it is essential to make accurate estimates, identify and resolve issues efficiently, as well as provide ongoing support for already delivered products.
+
+During the execution of a project, various questions and challenges arise that must be proactively addressed. For example, how to ensure that initial estimates are realistic? What strategies can be implemented to manage changes in customer requirements? How to minimize the impact of code errors?
+
+In today's business context, there are numerous tools and platforms that facilitate the management of projects and internal processes. These integrated systems allow organizations to control aspects such as finances, inventories, planning and project management, improving efficiency and decision making.
