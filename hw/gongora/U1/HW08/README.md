@@ -1,0 +1,1 @@
+# Create class diagram with its respective dependencies of the "accounting system" project
