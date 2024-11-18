@@ -36,10 +36,28 @@ $
 edison_lascano@yahoo.com
 - Arias Alan
 - Bohorquez Camila
-.
-.
-.
-
+- Bonilla Robinson
+- Camacho Mateo
+- Charij Jair
+- Cuichan Hector
+- Espinosa Andres
+- Gongora Lucas
+- Jami Klever
+- Leiton José
+- Manosalvas Gabriel
+- Maza Jardel
+- Pasquel Marlon
+- Paucar Dennis
+- Pazmiño Brandon
+- Pilatasig David
+- Proaño Abner
+- Quiroga Esteban
+- Robalino Benjamin
+- Rojas Matias
+- Sandoval Andres
+- Tipan Tania
+- Topon Juan
+- Ullcu Denis
 ## Version History
 
 * 0.1
