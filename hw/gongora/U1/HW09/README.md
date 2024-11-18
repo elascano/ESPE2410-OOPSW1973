@@ -1,0 +1,1 @@
+# Perform classes only with the attributes of the "accounting system" project with java and javascript
