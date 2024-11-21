@@ -1,0 +1,5 @@
+{"houses":[
+    {"id":1,"nameOwner":"MeryBermeo","expense":21.00,"residents":2,"pets":3,"tenants":4,"vehicles":2},
+    {"id":2,"nameOwner":"KattyPortilla","expense":22.00,"residents":3,"pets":2,"tenants":1,"vehicles":3},
+    {"id":3,"nameOwner":"MarceloEspinoza","expense":23.00,"residents":2,"pets":3,"tenants":4,"vehicles":2}
+]}
