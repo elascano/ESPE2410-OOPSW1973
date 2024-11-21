@@ -1,0 +1,32 @@
+{
+    "projects": [
+      {
+        "projectId": "Project_1",
+        "name": "UDLA Park",
+        "description": "Sistema de red UDLA",
+        "category": "Sent",
+        "status": "Accepted",
+        "isFactured": false,
+        "isPayed": false
+      },
+      {
+        "projectId": "Project_2",
+        "name": "SmartCity Quito",
+        "description": "Implementación de IoT para control de tráfico",
+        "category": "Sent",
+        "status": "Accepted",
+        "isFactured": true,
+        "isPayed": false
+      },
+      {
+        "projectId": "Project_3",
+        "name": "Universidad Central",
+        "description": "Diseño de red de alta velocidad para campus",
+        "category": "Not Sent",
+        "status": "Accepted",
+        "isFactured": false,
+        "isPayed": true
+    }
+    ]
+  }
+  
