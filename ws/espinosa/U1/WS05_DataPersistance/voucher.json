@@ -1,0 +1,7 @@
+{
+    "vouchers":[
+        {"type":"invoice","id":"0001","date":"24/11/2024","VAT":"1.15"},
+        {"type":"salesnote","id":"0002","date":"19/10/2024","VAT":"1.15"},
+        {"type":"invoice","id":"0003","date":"14/11/2024","VAT":"1.15"}
+    ]
+}
