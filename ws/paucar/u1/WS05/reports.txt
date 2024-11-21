@@ -1,0 +1,3 @@
+001:21/11/2024:2:MobileNetworkExpansionProject:approved:PRJ001:50.000:true:45.000:2.000:11:47.000 
+002:15/10/2024:0:FiberOpticInstallation:inprogress:PRJ002:12.000:false:9.500:1.000:11:11.000:
+004:05/08/2024:15:ConstructionofTelecommunicationsAntenna:approved:PRJ004:80.000:true:60.000:7.500:11:81.000
