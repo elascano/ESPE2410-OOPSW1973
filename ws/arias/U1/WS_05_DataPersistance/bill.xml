@@ -1,0 +1,26 @@
+<bills>
+    <bill>
+        <numberOfBill>1</numberOfBill>
+        <costumerAddress>Turubamba Bajo</costumerAddress>
+        <costumerGmail>ariasalan634@gmail.com</costumerGmail>
+        <costumerId>12</costumerId>
+        <costumerName>Alan Arias</costumerName>
+        <total>12.50</total>
+    </bill>
+    <bill>
+        <numberOfBill>2</numberOfBill>
+        <costumerAddress>Turubamba Alto</costumerAddress>
+        <costumerGmail>mateoarias634@gmail.com</costumerGmail>
+        <costumerId>13</costumerId>
+        <costumerName>Mateo Arias</costumerName>
+        <total>5.50</total>
+    </bill>
+    <bill>
+        <numberOfBill>3</numberOfBill>
+        <costumerAddress>Solanda</costumerAddress>
+        <costumerGmail>pepitoarmijos244@gmail.com</costumerGmail>
+        <costumerId>14</costumerId>
+        <costumerName>Pepe Armijos</costumerName>
+        <total>15.00</total>
+    </bill>
+</bills>

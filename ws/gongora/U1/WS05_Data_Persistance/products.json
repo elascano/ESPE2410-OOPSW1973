@@ -1,0 +1,7 @@
+{
+    "products":[
+        {"id":1,"reference":"chocolate","description":"Manicho","price":1.50,"amount":54,"unit":"bag"},
+        {"id":2,"reference":"chocolate","description":"Galak","price":1.80,"amount":50,"unit":"bag"},
+        {"id":3,"reference":"cookie","description":"Oreo","price":0.50,"amount":40,"unit":"bag"}
+    ]
+}

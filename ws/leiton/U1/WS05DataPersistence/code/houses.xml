@@ -1,0 +1,29 @@
+<houses>
+    <house>
+        <id>1</id>
+        <nameOwner>MeryBermeo</nameOwner>
+        <expense>21.00</expense>
+        <residents>4</residents>
+        <pets>2</pets>
+        <tenants>2</tenants>
+        <vehicles>2</vehicles>
+    </house>
+    <house>
+        <id>2</id>
+        <nameOwner>KattyPortilla</nameOwner>
+        <expense>22.00</expense>
+        <residents>3</residents>
+        <pets>2</pets>
+        <tenants>3</tenants>
+        <vehicles>4</vehicles>
+    </house>
+    <house>
+        <id>3</id>
+        <nameOwner>MarceloEspinoza</nameOwner>
+        <expense>23.00</expense>
+        <residents>3</residents>
+        <pets>3</pets>
+        <tenants>2</tenants>
+        <vehicles>1</vehicles>
+    </house>
+</houses>
