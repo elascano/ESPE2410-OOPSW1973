@@ -1,0 +1,29 @@
+orders.xml
+<orders>
+      <ordes>
+      <id>1</numberOfOrder>
+      <name>Juan</nameOfClient>
+      <order>secodepollo</nameofplate>
+      <date>21/11/2024</dateOfOrder>
+      <hour>12:08</hourOfOrder>
+      <state>delivered</stateOfOrder> 
+  </order>
+</orders>
+      <ordes>
+      <id>2</numberOfOrder>
+      <name>Alan</nameOfClient>
+      <order>guatita</nameofplate>
+      <date>21/11/2024</dateOfOrder>
+      <hour>12:11</hourOfOrder>
+      <state>undelivered</stateOfOrder> 
+   </order>
+   </orders>
+      <ordes>
+      <id>3</numberOfOrder>
+      <name>Edison</nameOfClient>
+      <order>gsecodecostilla</nameofplate>
+      <date>21/11/2024</dateOfOrder>
+      <hour>12:18</hourOfOrder>
+      <state>undelivered</stateOfOrder> 
+   </order>
+
