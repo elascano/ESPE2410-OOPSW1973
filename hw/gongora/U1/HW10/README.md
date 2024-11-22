@@ -1,0 +1,1 @@
+# To create a use case diagram of the project “accounting system”.

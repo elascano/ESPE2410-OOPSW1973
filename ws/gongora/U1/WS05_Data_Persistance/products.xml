@@ -1,0 +1,26 @@
+<Products>
+    <Product>
+        <id>1</id>
+        <reference>chocolate</reference>
+        <description>Manicho</description>
+        <price>1.50</price>
+        <amount>54</amount>
+        <unit>bag</unit>
+    </Product>
+    <Product>
+        <id>2</id>
+        <reference>chocolate</reference>
+        <description>Galak</description>
+        <price>1.80</price>
+        <amount>50</amount>
+        <unit>bag</unit>
+    </Product>
+    <Product>
+        <id>3</id>
+        <reference>cookie</reference>
+        <description>Oreo</description>
+        <price>0.50</price>
+        <amount>40</amount>
+        <unit>bag</unit>
+    </Product>
+</Produts>

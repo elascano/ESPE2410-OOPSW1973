@@ -1,0 +1,25 @@
+<clients>
+    <client>
+        <id>1</id>
+        <name>Esteban</name>
+        <phonenumber>0969966509</phonenumber>
+        <address>Ambato</address>
+        <status>Waiting_To_Pay</status>
+    </client>
+
+    <client>
+        <id>2</id>
+        <name>Juan</name>
+        <phonenumber>093238844</phonenumber>
+        <address>Quito</address>
+        <status>Paying</status>
+    </client>
+
+    <client>
+        <id>3</id>
+        <name>Pepe</name>
+        <phonenumber>0941425252</phonenumber>
+        <address>Loja</address>
+        <status>Paying</status>
+    </client>
+</clients>

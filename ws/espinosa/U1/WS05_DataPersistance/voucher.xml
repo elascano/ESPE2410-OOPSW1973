@@ -1,0 +1,20 @@
+<vouchers>
+    <voucher>
+        <type>invoice</type>
+        <id>0001</id>
+        <issueDate>24/11/2024</issueDate>
+        <VAT>1.15</VAT>
+   </voucher>
+    <voucher>
+        <type></type>
+        <id>0002</id>
+        <issueDate>19/10/2024</issueDate>
+        <VAT>1.15</VAT>
+   </voucher>
+    <voucher>
+        <type>invoice</type>
+        <id>0003</id>
+        <issueDate>14/11/2024</issueDate>
+        <VAT>1.15</VAT>
+   </voucher>
+</vouchers>

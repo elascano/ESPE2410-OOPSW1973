@@ -1,0 +1,30 @@
+[
+  {
+    "id": "1a",
+    "nombre": "Cliente1",
+    "ciudad": "Quito",
+    "email": "cliente1@gmail.com",
+    "telefono": "098741"
+  },
+  {
+    "id": "1b",
+    "nombre": "Cliente2",
+    "ciudad": "Quito",
+    "email": "cliente2@gmail.com",
+    "telefono": "454635"
+  },
+  {
+    "id": "1c",
+    "nombre": "Cliente3",
+    "ciudad": "Quito",
+    "email": "cliente3@gmail.com",
+    "telefono": "513233"
+  },
+  {
+    "id": "1d",
+    "nombre": "Cliente4",
+    "ciudad": "Quito",
+    "email": "cliente4@gmail.com",
+    "telefono": "745455"
+  }
+]
