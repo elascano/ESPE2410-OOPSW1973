@@ -1,0 +1,27 @@
+<prices>
+    <price>
+        <current>2.00</current>
+        <retail>1.50</retail>
+        <wholesale>20.00</wholesale>
+        <distributor>40.00</distributor>
+        <discount>30%</discount>
+    </price>
+
+    <price>
+        <current>2.00</current>
+        <retail>1.50</retail>
+        <wholesale>20.00</wholesale>
+        <distributor>40.00</distributor>
+        <discount>30%</discount>
+    </price>
+
+    <price>
+        <current>2.00</current>
+        <retail>1.50</retail>
+        <wholesale>20.00</wholesale>
+        <distributor>40.00</distributor>
+        <discount>30%</discount>
+    </price>
+</prices>
+
+
