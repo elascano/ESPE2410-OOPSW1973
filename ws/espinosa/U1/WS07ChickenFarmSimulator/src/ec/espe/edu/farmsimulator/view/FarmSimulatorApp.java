@@ -12,19 +12,21 @@ public class FarmSimulatorApp {
         System.out.println("Espinosa's Chicken Farm Simulator");
         
         Chicken chicken;
-        chicken = new Chicken();
         int id=1;
         String name="Lucy";
         String color="White";
-        Date bornOnDate= new Date(2023, 1, 2);
+        Date bornOnDate=new Date(23, 1, 2);
         boolean notMolting=false;
         
-        System.out.println("chicken -->"+ chicken);
-        System.out.println("chicken -->"+ chicken.getId());
         
+        chicken = new Chicken(id, name, color, bornOnDate, notMolting);
+
+        System.out.println("chicken--> " + chicken);
+        System.out.println("chicken--> " + chicken.getId());
         chicken.setId(1);
-        chicken.setName("Maruja");
-        System.out.println("chicken -->"+ chicken);
-        
+        chicken.setName("Lucy");
+        System.out.println("chicken-->" + chicken);
+
     }
+
 }
