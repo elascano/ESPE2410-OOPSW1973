@@ -1,0 +1,14 @@
+<RegistrationProduct>
+    <registrationProduct>
+    <name>Jeans</name>
+    <category>girl</category>
+    <size>short</size>
+    <quantity>3und</quantity>
+    </registrationProduct>
+        <registrationProduct>
+    <name>t-shirt</name>
+    <category>man</category>
+    <size>Big</size>
+    <quantity>2und</quantity>
+</registrationProduct>
+</RegistrationProduct>
