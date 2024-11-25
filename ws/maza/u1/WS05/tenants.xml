@@ -1,0 +1,29 @@
+<tenants>
+    <tenant>
+        <id>0001</id>
+        <name>Alexander</name>
+        <lastName>Perez</lastName>
+        <phone>0987643221</phone>
+        <houseNumber>01</houseNumber>
+        <paymentStatus>canceled</paymentStatus>
+        <entryDate>21/11/2024</entryDate>
+    </tenant>
+    <tenant>
+        <id>0002</id>
+        <name>Josue</name>
+        <lastName>Castillo</lastName>
+        <phone>0991234523</phone>
+        <houseNumber>02</houseNumber>
+        <paymentStatus>notcanceled</paymentStatus>
+        <entryDate>20/11/2024</entryDate>
+    </tenant>
+    <tenant>
+        <id>0003</id>
+        <name>Juan</name>
+        <lastName>Hernandez</lastName>
+        <phone>0964327243</phone>
+        <houseNumber>03</houseNumber>
+        <paymentStatus>canceled</paymentStatus>
+        <entryDate>15/11/2024</entryDate>
+    </tenant>
+</tenants>
