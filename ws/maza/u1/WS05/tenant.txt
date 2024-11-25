@@ -1,0 +1,23 @@
+Tenant 1:
+Name: Juan
+LastName: Pérez
+Phone: 1234567890
+HouseNumber: 101
+PaymentStatus: Pagado
+EntryDate: 2024-01-15
+
+Tenant 2:
+Name: María
+LastName: Gómez
+Phone: 0987654321
+HouseNumber: 102
+PaymentStatus: No Pagado
+EntryDate: 2023-12-20
+
+Tenant 3:
+Name: Carlos
+LastName: López
+Phone: 5678901234
+HouseNumber: 103
+PaymentStatus: Pagado
+EntryDate: 2024-02-01
