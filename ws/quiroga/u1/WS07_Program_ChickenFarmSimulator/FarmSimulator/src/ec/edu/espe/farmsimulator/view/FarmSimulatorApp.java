@@ -16,9 +16,10 @@ public class FarmSimulatorApp {
         int id=1;
         String name="Lucy";
         String color="white";
-        Date bornOnDate=new Date(2023, 1, 2);
+        Date bornOnDate=new Date(123, 1, 2);
         boolean notMolting=false;
-        chicken = new Chicken(id, name, color, bornOnDate, notMolting);
+        int ageInMonths = 5;
+        chicken = new Chicken(id, name, color, bornOnDate, notMolting,ageInMonths);
         
         System.out.println("chicken --> " + chicken);
         System.out.println("chicken id --> " + chicken.getId());

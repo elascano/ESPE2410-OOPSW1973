@@ -1,6 +1,10 @@
 package ec.edu.espe.farmsimulator.model;
 
+import java.time.LocalDate;
+import java.time.Period;
+import java.time.ZoneId;
 import java.util.Date;
+
 
 /**
  *
@@ -19,20 +23,32 @@ public class Chicken {
         return "Chicken{" + "id=" + id + ", name=" + name + ", color=" + color + ", age=" + ageInMonths + ", bornOnDate=" + bornOnDate + ", notMolting=" + notMolting + '}';
     }
 
-    public Chicken(int id, String name, String color, Date bornOnDate, boolean notMolting) {
+    public Chicken(int id, String name, String color, Date bornOnDate, boolean notMolting, int ageInMonths) {
         this.id = id;
         this.name = name;
         this.color = color;
         this.bornOnDate = bornOnDate;
         this.notMolting = notMolting;
         
-        //TODO algorithm to compute age
-        this.ageInMonths=computeAgeInMonths();
+        //DONE algorithm to compute age
+        this.ageInMonths=computeAgeInMonths(bornOnDate);
     }
     
-    public int computeAgeInMonths(){
-        //TODO compute age
-        return 0;
+    /**
+     *
+     * @param bornOnDate
+     * @return
+     */
+    public int computeAgeInMonths(Date bornOnDate){
+        //DONE compute age
+        LocalDate castedBornOnDate = bornOnDate.toInstant()
+                                         .atZone(ZoneId.systemDefault())
+                                         .toLocalDate();
+        LocalDate actualDate = LocalDate.now();
+        Period period = Period.between(castedBornOnDate, actualDate);
+        ageInMonths = period.getYears()*12 + period.getMonths();
+        
+        return ageInMonths;
     }
     
     
