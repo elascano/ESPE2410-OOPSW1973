@@ -1,0 +1,5 @@
+{"bills":[
+    {"numberOfBill":1,"costumerAddress":"Turubamba Bajo","costumerGmail":"ariasalan634@gmail.com","costumerId":12,"costumerName":"Alan Arias","total":12.50},
+    {"numberOfBill":2,"costumerAddress":"Turubamba Alto","costumerGmail":"ariasmateo634@gmail.com","costumerId":13,"costumerName":"Mateo Arias","total":5.50},
+    {"numberOfBill":3,"costumerAddress":"Solanda","costumerGmail":"pepitoarmijos244@gmail.com","costumerId":14,"costumerName":"Pepe Armijos","total":15.50}
+]}

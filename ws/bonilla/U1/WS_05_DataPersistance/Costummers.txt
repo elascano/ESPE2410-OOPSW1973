@@ -1,0 +1,4 @@
+1a,Cliente1,Quito,cliente1@gmail.com,098741
+1b,Cliente2,Quito,cliente2@gmail.com,454635
+1c,Cliente3,Quito,cliente3@gmail.com,513233
+1d,Cliente4,Quito,cliente4@gmail.com,745455

@@ -1,0 +1,23 @@
+<notifications>
+    <notification>
+        <id>00000001</id>
+        <title>beginTheProject</title>
+        <date>21/11/2024</date>
+        <status>Active</status>
+        <message>"Usuario, el dia de hoy empezara su proyecto"</message>
+    </notification>
+    <notification>
+        <id>00000002</id>
+        <title>Cancellproject</title>
+        <date>23/11/2024</date>
+        <status>Cancel</status>
+        <message>"Usuario, su proyecto ha sido cancelado"</message>
+    </notification>
+    <notification>
+        <id>00000003</id>
+        <title>PaidProject</title>
+        <date>26/011/2024</date>
+        <status>Paid</status>
+        <message>"Usuario, el pago de su proyecto ha sido completado"</message>
+    </notification>
+</notifications>

@@ -1,0 +1,47 @@
+{
+    "projects": [
+      {
+        "reportid": "001",
+        "date": "21/11/2024",
+        "priority": 2,
+        "projectname": "MobileNetworkExpansionProject",
+        "status": "approved",
+        "projectcode": "PRJ001",
+        "budget": 50.000,
+        "cancelled": true,
+        "cost": 45.000,
+        "expensers": 2.000,
+        "utilities": 11,
+        "total": 47.000
+      },
+      {
+        "reportid": "002",
+        "date": "15/10/2024",
+        "priority": 0,
+        "projectname": "FiberOpticInstallation",
+        "status": "inprogress",
+        "projectcode": "PRJ002",
+        "budget": 12.000,
+        "cancelled": false,
+        "cost": 9.500,
+        "expensers": 1.000,
+        "utilities": 11,
+        "total": 11.000
+      },
+      {
+        "reportid": "004",
+        "date": "05/08/2024",
+        "priority": 15,
+        "projectname": "ConstructionofTelecommunicationsAntenna",
+        "status": "approved",
+        "projectcode": "PRJ004",
+        "budget": 80.000,
+        "cancelled": true,
+        "cost": 60.000,
+        "expensers": 7.500,
+        "utilities": 11,
+        "total": 81.000
+      }
+    ]
+  }
+  
