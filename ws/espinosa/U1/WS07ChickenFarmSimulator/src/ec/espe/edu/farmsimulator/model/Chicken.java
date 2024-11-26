@@ -31,12 +31,9 @@ public class Chicken {
     }
 
     public int computeAgeInMonths() {
-        //TODO compute ageInMonths
-        /*Date currentDate = new Date();
-        Date age;
-        age = currentDate - bornOnDate;*/
-        return 0;
-
+        Date currentDate = new Date();
+        int ageInMonths = (currentDate.getYear() - bornOnDate.getYear()) * 12 + (currentDate.getMonth() - bornOnDate.getMonth());
+        return ageInMonths;
     }
 
     /**

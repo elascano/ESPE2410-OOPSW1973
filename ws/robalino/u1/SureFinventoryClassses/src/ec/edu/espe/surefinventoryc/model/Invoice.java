@@ -1,6 +1,7 @@
 
 package ec.edu.espe.surefinventoryc.model;
 
+import java.time.LocalDate;
 import java.util.Date;
 
 /**
@@ -11,7 +12,7 @@ public class Invoice {
      private String invoiceNumber;
      private String customerName;
      private double amount;
-     private String dueDate;
+     private LocalDate dueDate;
      private boolean isPaid;
      private int date; 
 
@@ -28,7 +29,8 @@ public class Invoice {
         this.invoiceNumber = invoiceNumber;
         this.customerName = customerName;
         this.amount = amount;
-        this.dueDate = dueDate;
+         LocalDate LocalDate = null;
+        this.dueDate = LocalDate;
         this.isPaid = isPaid;
         //algorythm to compute date
         this.date=3;
@@ -87,7 +89,7 @@ public class Invoice {
     /**
      * @return the dueDate
      */
-    public String getDueDate() {
+    public LocalDate getDueDate() {
         return dueDate;
     }
 
