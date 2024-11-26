@@ -1,13 +1,12 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package utils;
+ package utils;
 
 /**
  *
  * @author Brandon Pazmino <www.espe.edu.ec>
  */
 public class FileManager {
+    public static void save(String data, String fileName,String format) {
+        
+    }
     
 }
