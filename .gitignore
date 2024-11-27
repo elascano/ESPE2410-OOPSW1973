@@ -22,3 +22,10 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+/ws/espinosa/U1/ChickenFarmSimulator/nbproject/private/
+/ws/espinosa/U1/ChickenFarmSimulator/build/
+/ws/espinosa/U1/JavaApplication3/nbproject/private/
+/ws/espinosa/U1/WS08/PrjContactBook/nbproject/private/
+/ws/espinosa/U1/WS08/HelloW/nbproject/private/
+/ws/espinosa/U1/WS08/AccountingSystem/nbproject/private/
+/ws/espinosa/U1/WS08/PrjContactBook/build/
