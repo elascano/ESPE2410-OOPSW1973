@@ -1,0 +1,1 @@
+This is the README for WS06_Chicken_ClassDiagram_Associations

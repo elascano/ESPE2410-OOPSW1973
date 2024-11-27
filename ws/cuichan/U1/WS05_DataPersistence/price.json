@@ -1,0 +1,23 @@
+{"prices":[
+    {"current":2.00,
+     "retail":1.50,
+     "wholesale":20.00,
+     "distributor":40.00,
+     "discount":30
+    },
+
+    {"current":3.00,
+     "retail":2.00,
+     "wholesale":30.00,
+     "distributor":30.00,
+     "discount":30
+    },
+
+    {"current":4.00,
+     "retail":1.50,
+     "wholesale":10.00,
+     "distributor":20.00,
+     "discount":30
+    }
+
+]}
