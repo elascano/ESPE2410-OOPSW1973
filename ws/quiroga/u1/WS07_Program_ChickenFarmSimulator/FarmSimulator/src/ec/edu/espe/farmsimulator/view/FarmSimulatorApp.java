@@ -1,31 +1,43 @@
 package ec.edu.espe.farmsimulator.view;
 
 import ec.edu.espe.farmsimulator.model.Chicken;
+import ec.edu.espe.farmsimulator.utils.JsonForm;
 import java.util.Date;
+import javax.swing.SwingUtilities;
+import java.util.Scanner;
 
 /**
  *
  * @author Esteban Quiroga
  */
 public class FarmSimulatorApp {
-
+    
+    
     public static void main(String[] args) {
-        System.out.println("Esteban's Chicken Farm Simulator!");
         
-        Chicken chicken;
-        int id=1;
-        String name="Lucy";
-        String color="white";
-        Date bornOnDate=new Date(123, 1, 2);
-        boolean notMolting=false;
-        int ageInMonths = 5;
-        chicken = new Chicken(id, name, color, bornOnDate, notMolting,ageInMonths);
+        Menu mainMenu = new Menu();
         
-        System.out.println("chicken --> " + chicken);
-        System.out.println("chicken id --> " + chicken.getId());
+        mainMenu.initMainMenu();
         
-        chicken.setId(1);
-        chicken.setName("Maruja");
+        int menuOption = 0;
+
         
+        do{
+
+            menuOption = mainMenu.selectMenuOption(menuOption, mainMenu);        
+
+
+                switch (menuOption){
+                    case 1: mainMenu.initCase1();
+                    break;
+
+                    case 2: mainMenu.initCase2();
+                    break;
+                    
+                    case 3:
+                    break;
+
+                }
+            }while(menuOption!=3);
     }
 }
