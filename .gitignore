@@ -20,8 +20,32 @@
 *.rar
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+<<<<<<< HEAD
 hs_err_pid*
 replay_pid*
 /ws/pazmino/u1/WS7/ChickenFarmSimulator/nbproject/private/
 /ws/pazmino/u1/WS7/ChickenFarmSimulator/build/
 /ws/pazmino/u1/WS7/PrjContactBook/nbproject/private/
+=======
+/ws/quiroga/u1/WS05_Program_ChickenFarmSimulator/FarmSimulator/nbproject/private/
+/ws/quiroga/u1/WS05_Program_ChickenFarmSimulator/FarmSimulator/build/
+/ws/quiroga/u1/WS06_Program_ChickenFarmSimulator/FarmSimulator/build/
+/ws/quiroga/u1/WS06_Program_ChickenFarmSimulator/FarmSimulator/nbproject/private/
+/ws/pasquel/u1/Ws 07 ImplementingClass/ChickenFarmSimulator/nbproject/private/
+/ws/pasquel/u1/Ws 07 ImplementingClass/ChickenFarmSimulator/build/
+/ws/pasquel/u1/Ws 07 ImplementingClass/ChickenSimulator/nbproject/private/
+/ws/robalino/u1/SureFinventoryClassses/nbproject/private/
+/ws/robalino/u1/SureFinventoryClassses/build/
+/ws/pasquel/u1/Ws 07 ImplementingClass/ChickenFarmSimulator/nbproject/private/
+/ws/pasquel/u1/Ws 07 ImplementingClass/ChickenFarmSimulator/build/
+/ws/pasquel/u1/Ws 07 ImplementingClass/ChickenSimulator/nbproject/private/
+
+/ws/robalino/u1/GetEmployeesAge/nbproject/private/
+/ws/robalino/u1/GetEmployeesAge/build/
+
+/ws/espinosa/U1/WS07ChickenFarmSimulator/build/
+/ws/charij/u1/WS_07_ChickenFarm/ChickenFarmSimulator/nbproject/private/
+/ws/charij/u1/WS_07_ChickenFarm/ChickenFarmSimulator/build/
+
+/hw/pazmino/u1/HW12/HW12MolePrjManagement/nbproject/private/
+>>>>>>> 3a17453ad470d2a319c7be13e475eaf6ef2edfa2

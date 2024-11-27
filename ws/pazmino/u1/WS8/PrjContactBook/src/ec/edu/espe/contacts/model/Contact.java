@@ -14,20 +14,24 @@ public class Contact {
     private int numberOfMutualFriends;
     private int numberOfOtherFriends;
     private int totalFriends;
-      public Contact(int id, String name, Date birthDate, String email, int numberOfMutualFriends, int numberOfOtherFriends, int totalFriends) {
+    
+      public Contact(int id, String name, Date birthDate, String email, int numberOfMutualFriends, int numberOfOtherFriends) {
         this.id = id;
         this.name = name;
         this.birthDate = birthDate;
         this.email = email;
         this.numberOfMutualFriends = numberOfMutualFriends;
         this.numberOfOtherFriends = numberOfOtherFriends;
-        this.totalFriends = totalFriends;
-    }
+        this.totalFriends = numberOfMutualFriends + numberOfOtherFriends;
+    } 
       
       
         @Override
     public String toString() {
-        return "Contact{" + "id=" + id + ", name=" + name + ", birthDate=" + birthDate + ", email=" + email + ", numberOfMutualFriends=" + numberOfMutualFriends + ", numberOfOtherFriends=" + numberOfOtherFriends + ", totalFriends=" + totalFriends + '}';
+        return "Contact{" + "\n\tid=" + id + ", name=" + name + ",\n\tbirthDate=" 
+                + birthDate + ", \n\temail=" + email + ", \n\tnumberOfMutualFriends=" 
+                + numberOfMutualFriends + ", \n\tnumberOfOtherFriends=" 
+                + numberOfOtherFriends + ", \n\ttotalFriends=" + totalFriends + '}';
     }
 
 

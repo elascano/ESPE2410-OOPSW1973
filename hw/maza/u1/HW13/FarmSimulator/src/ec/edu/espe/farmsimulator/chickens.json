@@ -1,0 +1,19 @@
+[
+    {
+      "id": 1,
+      "name": "Lucy",
+      "color": "white",
+      "ageInMonths": 12,
+      "bornOnDate": "2024-11-24",
+      "notMolting": false
+    },
+    {
+      "id": 2,
+      "name": "Monica",
+      "color": "brown",
+      "ageInMonths": 36,
+      "bornOnDate": "2024-11-24",
+      "notMolting": false
+    }
+  ]
+  
