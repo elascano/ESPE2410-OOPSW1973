@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Multi-file class diagram">
+  <ClassDiagramComponents>
+    <Class name="Contact" package="ec.edu.espe.contact.model" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="id" type="int" visibility="private"/>
+        <Field name="name" type="String" visibility="private"/>
+        <Field name="birthDate" type="Date" visibility="private"/>
+        <Field name="email" type="String" visibility="private"/>
+        <Field name="numberOfMutualFriends" type="int" visibility="private"/>
+        <Field name="numberOfOtherFriends" type="int" visibility="private"/>
+        <Field name="totalFriends" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="id"/>
+          <Argument type="String" name="name"/>
+          <Argument type="Date" name="birthDate"/>
+          <Argument type="String" name="email"/>
+          <Argument type="int" name="numberOfMutualFriends"/>
+          <Argument type="int" name="numberOfOtherFriends"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="getId" returnType="int" visibility="public"/>
+        <Method name="setId" returnType="void" visibility="public">
+          <Argument type="int" name="id"/>
+        </Method>
+        <Method name="getName" returnType="String" visibility="public"/>
+        <Method name="setName" returnType="void" visibility="public">
+          <Argument type="String" name="name"/>
+        </Method>
+        <Method name="getBirthDate" returnType="Date" visibility="public"/>
+        <Method name="setBirthDate" returnType="void" visibility="public">
+          <Argument type="Date" name="birthDate"/>
+        </Method>
+        <Method name="getEmail" returnType="String" visibility="public"/>
+        <Method name="setEmail" returnType="void" visibility="public">
+          <Argument type="String" name="email"/>
+        </Method>
+        <Method name="getNumberOfMutualFriends" returnType="int" visibility="public"/>
+        <Method name="setNumberOfMutualFriends" returnType="void" visibility="public">
+          <Argument type="int" name="numberOfMutualFriends"/>
+        </Method>
+        <Method name="getNumberOfOtherFriends" returnType="int" visibility="public"/>
+        <Method name="setNumberOfOtherFriends" returnType="void" visibility="public">
+          <Argument type="int" name="numberOfOtherFriends"/>
+        </Method>
+        <Method name="getTotalFriends" returnType="int" visibility="public"/>
+        <Method name="setTotalFriends" returnType="void" visibility="public">
+          <Argument type="int" name="totalFriends"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="ContactsApp" package="ec.edu.espe.contact.view" visibility="public" xPosition="348.0" yPosition="652.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+        <Method name="computeTotalFriends" returnType="int" visibility="public" isStatic="true">
+          <Argument type="int" name="numberOfMutualFriends"/>
+          <Argument type="int" name="numberOtherFriends"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>
