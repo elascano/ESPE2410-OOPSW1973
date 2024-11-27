@@ -29,15 +29,24 @@ public class ContactsApp {
         
         Contact contact = new Contact(id, name, birthDate, email, numberOfMutualFriends, numberOfOtherFriends);
         System.out.println("My first Class is --> \n" + contact );
-        System.out.println("");
+        int total = computeTotalFriends(numberOfMutualFriends, numberOfOtherFriends)
+       
         System.out.println("The total number of friends is -->" + computeTotalFriends(numberOfMutualFriends, numberOfOtherFriends));
         System.out.println("");
         System.out.println("total --> " + computeTotalFriends(numberOfMutualFriends, numberOfOtherFriends));
+        
+        changeContact(contact);
+        System.out.println("contact name -->" + contact.getName());
  
     }
     public static int computeTotalFriends(int numerOfMutualFriends,int numberOfOtherFriends){
         int total;
+        int numberOfMutualFriends = 90;
         total = numerOfMutualFriends + numberOfOtherFriends
         return total;
+    }
+    public static void changeContact(Contact contact) {
+        contact.setName("Brandon");
+        
     }
 }
