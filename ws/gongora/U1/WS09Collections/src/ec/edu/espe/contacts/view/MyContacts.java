@@ -39,7 +39,7 @@ public class MyContacts {
         ArrayList<Person> persons = new ArrayList<>();
 
         for (int i = 0; i < 5; i++) {
-            persons.add(new Person(i + 1, "Lucas" + i, "Gongora" + i, (i+1)*1000));
+            persons.add(new Person(i + 1, "Lucas" + (i+1), "Gongora" + (i+1), (i+1)*1000));
         }
         persons.forEach((p) -> {
             System.out.println("Person -->" + p);
