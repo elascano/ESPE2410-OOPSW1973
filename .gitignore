@@ -23,6 +23,15 @@
 <<<<<<< HEAD
 hs_err_pid*
 replay_pid*
+<<<<<<< HEAD
+/ws/espinosa/U1/ChickenFarmSimulator/nbproject/private/
+/ws/espinosa/U1/ChickenFarmSimulator/build/
+/ws/espinosa/U1/JavaApplication3/nbproject/private/
+/ws/espinosa/U1/WS08/PrjContactBook/nbproject/private/
+/ws/espinosa/U1/WS08/HelloW/nbproject/private/
+/ws/espinosa/U1/WS08/AccountingSystem/nbproject/private/
+/ws/espinosa/U1/WS08/PrjContactBook/build/
+=======
 /ws/pazmino/u1/WS7/ChickenFarmSimulator/nbproject/private/
 /ws/pazmino/u1/WS7/ChickenFarmSimulator/build/
 /ws/pazmino/u1/WS7/PrjContactBook/nbproject/private/
@@ -71,4 +80,34 @@ replay_pid*
 >>>>>>> f861e9dd6f94d2590649f2046acb14606c95c4be
 >>>>>>> 8d98517076c49dcdf2206a83b0553d42e3944603
 >>>>>>> a7e5e94c1677e6bb891b12020cf4399dff72ca16
+<<<<<<< HEAD
+/ws/sandoval/U1/ws09/Ws09ArrayList/nbproject/private/
+/ws/sandoval/U1/ws09/Ws09ArrayList/build/
+/ws/sandoval/U1/ws09/Ws09ArrayList/dist/
+=======
 /ws/pazmino/u1/WS8/PrjContactBook/build/
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 9d9deea0869549027e8af484615529ff8f8c3286
+/ws/espinosa/U1/WS09/PrjContects/nbproject/private/
+/ws/espinosa/U1/WS09/PrjContects/build/
+=======
+/ws/pasquel/u1/Ws no9 Array list/ArrayList/nbproject/private/
+/ws/pasquel/u1/Ws no9 Array list/PrjContact/nbproject/private/
+/ws/pasquel/u1/Ws no9 Array list/PrjContact/build/
+=======
+<<<<<<< HEAD
+/ws/leiton/U1/WS09ArrayList/ArrayList/nbproject/private/
+/ws/leiton/U1/WS09ArrayList/ArrayList/build/
+>>>>>>> d6eb6b43f12ff4cdf7a19296fda7e2c36102cef5
+=======
+/ws/pazmino/u1/WS9/WS9ArrayList/nbproject/private/
+/ws/pazmino/u1/WS9/WS9PrjContacts/nbproject/private/
+/ws/pazmino/u1/WS9/PrjContacts/nbproject/private/
+/ws/pazmino/u1/WS9/PrjContacts/build/
+>>>>>>> e11af90b894fa31bd9885f0ed8e14bc214147de6
+<<<<<<< HEAD
+=======
+>>>>>>> 80c5dc1b07d9cddce83b09af3a3193369113e847
+>>>>>>> d6eb6b43f12ff4cdf7a19296fda7e2c36102cef5
+>>>>>>> 55145b16784fe0c44b41f00a718786ebb9dd7ab1
