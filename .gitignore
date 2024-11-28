@@ -20,8 +20,10 @@
 *.rar
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+<<<<<<< HEAD
 hs_err_pid*
 replay_pid*
+<<<<<<< HEAD
 /ws/espinosa/U1/ChickenFarmSimulator/nbproject/private/
 /ws/espinosa/U1/ChickenFarmSimulator/build/
 /ws/espinosa/U1/JavaApplication3/nbproject/private/
@@ -29,3 +31,56 @@ replay_pid*
 /ws/espinosa/U1/WS08/HelloW/nbproject/private/
 /ws/espinosa/U1/WS08/AccountingSystem/nbproject/private/
 /ws/espinosa/U1/WS08/PrjContactBook/build/
+=======
+/ws/pazmino/u1/WS7/ChickenFarmSimulator/nbproject/private/
+/ws/pazmino/u1/WS7/ChickenFarmSimulator/build/
+/ws/pazmino/u1/WS7/PrjContactBook/nbproject/private/
+=======
+/ws/quiroga/u1/WS05_Program_ChickenFarmSimulator/FarmSimulator/nbproject/private/
+/ws/quiroga/u1/WS05_Program_ChickenFarmSimulator/FarmSimulator/build/
+/ws/quiroga/u1/WS06_Program_ChickenFarmSimulator/FarmSimulator/build/
+/ws/quiroga/u1/WS06_Program_ChickenFarmSimulator/FarmSimulator/nbproject/private/
+/ws/pasquel/u1/Ws 07 ImplementingClass/ChickenFarmSimulator/nbproject/private/
+/ws/pasquel/u1/Ws 07 ImplementingClass/ChickenFarmSimulator/build/
+/ws/pasquel/u1/Ws 07 ImplementingClass/ChickenSimulator/nbproject/private/
+/ws/robalino/u1/SureFinventoryClassses/nbproject/private/
+/ws/robalino/u1/SureFinventoryClassses/build/
+/ws/pasquel/u1/Ws 07 ImplementingClass/ChickenFarmSimulator/nbproject/private/
+/ws/pasquel/u1/Ws 07 ImplementingClass/ChickenFarmSimulator/build/
+/ws/pasquel/u1/Ws 07 ImplementingClass/ChickenSimulator/nbproject/private/
+
+/ws/robalino/u1/GetEmployeesAge/nbproject/private/
+/ws/robalino/u1/GetEmployeesAge/build/
+
+/ws/espinosa/U1/WS07ChickenFarmSimulator/build/
+<<<<<<< HEAD
+>>>>>>> e3c83ce08e94ceb0fad66ecf682580b8d128c82e
+/ws/quiroga/u1/WS08_PrimitiveAndReferenced/PrjContactBook/nbproject/private/
+/ws/quiroga/u1/WS08_PrimitiveAndReferenced/PrjContactBook/build/
+
+/ws/charij/u1/WS_07_ChickenFarm/ChickenFarmSimulator/nbproject/private/
+/ws/charij/u1/WS_07_ChickenFarm/ChickenFarmSimulator/build/
+
+<<<<<<< HEAD
+/ws/pasquel/u1/New Folder/ContactsBook/nbproject/private/
+/ws/pasquel/u1/WsNo8/contactBook/nbproject/private/
+/ws/pasquel/u1/WsNo8/ContactsBook/nbproject/private/
+/ws/pasquel/u1/WsNo8/ContactsBook1/nbproject/private/
+=======
+<<<<<<< HEAD
+/ws/leiton/U1/NewFolder/PjrContactBook/nbproject/private/
+/ws/leiton/U1/NewFolder/PjrContactBook/build/
+=======
+/hw/pazmino/u1/HW12/HW12MolePrjManagement/nbproject/private/
+<<<<<<< HEAD
+>>>>>>> 3a17453ad470d2a319c7be13e475eaf6ef2edfa2
+=======
+>>>>>>> ff9cfb54340469cd0f141cb7fbe483e0621d07ea
+/ws/pasquel/u1/WS no 8/ContactsBook/nbproject/private/
+>>>>>>> f861e9dd6f94d2590649f2046acb14606c95c4be
+>>>>>>> 8d98517076c49dcdf2206a83b0553d42e3944603
+>>>>>>> a7e5e94c1677e6bb891b12020cf4399dff72ca16
+/ws/pazmino/u1/WS8/PrjContactBook/build/
+>>>>>>> 9d9deea0869549027e8af484615529ff8f8c3286
+/ws/espinosa/U1/WS09/PrjContects/nbproject/private/
+/ws/espinosa/U1/WS09/PrjContects/build/
