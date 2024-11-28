@@ -7,7 +7,7 @@ import java.util.Date;
 
 /**
  *
- * @author Cahd!
+ * @author David Cuichan!
  */
 public class MyContacts {
     public static void main(String[] args) {

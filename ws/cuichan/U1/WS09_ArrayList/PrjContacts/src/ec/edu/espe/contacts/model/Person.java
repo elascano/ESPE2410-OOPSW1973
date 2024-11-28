@@ -2,7 +2,7 @@ package ec.edu.espe.contacts.model;
 
 /**
  *
- * @author Cahd!
+ * @author David Cuichan!
  */
 public class Person {
     private int id;
