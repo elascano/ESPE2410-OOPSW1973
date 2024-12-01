@@ -22,3 +22,5 @@
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+/ws/camacho/ws_07/ChikenFarmSimulator2.0.0/nbproject/private/
+/ws/camacho/ws_07/ChikenFarmSimulator2.0.0/build/
