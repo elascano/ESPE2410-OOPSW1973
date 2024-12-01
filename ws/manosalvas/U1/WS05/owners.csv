@@ -1,0 +1,4 @@
+id,name,address,phone,email,is_active
+1,Jose,1,091111111,jose@gmail.com,false
+2,David,1,09234234343,davdi@gmail.com,true
+3,Andres,1,0928792817,andres@gmail.com,false

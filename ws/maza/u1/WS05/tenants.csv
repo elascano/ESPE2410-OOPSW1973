@@ -1,0 +1,4 @@
+name,lastName,phone,houseNumber,paymentStatus,entryDate
+Juan,Pérez,1234567890,101,Pagado,2024-01-15
+María,Gómez,0987654321,102,No-Pagado,2023-12-20
+Carlos,López,5678901234,103,Pagado,2024-02-01

@@ -1,0 +1,30 @@
+<clientes>
+    <cliente>
+        <id>1a</id>
+        <nombre>Cliente1</nombre>
+        <ciudad>Quito</ciudad>
+        <email>cliente1@gmail.com</email>
+        <telefono>098741</telefono>
+    </cliente>
+    <cliente>
+        <id>1b</id>
+        <nombre>Cliente2</nombre>
+        <ciudad>Quito</ciudad>
+        <email>cliente2@gmail.com</email>
+        <telefono>454635</telefono>
+    </cliente>
+    <cliente>
+        <id>1c</id>
+        <nombre>Cliente3</nombre>
+        <ciudad>Quito</ciudad>
+        <email>cliente3@gmail.com</email>
+        <telefono>513233</telefono>
+    </cliente>
+    <cliente>
+        <id>1d</id>
+        <nombre>Cliente4</nombre>
+        <ciudad>Quito</ciudad>
+        <email>cliente4@gmail.com</email>
+        <telefono>745455</telefono>
+    </cliente>
+</clientes>

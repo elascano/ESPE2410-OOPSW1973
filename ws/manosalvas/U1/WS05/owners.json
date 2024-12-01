@@ -1,0 +1,8 @@
+{
+    "owners": [
+      {"id": 1, "name": "Jose","address": "1","phone": "09876544","email": "jose@gmail.com"},
+      {"id": 2,"name": "Andres","address": "2","phone": "09876544","email": "andres@gmail.com"},
+      {"id": 3,"name": "David","address": "3","phone": "09876544","email": "david@gmail.com"}
+    ]
+  }
+  

@@ -1,0 +1,7 @@
+{} orders.json
+{"orders": [
+    {"id": 1,"name": "Juan","order": "secodepollo","date": "21/11/2024","hour": "12:08","state": "delivered"},
+    {"id": 2,"name": "Alan","order": "guatita","date": "21/11/2024","hour": "12:11","state": "undelivered"},
+    {"id": 3,"name": "Edison","order": "secodecostilla","date": "21/11/2024","hour": "12:18","state": "undelivered"}
+  ]
+}

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 package utils;
 
 import java.io.FileWriter;
@@ -41,3 +42,16 @@ public class FileManager {
 }
 
 
+=======
+package utils;
+
+/**
+ *
+ * @author Mateo Camacho
+ */
+public class FileManager {
+    public static void save(String data, String fileName, String format){
+        
+    }
+}
+>>>>>>> 3dd5cd029ea153644e6cf1c375933b956a6f8e39
