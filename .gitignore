@@ -19,3 +19,7 @@
 *.tar.gz
 *.rar
 
+/ws/robalino/u1/WS_06Classes/nbproject/private/
+/ws/robalino/u1/New Folder/AntsSimulatorPrj/nbproject/private/
+/ws/robalino/u1/New Folder/ReverseEngineering/nbproject/private/
+/ws/robalino/u1/New Folder/ReverseEngineering/build/
