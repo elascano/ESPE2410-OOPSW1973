@@ -20,6 +20,12 @@
 *.rar
 
 <<<<<<< HEAD
+/ws/pasquel/u1/WS no 8/ContactsBook/nbproject/private/
+/ws/pasquel/u1/WS no 8/ContactsBook/build/
+/ws/pasquel/u1/Ws no 10/ReverseEngeneering/nbproject/private/
+/ws/pasquel/u1/Ws no 10/ReverseEngeneering/build/
+=======
+<<<<<<< HEAD
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
@@ -27,8 +33,22 @@ replay_pid*
 /ws/camacho/ws_07/ChikenFarmSimulator2.0.0/build/
 =======
 >>>>>>> 3dd5cd029ea153644e6cf1c375933b956a6f8e39
+<<<<<<< HEAD
+/ws/leiton/U1/WS10ReverseEngineered/ReverseEngineering/nbproject/private/
+/ws/leiton/U1/WS10ReverseEngineered/ReverseEngineering/build/
+=======
 /ws/cuichan/U1/WS07_ChickenFarmSimulator/PrjChickenFarmSimulator/nbproject/private/
 /ws/cuichan/U1/WS07_ChickenFarmSimulator/PrjChickenFarmSimulator/build/
+<<<<<<< HEAD
 /ws/espinosa/U1/WS10ReverseEngeneering/JavaApplication9/nbproject/private/
 /ws/espinosa/U1/WS10ReverseEngeneering/ReverseEngineering/nbproject/private/
 /ws/espinosa/U1/WS10ReverseEngeneering/ReverseEngineering/build/
+=======
+<<<<<<< HEAD
+>>>>>>> e62083d8451321a3e4bef5dec8927a2e1c75fc95
+=======
+/ws/cuichan/U1/WS10_ReverseEngineering/ReverseEngineering/nbproject/private/
+/ws/cuichan/U1/WS10_ReverseEngineering/ReverseEngineering/build/
+>>>>>>> 81fa65dcf1b821ea4ff2710ea5c12a3c62779118
+>>>>>>> 2ddfc4ae3457b99ccf3bbdd358554c1b12c35d1b
+>>>>>>> 21588f8eba54090eb512b3daf6df10695463b846
