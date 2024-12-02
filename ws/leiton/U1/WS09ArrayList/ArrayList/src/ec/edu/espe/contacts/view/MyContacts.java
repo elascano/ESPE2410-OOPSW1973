@@ -60,10 +60,14 @@ public class MyContacts {
                 System.out.println("person -->"+p);
             }
             
+            persons.add(new Person(6,"Juan","Riobo",0.25F));
+            
             for(int i=0; i<persons.size();i++){
                 
             }
-              
+            for(Person p:persons){
+            System.out.println("person -->"+p);
+            }  
     }
     
 }
