@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <cashiers>
     <cashier>
     <Name>Federico Ferelcano<Name>
@@ -22,4 +23,30 @@
     <date>20/02/2024<date>
     <email>peperiaito@gmail.com<email>
     <cashier>
+=======
+<cashiers>
+    <cashier>
+    <Name>Federico Ferelcano<Name>
+    <DNI>723928977<DNI>
+    <address>Marin<address>
+    <date>21/11/2024<date>
+    <email>ismararta@gmail.com<email>
+    <cashier>
+
+    <cashier>
+    <Name>Maria Mercedes<Name>
+    <DNI>1713122387<DNI>
+    <address>SanRoque<address>
+    <date>20/10/20<date>
+    <email>mariamaria@gmail.com<email>
+    <cashier>
+    
+    <cashier>
+    <Name>Carlos Pared<Name>
+    <DNI>172635467<DNI>
+    <address>Lomatumadre<address>
+    <date>20/02/2024<date>
+    <email>peperiaito@gmail.com<email>
+    <cashier>
+>>>>>>> 3dd5cd029ea153644e6cf1c375933b956a6f8e39
 <cashiers>
