@@ -1,0 +1,29 @@
+@startuml
+annotation java.lang.Override
+class ec.espe.edu.condomanage.model.CoOwner
+class ec.espe.edu.condomanage.model.ParkingLot
+class ec.espe.edu.condomanage.model.ParkingSpace
+class ec.espe.edu.condomanage.model.Tenant
+class ec.espe.edu.condomanage.model.Vehicle
+class ec.espe.edu.condomanage.view.condominiumManagement
+class java.io.FileWriter
+class java.io.IOException
+class java.util.Scanner
+class org.json.JSONObject
+class utils.FileManager
+ec.espe.edu.condomanage.model.CoOwner ..> java.lang.Override
+ec.espe.edu.condomanage.model.ParkingLot ..> java.lang.Override
+ec.espe.edu.condomanage.model.ParkingSpace ..> java.lang.Override
+ec.espe.edu.condomanage.model.Tenant ..> java.lang.Override
+ec.espe.edu.condomanage.model.Vehicle ..> java.lang.Override
+ec.espe.edu.condomanage.view.condominiumManagement ..> ec.espe.edu.condomanage.model.CoOwner
+ec.espe.edu.condomanage.view.condominiumManagement ..> ec.espe.edu.condomanage.model.ParkingLot
+ec.espe.edu.condomanage.view.condominiumManagement ..> ec.espe.edu.condomanage.model.ParkingSpace
+ec.espe.edu.condomanage.view.condominiumManagement ..> ec.espe.edu.condomanage.model.Tenant
+ec.espe.edu.condomanage.view.condominiumManagement ..> ec.espe.edu.condomanage.model.Vehicle
+ec.espe.edu.condomanage.view.condominiumManagement ..> java.util.Scanner
+ec.espe.edu.condomanage.view.condominiumManagement ..> utils.FileManager
+utils.FileManager ..> java.io.FileWriter
+utils.FileManager ..> java.io.IOException
+utils.FileManager ..> org.json.JSONObject
+@enduml
