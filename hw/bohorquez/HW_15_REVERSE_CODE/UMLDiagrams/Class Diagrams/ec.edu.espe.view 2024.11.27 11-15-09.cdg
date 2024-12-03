@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="ec.edu.espe.view">
+  <ClassDiagramComponents>
+    <Class name="Facturs" package="ec.edu.espe.view" visibility="public" xPosition="71.0" yPosition="20.0">
+      <Fields>
+        <Field name="idFactur" type="int" visibility="private"/>
+        <Field name="ordenes" type="ArrayList&lt;Orders&gt;" visibility="private"/>
+        <Field name="total" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="idFactur"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getIdFactur" returnType="int" visibility="public"/>
+        <Method name="setIdFactur" returnType="int" visibility="public">
+          <Argument type="int" name="idFactur"/>
+        </Method>
+        <Method name="getOrdenes" returnType="ArrayList&lt;Orders&gt;" visibility="public"/>
+        <Method name="setOrdenes" returnType="ArrayList&lt;Orden&gt;" visibility="public">
+          <Argument type="ArrayList&lt;Orden&gt;" name="ordenes"/>
+        </Method>
+        <Method name="getTotal" returnType="double" visibility="public"/>
+        <Method name="setTotal" returnType="double" visibility="public">
+          <Argument type="double" name="total"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Menu" package="ec.edu.espe.view" visibility="public" xPosition="71.0" yPosition="353.0">
+      <Fields>
+        <Field name="opciones" type="String[]" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String[]" name="opciones"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getOpciones" returnType="String[]" visibility="public"/>
+        <Method name="setOpciones" returnType="String[]" visibility="public">
+          <Argument type="String[]" name="opciones"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Orders" package="ec.edu.espe.view" visibility="public" xPosition="549.0" yPosition="266.0">
+      <Fields>
+        <Field name="idOrden" type="int" visibility="private"/>
+        <Field name="descripcion" type="String" visibility="private"/>
+        <Field name="precio" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="idOrden"/>
+          <Argument type="String" name="descripcion"/>
+          <Argument type="double" name="precio"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getIdOrden" returnType="int" visibility="public"/>
+        <Method name="setIdOrden" returnType="int" visibility="public">
+          <Argument type="int" name="idOrden"/>
+        </Method>
+        <Method name="getDescripcion" returnType="String" visibility="public"/>
+        <Method name="setDescripcion" returnType="String" visibility="public">
+          <Argument type="String" name="descripcion"/>
+        </Method>
+        <Method name="getPrecio" returnType="double" visibility="public"/>
+        <Method name="setPrecio" returnType="double" visibility="public">
+          <Argument type="double" name="precio"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="SaleNotes" package="ec.edu.espe.view" visibility="public" xPosition="869.0" yPosition="20.0">
+      <Fields>
+        <Field name="idNota" type="int" visibility="private"/>
+        <Field name="factur" type="Facturs" visibility="private"/>
+        <Field name="fecha" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="idNota"/>
+          <Argument type="Factur" name="factur"/>
+          <Argument type="String" name="fecha"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getIdNote" returnType="int" visibility="public"/>
+        <Method name="setIdNote" returnType="int" visibility="public">
+          <Argument type="int" name="idNote"/>
+        </Method>
+        <Method name="getFactur" returnType="Facturs" visibility="public"/>
+        <Method name="setFactur" returnType="Factur" visibility="public">
+          <Argument type="Factur" name="factur"/>
+        </Method>
+        <Method name="getFecha" returnType="String" visibility="public"/>
+        <Method name="setFecha" returnType="String" visibility="public">
+          <Argument type="String" name="fecha"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation source="ec.edu.espe.view.SaleNotes" target="ec.edu.espe.view.Facturs" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="ordenes" source="ec.edu.espe.view.Facturs" target="ec.edu.espe.view.Orders" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Orden&gt;"/>
+    <UseRelation source="ec.edu.espe.view.Facturs" target="ec.edu.espe.view.Orders" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="factur" source="ec.edu.espe.view.SaleNotes" target="ec.edu.espe.view.Facturs" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

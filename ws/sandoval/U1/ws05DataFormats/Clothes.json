@@ -1,0 +1,8 @@
+{"clothes":[
+    {"idProduct":"R0001","name":"Short","category":"Pants","color":"Blue", "price":"5$","amount":"10"}
+    {"idProduct":"R0002","name":"Bluse","category":"Jacket","color":"Jasmin", "price":"5$","amount":"11"}
+    {"idProduct":"R0003","name":"t-shirt","category":"Camisa","color":"red", "price":"4$","amount":"12"}
+    ]
+}
+
+

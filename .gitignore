@@ -19,38 +19,49 @@
 *.tar.gz
 *.rar
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-/ws/quiroga/u1/WS05_Program_ChickenFarmSimulator/FarmSimulator/nbproject/private/
-/ws/quiroga/u1/WS05_Program_ChickenFarmSimulator/FarmSimulator/build/
-/ws/quiroga/u1/WS06_Program_ChickenFarmSimulator/FarmSimulator/build/
-/ws/quiroga/u1/WS06_Program_ChickenFarmSimulator/FarmSimulator/nbproject/private/
-/ws/pasquel/u1/Ws 07 ImplementingClass/ChickenFarmSimulator/nbproject/private/
-/ws/pasquel/u1/Ws 07 ImplementingClass/ChickenFarmSimulator/build/
-/ws/pasquel/u1/Ws 07 ImplementingClass/ChickenSimulator/nbproject/private/
-/ws/robalino/u1/SureFinventoryClassses/nbproject/private/
-/ws/robalino/u1/SureFinventoryClassses/build/
-/ws/pasquel/u1/Ws 07 ImplementingClass/ChickenFarmSimulator/nbproject/private/
-/ws/pasquel/u1/Ws 07 ImplementingClass/ChickenFarmSimulator/build/
-/ws/pasquel/u1/Ws 07 ImplementingClass/ChickenSimulator/nbproject/private/
-
-/ws/robalino/u1/GetEmployeesAge/nbproject/private/
-/ws/robalino/u1/GetEmployeesAge/build/
-
-/ws/espinosa/U1/WS07ChickenFarmSimulator/build/
 <<<<<<< HEAD
->>>>>>> e3c83ce08e94ceb0fad66ecf682580b8d128c82e
-/ws/quiroga/u1/WS08_PrimitiveAndReferenced/PrjContactBook/nbproject/private/
-/ws/quiroga/u1/WS08_PrimitiveAndReferenced/PrjContactBook/build/
-
-/ws/charij/u1/WS_07_ChickenFarm/ChickenFarmSimulator/nbproject/private/
-/ws/charij/u1/WS_07_ChickenFarm/ChickenFarmSimulator/build/
-
-/hw/pazmino/u1/HW12/HW12MolePrjManagement/nbproject/private/
->>>>>>> ff9cfb54340469cd0f141cb7fbe483e0621d07ea
 /ws/pasquel/u1/WS no 8/ContactsBook/nbproject/private/
+<<<<<<< HEAD
 /ws/quiroga/u1/WS09_Collections/PrjContacts/nbproject/private/
 /ws/quiroga/u1/WS09_Collections/PrjContacts/build/
 /ws/quiroga/u1/WS10_ReverseEngineering/ReverseEngineering/nbproject/private/
 /ws/quiroga/u1/WS10_ReverseEngineering/ReverseEngineering/build/
 /ws/quiroga/u1/WS11_DirectEngineering/AntSimulator/nbproject/private/
 /ws/quiroga/u1/WS11_DirectEngineering/AntSimulator/build/
+
+<<<<<<< HEAD
+>>>>>>> f861e9dd6f94d2590649f2046acb14606c95c4be
+>>>>>>> 8d98517076c49dcdf2206a83b0553d42e3944603
+/ws/pasquel/u1/WS no 8/ContactsBook/build/
+
+/ws/pasquel/u1/WS no 8/ContactsBook/build/
+/ws/pasquel/u1/Ws no 10/ReverseEngeneering/nbproject/private/
+/ws/pasquel/u1/Ws no 10/ReverseEngeneering/build/
+
+<<<<<<< HEAD
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+replay_pid*
+
+/ws/maza/u1/WS07/ChickenFarmSimulator/nbproject/private/
+/ws/maza/u1/WS07/ChickenFarmSimulator/build/
+
+/ws/camacho/ws_07/ChikenFarmSimulator2.0.0/nbproject/private/
+/ws/camacho/ws_07/ChikenFarmSimulator2.0.0/build/
+
+>>>>>>> 3dd5cd029ea153644e6cf1c375933b956a6f8e39
+<<<<<<< HEAD
+/ws/leiton/U1/WS10ReverseEngineered/ReverseEngineering/nbproject/private/
+/ws/leiton/U1/WS10ReverseEngineered/ReverseEngineering/build/
+
+/ws/cuichan/U1/WS07_ChickenFarmSimulator/PrjChickenFarmSimulator/nbproject/private/
+/ws/cuichan/U1/WS07_ChickenFarmSimulator/PrjChickenFarmSimulator/build/
+<<<<<<< HEAD
+>>>>>>> e62083d8451321a3e4bef5dec8927a2e1c75fc95
+
+/ws/cuichan/U1/WS10_ReverseEngineering/ReverseEngineering/nbproject/private/
+/ws/cuichan/U1/WS10_ReverseEngineering/ReverseEngineering/build/
+>>>>>>> 81fa65dcf1b821ea4ff2710ea5c12a3c62779118
+>>>>>>> 2ddfc4ae3457b99ccf3bbdd358554c1b12c35d1b
+>>>>>>> 9dcdd7212b464564b1a76a13ee6d8bd79d58698f
+>>>>>>> 5fae21d2e7c8fdbb6483aec84dad6770828b7fc5

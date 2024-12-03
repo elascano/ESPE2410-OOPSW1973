@@ -27,10 +27,10 @@ public class ContactsApp {
     numberOfOtherFriends = 5;
     totalFriends = numberOfMutualFriends + numberOfOtherFriends;
     
-    Contact contact = new Contact(id, name, birthDate, email, numberOfMutualFriends, numberOfOtherFriends, totalFriends);
+   /* Contact contact = new Contact(id, name, birthDate, email, numberOfMutualFriends, numberOfOtherFriends, totalFriends);
            
         System.out.println("My first contact is --> \n"+ contact);
-        
+   //     int total = computeTotalFriends(numberOfMutualFriends, numberOfOtherFriends);*/
         System.out.println("The total number of friends is --> " + computeTotalFriends(numberOfMutualFriends, numberOfOtherFriends));
         
             
@@ -38,7 +38,7 @@ public class ContactsApp {
     
     public static int computeTotalFriends (int numberOfMutualFriends, int numberOfOtherFriends){
         int total;
-        total = numberOfMutualFriends + numberOfOtherFriends;
-        return total;
+        total = numberOfMutualFriends + numberOfOtherFriends;       
+        return total; 
     }
 }

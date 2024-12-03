@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Multi-file class diagram">
+  <ClassDiagramComponents>
+    <Class name="Client" package="ec.edu.espe.accountingsystem.model" visibility="public" xPosition="2485.0" yPosition="477.0">
+      <Fields>
+        <Field name="type" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="id"/>
+          <Argument type="String" name="name"/>
+          <Argument type="IdentityCard" name="identityCard"/>
+          <Argument type="String" name="address"/>
+          <Argument type="String" name="phoneNumber"/>
+          <Argument type="String" name="email"/>
+        </Constructor>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="getType" returnType="String" visibility="public"/>
+        <Method name="setType" returnType="void" visibility="public">
+          <Argument type="String" name="type"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Entity" package="ec.edu.espe.accountingsystem.model" visibility="public" xPosition="1075.0" yPosition="657.0">
+      <Fields>
+        <Field name="id" type="String" visibility="private"/>
+        <Field name="name" type="String" visibility="private"/>
+        <Field name="identityCard" type="IdentityCard" visibility="private"/>
+        <Field name="address" type="String" visibility="private"/>
+        <Field name="phoneNumber" type="String" visibility="private"/>
+        <Field name="email" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="id"/>
+          <Argument type="String" name="name"/>
+          <Argument type="IdentityCard" name="identityCard"/>
+          <Argument type="String" name="address"/>
+          <Argument type="String" name="phoneNumber"/>
+          <Argument type="String" name="email"/>
+        </Constructor>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="getId" returnType="String" visibility="public"/>
+        <Method name="setId" returnType="void" visibility="public">
+          <Argument type="String" name="id"/>
+        </Method>
+        <Method name="getName" returnType="String" visibility="public"/>
+        <Method name="setName" returnType="void" visibility="public">
+          <Argument type="String" name="name"/>
+        </Method>
+        <Method name="getIdentityCard" returnType="IdentityCard" visibility="public"/>
+        <Method name="setIdentityCard" returnType="void" visibility="public">
+          <Argument type="IdentityCard" name="identityCard"/>
+        </Method>
+        <Method name="getAddress" returnType="String" visibility="public"/>
+        <Method name="setAddress" returnType="void" visibility="public">
+          <Argument type="String" name="address"/>
+        </Method>
+        <Method name="getPhoneNumber" returnType="String" visibility="public"/>
+        <Method name="setPhoneNumber" returnType="void" visibility="public">
+          <Argument type="String" name="phoneNumber"/>
+        </Method>
+        <Method name="getEmail" returnType="String" visibility="public"/>
+        <Method name="setEmail" returnType="void" visibility="public">
+          <Argument type="String" name="email"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="IdentityCard" package="ec.edu.espe.accountingsystem.model" visibility="public" xPosition="1958.0" yPosition="1127.0">
+      <Fields>
+        <Field name="type" type="String" visibility="private"/>
+        <Field name="id" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="type"/>
+          <Argument type="String" name="id"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="getType" returnType="String" visibility="public"/>
+        <Method name="setType" returnType="void" visibility="public">
+          <Argument type="String" name="type"/>
+        </Method>
+        <Method name="getId" returnType="String" visibility="public"/>
+        <Method name="setId" returnType="void" visibility="public">
+          <Argument type="String" name="id"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Inventory" package="ec.edu.espe.accountingsystem.model" visibility="public" xPosition="3594.0" yPosition="1362.0">
+      <Fields>
+        <Field name="products" type="ArrayList&lt;Product&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="ArrayList&lt;Product&gt;" name="products"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="add" returnType="void" visibility="public">
+          <Argument type="Product" name="product"/>
+        </Method>
+        <Method name="delete" returnType="void" visibility="public">
+          <Argument type="String" name="productId"/>
+        </Method>
+        <Method name="update" returnType="void" visibility="public">
+          <Argument type="String" name="productId"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Price" package="ec.edu.espe.accountingsystem.model" visibility="public" xPosition="3492.0" yPosition="2395.0">
+      <Fields>
+        <Field name="current" type="float" visibility="private"/>
+        <Field name="retail" type="float" visibility="private"/>
+        <Field name="wholesale" type="float" visibility="private"/>
+        <Field name="distributor" type="float" visibility="private"/>
+        <Field name="discount" type="float" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="float" name="current"/>
+          <Argument type="float" name="retail"/>
+          <Argument type="float" name="wholesale"/>
+          <Argument type="float" name="distributor"/>
+          <Argument type="float" name="discount"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="getCurrent" returnType="float" visibility="public"/>
+        <Method name="setCurrent" returnType="void" visibility="public">
+          <Argument type="float" name="current"/>
+        </Method>
+        <Method name="getRetail" returnType="float" visibility="public"/>
+        <Method name="setRetail" returnType="void" visibility="public">
+          <Argument type="float" name="retail"/>
+        </Method>
+        <Method name="getWholesale" returnType="float" visibility="public"/>
+        <Method name="setWholesale" returnType="void" visibility="public">
+          <Argument type="float" name="wholesale"/>
+        </Method>
+        <Method name="getDistributor" returnType="float" visibility="public"/>
+        <Method name="setDistributor" returnType="void" visibility="public">
+          <Argument type="float" name="distributor"/>
+        </Method>
+        <Method name="getDiscount" returnType="float" visibility="public"/>
+        <Method name="setDiscount" returnType="void" visibility="public">
+          <Argument type="float" name="discount"/>
+        </Method>
+        <Method name="adjustCurrentPrice" returnType="void" visibility="public">
+          <Argument type="String" name="typePrice"/>
+        </Method>
+        <Method name="applyDiscount" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Product" package="ec.edu.espe.accountingsystem.model" visibility="public" xPosition="3490.0" yPosition="1795.0">
+      <Fields>
+        <Field name="id" type="String" visibility="private"/>
+        <Field name="reference" type="String" visibility="private"/>
+        <Field name="description" type="String" visibility="private"/>
+        <Field name="price" type="Price" visibility="private"/>
+        <Field name="amount" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="id"/>
+          <Argument type="String" name="reference"/>
+          <Argument type="String" name="description"/>
+          <Argument type="Price" name="price"/>
+          <Argument type="int" name="amount"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="getId" returnType="String" visibility="public"/>
+        <Method name="setId" returnType="void" visibility="public">
+          <Argument type="String" name="id"/>
+        </Method>
+        <Method name="getReference" returnType="String" visibility="public"/>
+        <Method name="setReference" returnType="void" visibility="public">
+          <Argument type="String" name="reference"/>
+        </Method>
+        <Method name="getDescription" returnType="String" visibility="public"/>
+        <Method name="setDescription" returnType="void" visibility="public">
+          <Argument type="String" name="description"/>
+        </Method>
+        <Method name="getPrice" returnType="Price" visibility="public"/>
+        <Method name="setPrice" returnType="void" visibility="public">
+          <Argument type="Price" name="price"/>
+        </Method>
+        <Method name="getAmount" returnType="int" visibility="public"/>
+        <Method name="setAmount" returnType="void" visibility="public">
+          <Argument type="int" name="amount"/>
+        </Method>
+        <Method name="calculateTotalPrice" returnType="float" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Purchase" package="ec.edu.espe.accountingsystem.model" visibility="public" xPosition="570.0" yPosition="1761.0">
+      <Fields>
+        <Field name="supplier" type="Supplier" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="getSupplier" returnType="Supplier" visibility="public"/>
+        <Method name="setSupplier" returnType="void" visibility="public">
+          <Argument type="Supplier" name="supplier"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="PurchaseRecord" package="ec.edu.espe.accountingsystem.model" visibility="public" xPosition="522.0" yPosition="1348.0">
+      <Fields>
+        <Field name="purchases" type="ArrayList&lt;Purchase&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="ArrayList&lt;Purchase&gt;" name="purchases"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="getPurchases" returnType="ArrayList&lt;Purchase&gt;" visibility="public"/>
+        <Method name="setPurchases" returnType="void" visibility="public">
+          <Argument type="ArrayList&lt;Purchase&gt;" name="purchases"/>
+        </Method>
+        <Method name="add" returnType="void" visibility="public">
+          <Argument type="Purchase" name="purchase"/>
+        </Method>
+        <Method name="delete" returnType="void" visibility="public">
+          <Argument type="String" name="purchaseId"/>
+        </Method>
+        <Method name="update" returnType="void" visibility="public">
+          <Argument type="String" name="purchaseId"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Sale" package="ec.edu.espe.accountingsystem.model" visibility="public" xPosition="173.0" yPosition="512.0">
+      <Fields>
+        <Field name="client" type="Client" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="SalesRecord" package="ec.edu.espe.accountingsystem.model" visibility="public" xPosition="612.0" yPosition="707.0">
+      <Fields>
+        <Field name="sales" type="ArrayList&lt;Sale&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="ArrayList&lt;Sale&gt;" name="sales"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="getSales" returnType="ArrayList&lt;Sale&gt;" visibility="public"/>
+        <Method name="setSales" returnType="void" visibility="public">
+          <Argument type="ArrayList&lt;Sale&gt;" name="sales"/>
+        </Method>
+        <Method name="add" returnType="void" visibility="public">
+          <Argument type="Supplier" name="supplier"/>
+        </Method>
+        <Method name="delete" returnType="void" visibility="public">
+          <Argument type="String" name="supplierId"/>
+        </Method>
+        <Method name="update" returnType="void" visibility="public">
+          <Argument type="String" name="supplierId"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Supplier" package="ec.edu.espe.accountingsystem.model" visibility="public" xPosition="1063.0" yPosition="1751.0">
+      <Fields>
+        <Field name="type" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="type"/>
+          <Argument type="String" name="id"/>
+          <Argument type="String" name="name"/>
+          <Argument type="IdentityCard" name="identityCard"/>
+          <Argument type="String" name="address"/>
+          <Argument type="String" name="phoneNumber"/>
+          <Argument type="String" name="email"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="getType" returnType="String" visibility="public"/>
+        <Method name="setType" returnType="void" visibility="public">
+          <Argument type="String" name="type"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Transaction" package="ec.edu.espe.accountingsystem.model" visibility="public" xPosition="128.0" yPosition="1963.0">
+      <Fields>
+        <Field name="id" type="String" visibility="private"/>
+        <Field name="voucher" type="Voucher" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="id"/>
+          <Argument type="Voucher" name="voucher"/>
+        </Constructor>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="getId" returnType="String" visibility="public"/>
+        <Method name="setId" returnType="void" visibility="public">
+          <Argument type="String" name="id"/>
+        </Method>
+        <Method name="getVoucher" returnType="Voucher" visibility="public"/>
+        <Method name="setVoucher" returnType="void" visibility="public">
+          <Argument type="Voucher" name="voucher"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Voucher" package="ec.edu.espe.accountingsystem.model" visibility="public" xPosition="2465.0" yPosition="1681.0">
+      <Fields>
+        <Field name="type" type="String" visibility="private"/>
+        <Field name="id" type="int" visibility="private"/>
+        <Field name="issueDate" type="Date" visibility="private"/>
+        <Field name="products" type="ArrayList&lt;Product&gt;" visibility="private"/>
+        <Field name="client" type="Client" visibility="private"/>
+        <Field name="supplier" type="Supplier" visibility="private"/>
+        <Field name="VAT" type="float" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="type"/>
+          <Argument type="int" name="id"/>
+          <Argument type="Date" name="issueDate"/>
+          <Argument type="ArrayList&lt;Product&gt;" name="products"/>
+          <Argument type="Client" name="client"/>
+          <Argument type="Supplier" name="supplier"/>
+          <Argument type="float" name="VAT"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="getType" returnType="String" visibility="public"/>
+        <Method name="setType" returnType="void" visibility="public">
+          <Argument type="String" name="type"/>
+        </Method>
+        <Method name="getId" returnType="int" visibility="public"/>
+        <Method name="setId" returnType="void" visibility="public">
+          <Argument type="int" name="id"/>
+        </Method>
+        <Method name="getIssueDate" returnType="Date" visibility="public"/>
+        <Method name="setIssueDate" returnType="void" visibility="public">
+          <Argument type="Date" name="issueDate"/>
+        </Method>
+        <Method name="getProducts" returnType="ArrayList&lt;Product&gt;" visibility="public"/>
+        <Method name="setProducts" returnType="void" visibility="public">
+          <Argument type="ArrayList&lt;Product&gt;" name="products"/>
+        </Method>
+        <Method name="getClient" returnType="Client" visibility="public"/>
+        <Method name="setClient" returnType="void" visibility="public">
+          <Argument type="Client" name="client"/>
+        </Method>
+        <Method name="getVAT" returnType="float" visibility="public"/>
+        <Method name="setVAT" returnType="void" visibility="public">
+          <Argument type="float" name="VAT"/>
+        </Method>
+        <Method name="getSupplier" returnType="Supplier" visibility="public"/>
+        <Method name="setSupplier" returnType="void" visibility="public">
+          <Argument type="Supplier" name="supplier"/>
+        </Method>
+        <Method name="calculateVAT" returnType="float" visibility="public"/>
+        <Method name="calculateSubtotal" returnType="float" visibility="public"/>
+        <Method name="calculateTotal" returnType="float" visibility="public"/>
+        <Method name="generateVoucher" returnType="void" visibility="public"/>
+        <Method name="sendVoucher" returnType="void" visibility="public"/>
+        <Method name="addProduct" returnType="void" visibility="public">
+          <Argument type="Product" name="product"/>
+        </Method>
+        <Method name="deleteProduct" returnType="void" visibility="public">
+          <Argument type="String" name="productId"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation source="ec.edu.espe.accountingsystem.model.Voucher" target="ec.edu.espe.accountingsystem.model.Supplier" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="price" source="ec.edu.espe.accountingsystem.model.Product" target="ec.edu.espe.accountingsystem.model.Price" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="ec.edu.espe.accountingsystem.model.SalesRecord" target="ec.edu.espe.accountingsystem.model.Sale" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="ec.edu.espe.accountingsystem.model.SalesRecord" target="ec.edu.espe.accountingsystem.model.Supplier" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="ec.edu.espe.accountingsystem.model.Product" target="ec.edu.espe.accountingsystem.model.Price" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="ec.edu.espe.accountingsystem.model.Sale" target="ec.edu.espe.accountingsystem.model.Transaction"/>
+    <HasRelation name="client" source="ec.edu.espe.accountingsystem.model.Sale" target="ec.edu.espe.accountingsystem.model.Client" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="ec.edu.espe.accountingsystem.model.PurchaseRecord" target="ec.edu.espe.accountingsystem.model.Purchase" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="ec.edu.espe.accountingsystem.model.Transaction" target="ec.edu.espe.accountingsystem.model.Voucher" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="ec.edu.espe.accountingsystem.model.Entity" target="ec.edu.espe.accountingsystem.model.IdentityCard" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="supplier" source="ec.edu.espe.accountingsystem.model.Purchase" target="ec.edu.espe.accountingsystem.model.Supplier" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="ec.edu.espe.accountingsystem.model.Voucher" target="ec.edu.espe.accountingsystem.model.Client" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="voucher" source="ec.edu.espe.accountingsystem.model.Transaction" target="ec.edu.espe.accountingsystem.model.Voucher" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="products" source="ec.edu.espe.accountingsystem.model.Inventory" target="ec.edu.espe.accountingsystem.model.Product" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Product&gt;"/>
+    <UseRelation source="ec.edu.espe.accountingsystem.model.Inventory" target="ec.edu.espe.accountingsystem.model.Product" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="client" source="ec.edu.espe.accountingsystem.model.Voucher" target="ec.edu.espe.accountingsystem.model.Client" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="products" source="ec.edu.espe.accountingsystem.model.Voucher" target="ec.edu.espe.accountingsystem.model.Product" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Product&gt;"/>
+    <IsRelation name="is" source="ec.edu.espe.accountingsystem.model.Purchase" target="ec.edu.espe.accountingsystem.model.Transaction"/>
+    <HasRelation name="identityCard" source="ec.edu.espe.accountingsystem.model.Entity" target="ec.edu.espe.accountingsystem.model.IdentityCard" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="sales" source="ec.edu.espe.accountingsystem.model.SalesRecord" target="ec.edu.espe.accountingsystem.model.Sale" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Sale&gt;"/>
+    <UseRelation source="ec.edu.espe.accountingsystem.model.Voucher" target="ec.edu.espe.accountingsystem.model.Product" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="supplier" source="ec.edu.espe.accountingsystem.model.Voucher" target="ec.edu.espe.accountingsystem.model.Supplier" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="ec.edu.espe.accountingsystem.model.Purchase" target="ec.edu.espe.accountingsystem.model.Supplier" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="ec.edu.espe.accountingsystem.model.Supplier" target="ec.edu.espe.accountingsystem.model.Entity"/>
+    <IsRelation name="is" source="ec.edu.espe.accountingsystem.model.Client" target="ec.edu.espe.accountingsystem.model.Entity"/>
+    <HasRelation name="purchases" source="ec.edu.espe.accountingsystem.model.PurchaseRecord" target="ec.edu.espe.accountingsystem.model.Purchase" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Purchase&gt;"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
