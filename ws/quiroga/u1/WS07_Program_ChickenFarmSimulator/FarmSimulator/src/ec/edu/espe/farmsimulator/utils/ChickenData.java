@@ -6,7 +6,7 @@ import java.util.Date;
  *
  * @author Esteban Quiroga
  */
-public class Datos {
+public class ChickenData {
     
     String id;
     String name;

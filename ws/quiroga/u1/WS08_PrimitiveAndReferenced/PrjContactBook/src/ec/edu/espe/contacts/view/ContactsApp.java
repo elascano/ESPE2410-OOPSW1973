@@ -31,8 +31,9 @@ public class ContactsApp {
            
         System.out.println("My first contact is --> \n"+ contact);
         
-        System.out.println("The total number of friends is --> " + computeTotalFriends(numberOfMutualFriends, numberOfOtherFriends));
-        
+        int total = computeTotalFriends(numberOfMutualFriends, numberOfOtherFriends);
+                
+        System.out.println("The total number of friends is --> " + total) ;
             
     }
     
