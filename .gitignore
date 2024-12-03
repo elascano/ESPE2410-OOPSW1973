@@ -20,9 +20,24 @@
 *.rar
 
 <<<<<<< HEAD
+/ws/pasquel/u1/WS no 8/ContactsBook/nbproject/private/
+<<<<<<< HEAD
+>>>>>>> f861e9dd6f94d2590649f2046acb14606c95c4be
+>>>>>>> 8d98517076c49dcdf2206a83b0553d42e3944603
+/ws/pasquel/u1/WS no 8/ContactsBook/build/
+=======
+/ws/pasquel/u1/WS no 8/ContactsBook/build/
+/ws/pasquel/u1/Ws no 10/ReverseEngeneering/nbproject/private/
+/ws/pasquel/u1/Ws no 10/ReverseEngeneering/build/
+=======
+<<<<<<< HEAD
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+
+/ws/maza/u1/WS07/ChickenFarmSimulator/nbproject/private/
+/ws/maza/u1/WS07/ChickenFarmSimulator/build/
+
 /ws/camacho/ws_07/ChikenFarmSimulator2.0.0/nbproject/private/
 /ws/camacho/ws_07/ChikenFarmSimulator2.0.0/build/
 =======
@@ -39,5 +54,10 @@ replay_pid*
 /ws/cuichan/U1/WS10_ReverseEngineering/ReverseEngineering/nbproject/private/
 /ws/cuichan/U1/WS10_ReverseEngineering/ReverseEngineering/build/
 >>>>>>> 81fa65dcf1b821ea4ff2710ea5c12a3c62779118
+<<<<<<< HEAD
 /ws/leiton/U1/NewFolder/AntSimulator/nbproject/private/
 /ws/leiton/U1/NewFolder/AntSimulator/build/
+=======
+>>>>>>> 2ddfc4ae3457b99ccf3bbdd358554c1b12c35d1b
+>>>>>>> 9dcdd7212b464564b1a76a13ee6d8bd79d58698f
+>>>>>>> 5fae21d2e7c8fdbb6483aec84dad6770828b7fc5
