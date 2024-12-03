@@ -1,0 +1,26 @@
+<Clothes>
+    <cloth>
+        <idProduct>R001</idProduct>
+        <name>Short</name>
+        <category>Pants</category>
+        <color>Blue</color>
+        <price>5</price>
+        <amount>10</amount>
+    </cloth>
+     <cloth>
+        <idProduct>R002</idProduct>
+        <name>Bluse</name>
+        <category>Jacket</category>
+        <color>Jasmin</color>
+        <price>5</price>
+        <amount>11</amount>
+    </cloth>
+     <cloth>
+        <idProduct>R003</idProduct>
+        <name>t-shirt</name>
+        <category>Camisa</category>
+        <color>red</color>
+        <price>4</price>
+        <amount>12</amount>
+    </cloth>
+</Clothes>

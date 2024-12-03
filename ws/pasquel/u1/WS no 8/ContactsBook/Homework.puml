@@ -1,0 +1,7 @@
+@startuml
+class ec.edu.espe.contactsbook.model.Contact
+class ec.edu.espe.contactsbook.view.ContactsApp
+class java.util.Date
+ec.edu.espe.contactsbook.view.ContactsApp ..> ec.edu.espe.contactsbook.model.Contact
+ec.edu.espe.contactsbook.view.ContactsApp ..> java.util.Date
+@enduml
