@@ -162,7 +162,7 @@ public class JsonForm extends javax.swing.JFrame {
 
     private void btnjsonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnjsonActionPerformed
         // TODO add your handling code here:
-        Datos datos = new Datos();
+        ChickenData datos = new ChickenData();
         datos.name = txtname.getText().toString();
         datos.id = txtid.getText().toString();
         datos.name = txtname.getText().toString();
