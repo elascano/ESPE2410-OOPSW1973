@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author LABS-DCCO
+ * @author David Cuichan
  */
 public class AntSimulator {
     public static void main(String[] args) {
