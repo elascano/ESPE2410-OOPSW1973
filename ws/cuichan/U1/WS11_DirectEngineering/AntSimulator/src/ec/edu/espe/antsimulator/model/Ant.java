@@ -2,7 +2,7 @@ package ec.edu.espe.antsimulator.model;
 
 /**
  *
- * @author LABS-DCCO
+ * @author David Cuichan
  */
 public class Ant {   
     Cell cell;

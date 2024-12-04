@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author LABS-DCCO
+ * @author David Cuichan
  */
 public class Cell {
     int col;
