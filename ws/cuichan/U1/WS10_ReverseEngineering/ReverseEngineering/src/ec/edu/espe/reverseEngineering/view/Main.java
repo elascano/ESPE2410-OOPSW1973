@@ -28,8 +28,6 @@ public class Main {
             System.out.println("Do yo want to try again Y/N...");
         }
         
-        
-        
         cs = new ArrayList<>();
         cs.add(new C());
         cs.add(new C());

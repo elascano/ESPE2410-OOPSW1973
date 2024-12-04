@@ -1,0 +1,5 @@
+[
+  { "id_apartamento": 101, "inquilino": "Juan Perez", "num_habitaciones": 3, "ocupado": true },
+  { "id_apartamento": 102, "inquilino": "Maria Gomez", "num_habitaciones": 2, "ocupado": false },
+  { "id_apartamento": 103, "inquilino": "Carlos Ruiz", "num_habitaciones": 4, "ocupado": true },
+]

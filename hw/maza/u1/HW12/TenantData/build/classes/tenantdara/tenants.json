@@ -1,0 +1,32 @@
+{
+    "tenants": [
+      {
+        "id": 0001,
+        "name": "Alexander",
+        "lastName": "Perez",
+        "phone": "098764322",
+        "houseNumber": "01",
+        "paymentStatus": "canceled",
+        "entryDate": "21/11/2024"
+      },
+      {
+        "id": 0002,
+        "name": "Josue",
+        "lastName": "Castillo",
+        "phone": "0991234523",
+        "houseNumber": "02",
+        "paymentStatus": "notcanceled",
+        "entryDate": "20/11/2024"
+      },
+      {
+        "id": 0003,
+        "name": "Juan",
+        "lastName": "Hernandez",
+        "phone": "0964327243",
+        "houseNumber": "03",
+        "paymentStatus": "canceled",
+        "entryDate": "15/11/2024"
+      }
+    ]
+  }
+  
