@@ -2,7 +2,7 @@
 
 <ClassDiagram name="Multi-file class diagram">
   <ClassDiagramComponents>
-    <Class name="Client" package="ec.edu.espe.accountingsystem.model" visibility="public" xPosition="-340.0" yPosition="58.0">
+    <Class name="Client" package="ec.edu.espe.accountingsystem.model" visibility="public" xPosition="2485.0" yPosition="477.0">
       <Fields>
         <Field name="type" type="String" visibility="private"/>
       </Fields>
@@ -25,7 +25,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="Entity" package="ec.edu.espe.accountingsystem.model" visibility="public" xPosition="335.0" yPosition="39.0">
+    <Class name="Entity" package="ec.edu.espe.accountingsystem.model" visibility="public" xPosition="1075.0" yPosition="657.0">
       <Fields>
         <Field name="id" type="String" visibility="private"/>
         <Field name="name" type="String" visibility="private"/>
@@ -73,7 +73,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="IdentityCard" package="ec.edu.espe.accountingsystem.model" visibility="public" xPosition="1026.0" yPosition="659.0">
+    <Class name="IdentityCard" package="ec.edu.espe.accountingsystem.model" visibility="public" xPosition="1958.0" yPosition="1127.0">
       <Fields>
         <Field name="type" type="String" visibility="private"/>
         <Field name="id" type="String" visibility="private"/>
@@ -96,7 +96,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="Inventory" package="ec.edu.espe.accountingsystem.model" visibility="public" xPosition="1011.0" yPosition="39.0">
+    <Class name="Inventory" package="ec.edu.espe.accountingsystem.model" visibility="public" xPosition="3594.0" yPosition="1362.0">
       <Fields>
         <Field name="products" type="ArrayList&lt;Product&gt;" visibility="private"/>
       </Fields>
@@ -118,7 +118,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="Price" package="ec.edu.espe.accountingsystem.model" visibility="public" xPosition="1327.0" yPosition="7.0">
+    <Class name="Price" package="ec.edu.espe.accountingsystem.model" visibility="public" xPosition="3492.0" yPosition="2395.0">
       <Fields>
         <Field name="current" type="float" visibility="private"/>
         <Field name="retail" type="float" visibility="private"/>
@@ -163,7 +163,7 @@
         <Method name="applyDiscount" returnType="void" visibility="public"/>
       </Methods>
     </Class>
-    <Class name="Product" package="ec.edu.espe.accountingsystem.model" visibility="public" xPosition="1368.0" yPosition="535.0">
+    <Class name="Product" package="ec.edu.espe.accountingsystem.model" visibility="public" xPosition="3490.0" yPosition="1795.0">
       <Fields>
         <Field name="id" type="String" visibility="private"/>
         <Field name="reference" type="String" visibility="private"/>
@@ -205,7 +205,7 @@
         <Method name="calculateTotalPrice" returnType="float" visibility="public"/>
       </Methods>
     </Class>
-    <Class name="Purchase" package="ec.edu.espe.accountingsystem.model" visibility="public" xPosition="1820.0" yPosition="163.0">
+    <Class name="Purchase" package="ec.edu.espe.accountingsystem.model" visibility="public" xPosition="570.0" yPosition="1761.0">
       <Fields>
         <Field name="supplier" type="Supplier" visibility="private"/>
       </Fields>
@@ -218,7 +218,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="PurchaseRecord" package="ec.edu.espe.accountingsystem.model" visibility="public" xPosition="2120.0" yPosition="20.0">
+    <Class name="PurchaseRecord" package="ec.edu.espe.accountingsystem.model" visibility="public" xPosition="522.0" yPosition="1348.0">
       <Fields>
         <Field name="purchases" type="ArrayList&lt;Purchase&gt;" visibility="private"/>
       </Fields>
@@ -244,14 +244,14 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="Sale" package="ec.edu.espe.accountingsystem.model" visibility="public" xPosition="20.0" yPosition="420.0">
+    <Class name="Sale" package="ec.edu.espe.accountingsystem.model" visibility="public" xPosition="173.0" yPosition="512.0">
       <Fields>
         <Field name="client" type="Client" visibility="private"/>
       </Fields>
       <Constructors/>
       <Methods/>
     </Class>
-    <Class name="SalesRecord" package="ec.edu.espe.accountingsystem.model" visibility="public" xPosition="567.0" yPosition="1106.0">
+    <Class name="SalesRecord" package="ec.edu.espe.accountingsystem.model" visibility="public" xPosition="612.0" yPosition="707.0">
       <Fields>
         <Field name="sales" type="ArrayList&lt;Sale&gt;" visibility="private"/>
       </Fields>
@@ -277,7 +277,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="Supplier" package="ec.edu.espe.accountingsystem.model" visibility="public" xPosition="1327.0" yPosition="1117.0">
+    <Class name="Supplier" package="ec.edu.espe.accountingsystem.model" visibility="public" xPosition="1063.0" yPosition="1751.0">
       <Fields>
         <Field name="type" type="String" visibility="private"/>
       </Fields>
@@ -300,7 +300,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="Transaction" package="ec.edu.espe.accountingsystem.model" visibility="public" xPosition="-25.0" yPosition="1117.0">
+    <Class name="Transaction" package="ec.edu.espe.accountingsystem.model" visibility="public" xPosition="128.0" yPosition="1963.0">
       <Fields>
         <Field name="id" type="String" visibility="private"/>
         <Field name="voucher" type="Voucher" visibility="private"/>
@@ -324,7 +324,7 @@
         </Method>
       </Methods>
     </Class>
-    <Class name="Voucher" package="ec.edu.espe.accountingsystem.model" visibility="public" xPosition="314.0" yPosition="760.0">
+    <Class name="Voucher" package="ec.edu.espe.accountingsystem.model" visibility="public" xPosition="2465.0" yPosition="1681.0">
       <Fields>
         <Field name="type" type="String" visibility="private"/>
         <Field name="id" type="int" visibility="private"/>
@@ -390,31 +390,31 @@
     </Class>
   </ClassDiagramComponents>
   <ClassDiagramRelations>
-    <IsRelation name="is" source="ec.edu.espe.accountingsystem.model.Sale" target="ec.edu.espe.accountingsystem.model.Transaction"/>
-    <UseRelation source="ec.edu.espe.accountingsystem.model.Inventory" target="ec.edu.espe.accountingsystem.model.Product" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <UseRelation source="ec.edu.espe.accountingsystem.model.Voucher" target="ec.edu.espe.accountingsystem.model.Client" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <UseRelation source="ec.edu.espe.accountingsystem.model.Purchase" target="ec.edu.espe.accountingsystem.model.Supplier" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <HasRelation name="products" source="ec.edu.espe.accountingsystem.model.Inventory" target="ec.edu.espe.accountingsystem.model.Product" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Product&gt;"/>
-    <HasRelation name="client" source="ec.edu.espe.accountingsystem.model.Voucher" target="ec.edu.espe.accountingsystem.model.Client" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <HasRelation name="supplier" source="ec.edu.espe.accountingsystem.model.Purchase" target="ec.edu.espe.accountingsystem.model.Supplier" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="ec.edu.espe.accountingsystem.model.Voucher" target="ec.edu.espe.accountingsystem.model.Supplier" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="price" source="ec.edu.espe.accountingsystem.model.Product" target="ec.edu.espe.accountingsystem.model.Price" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="ec.edu.espe.accountingsystem.model.SalesRecord" target="ec.edu.espe.accountingsystem.model.Sale" sourceCardinality="1..1" targetCardinality="1..1"/>
     <UseRelation source="ec.edu.espe.accountingsystem.model.SalesRecord" target="ec.edu.espe.accountingsystem.model.Supplier" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="ec.edu.espe.accountingsystem.model.Product" target="ec.edu.espe.accountingsystem.model.Price" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="ec.edu.espe.accountingsystem.model.Sale" target="ec.edu.espe.accountingsystem.model.Transaction"/>
+    <HasRelation name="client" source="ec.edu.espe.accountingsystem.model.Sale" target="ec.edu.espe.accountingsystem.model.Client" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="ec.edu.espe.accountingsystem.model.PurchaseRecord" target="ec.edu.espe.accountingsystem.model.Purchase" sourceCardinality="1..1" targetCardinality="1..1"/>
     <UseRelation source="ec.edu.espe.accountingsystem.model.Transaction" target="ec.edu.espe.accountingsystem.model.Voucher" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="ec.edu.espe.accountingsystem.model.Entity" target="ec.edu.espe.accountingsystem.model.IdentityCard" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="supplier" source="ec.edu.espe.accountingsystem.model.Purchase" target="ec.edu.espe.accountingsystem.model.Supplier" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="ec.edu.espe.accountingsystem.model.Voucher" target="ec.edu.espe.accountingsystem.model.Client" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="voucher" source="ec.edu.espe.accountingsystem.model.Transaction" target="ec.edu.espe.accountingsystem.model.Voucher" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="products" source="ec.edu.espe.accountingsystem.model.Inventory" target="ec.edu.espe.accountingsystem.model.Product" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Product&gt;"/>
+    <UseRelation source="ec.edu.espe.accountingsystem.model.Inventory" target="ec.edu.espe.accountingsystem.model.Product" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="client" source="ec.edu.espe.accountingsystem.model.Voucher" target="ec.edu.espe.accountingsystem.model.Client" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="products" source="ec.edu.espe.accountingsystem.model.Voucher" target="ec.edu.espe.accountingsystem.model.Product" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Product&gt;"/>
+    <IsRelation name="is" source="ec.edu.espe.accountingsystem.model.Purchase" target="ec.edu.espe.accountingsystem.model.Transaction"/>
     <HasRelation name="identityCard" source="ec.edu.espe.accountingsystem.model.Entity" target="ec.edu.espe.accountingsystem.model.IdentityCard" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
     <HasRelation name="sales" source="ec.edu.espe.accountingsystem.model.SalesRecord" target="ec.edu.espe.accountingsystem.model.Sale" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Sale&gt;"/>
-    <HasRelation name="products" source="ec.edu.espe.accountingsystem.model.Voucher" target="ec.edu.espe.accountingsystem.model.Product" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Product&gt;"/>
-    <UseRelation source="ec.edu.espe.accountingsystem.model.SalesRecord" target="ec.edu.espe.accountingsystem.model.Sale" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <UseRelation source="ec.edu.espe.accountingsystem.model.PurchaseRecord" target="ec.edu.espe.accountingsystem.model.Purchase" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <UseRelation source="ec.edu.espe.accountingsystem.model.Voucher" target="ec.edu.espe.accountingsystem.model.Supplier" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <IsRelation name="is" source="ec.edu.espe.accountingsystem.model.Purchase" target="ec.edu.espe.accountingsystem.model.Transaction"/>
     <UseRelation source="ec.edu.espe.accountingsystem.model.Voucher" target="ec.edu.espe.accountingsystem.model.Product" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <HasRelation name="purchases" source="ec.edu.espe.accountingsystem.model.PurchaseRecord" target="ec.edu.espe.accountingsystem.model.Purchase" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Purchase&gt;"/>
-    <HasRelation name="price" source="ec.edu.espe.accountingsystem.model.Product" target="ec.edu.espe.accountingsystem.model.Price" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <IsRelation name="is" source="ec.edu.espe.accountingsystem.model.Supplier" target="ec.edu.espe.accountingsystem.model.Entity"/>
-    <HasRelation name="client" source="ec.edu.espe.accountingsystem.model.Sale" target="ec.edu.espe.accountingsystem.model.Client" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <UseRelation source="ec.edu.espe.accountingsystem.model.Entity" target="ec.edu.espe.accountingsystem.model.IdentityCard" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <UseRelation source="ec.edu.espe.accountingsystem.model.Product" target="ec.edu.espe.accountingsystem.model.Price" sourceCardinality="1..1" targetCardinality="1..1"/>
     <HasRelation name="supplier" source="ec.edu.espe.accountingsystem.model.Voucher" target="ec.edu.espe.accountingsystem.model.Supplier" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
-    <HasRelation name="voucher" source="ec.edu.espe.accountingsystem.model.Transaction" target="ec.edu.espe.accountingsystem.model.Voucher" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="ec.edu.espe.accountingsystem.model.Purchase" target="ec.edu.espe.accountingsystem.model.Supplier" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="ec.edu.espe.accountingsystem.model.Supplier" target="ec.edu.espe.accountingsystem.model.Entity"/>
     <IsRelation name="is" source="ec.edu.espe.accountingsystem.model.Client" target="ec.edu.espe.accountingsystem.model.Entity"/>
+    <HasRelation name="purchases" source="ec.edu.espe.accountingsystem.model.PurchaseRecord" target="ec.edu.espe.accountingsystem.model.Purchase" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;Purchase&gt;"/>
   </ClassDiagramRelations>
 </ClassDiagram>

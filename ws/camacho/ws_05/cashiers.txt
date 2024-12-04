@@ -1,3 +1,8 @@
+<<<<<<< HEAD
 FedericoFerelcano:1723928977:Marin:21/11/2024:ismararta@gmail.com
 MariaMercedes:1713122387:SanRoque:20/10/20:mariamaria@gmail.com
+=======
+FedericoFerelcano:1723928977:Marin:21/11/2024:ismararta@gmail.com
+MariaMercedes:1713122387:SanRoque:20/10/20:mariamaria@gmail.com
+>>>>>>> 3dd5cd029ea153644e6cf1c375933b956a6f8e39
 CarlosPared:172635467:Lomatumadre:20/02/2024:peperiaito@gmail.com 
