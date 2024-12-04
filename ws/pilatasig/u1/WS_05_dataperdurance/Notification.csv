@@ -1,0 +1,4 @@
+ID;TitleOfTheNotification;Date;Status;Message
+00000001;beginTheProject;21/11/2024;Active;"Usuario el dia de hoy empezara su proyecto"
+00000002;Cancellproject;23/11/2024;Cancel;"Usuario su proyecto ha sido cancelado"
+00000003;PaidProject;26/011/2024;Paid;"Usuario el pago de su proyecto ha sido completado"

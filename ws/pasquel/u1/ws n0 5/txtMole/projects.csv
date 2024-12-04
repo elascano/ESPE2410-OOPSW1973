@@ -1,0 +1,4 @@
+projectId; name; description; category; status; isFactured; isPayed
+Project_1;UDLA Park;Sistema de red UDLA;Sent;Accepted;false;false
+Project_2;SmartCity Quito;Implementación de IoT para control de tráfico;Sent;Accepted;true;false
+Project_3;Universidad Central;Diseño de red de alta velocidad para campus;Not Sent;Accepted;false;true

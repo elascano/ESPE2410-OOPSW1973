@@ -1,0 +1,10 @@
+1:/1:/Turubamba Bajo:/ariasalan634@gmail.com:/12:/Alan Arias:/12.50
+2:/2:/Turubamba Alto:/ariasmateo634@gmail.com:/13:/Mateo Arias:/5.50
+3:/3:/Solanda:/pepitoarmijos244@gmail.com:/14:/Pepe Armijos:/15.00
+
+1:numberofBill:
+2:costumerAddress:
+3:costumerGmail:
+4:costumerId:
+5:costumerName:
+6:/total:

@@ -1,0 +1,11 @@
+<invoices>
+    <invoice>
+    <id>001941</id>
+    <item>carrotCake</item>
+    <total>12.54</total>
+    <iva>15</iva> 
+    <invoice>
+    <id>001942</id>
+    <item>zucciniBaked</item>
+    <total>12.50</total>
+    <iva>15</iva> 

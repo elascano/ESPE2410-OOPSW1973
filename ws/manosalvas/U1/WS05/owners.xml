@@ -1,0 +1,26 @@
+<owners>
+    <owner>
+        <id>1</id>
+        <name>Jose</name>
+        <address>1</address>
+        <street>1</street>
+        <phone>09979693</phone>
+        <email>jose@gmail.com</email>
+    </owner>
+    <owner>
+        <id>2</id>
+        <name>David</name>
+        <address>2</address>
+        <street>2</street>
+        <phone>09949693</phone>
+        <email>david@gmail.com</email>
+    </owner>
+    <owner>
+        <id>3</id>
+        <name>Andres</name>
+        <address>3</address>
+        <street>3</street>
+        <phone>09479693</phone>
+        <email>andres@gmail.com</email>
+    </owner>
+</owners>
