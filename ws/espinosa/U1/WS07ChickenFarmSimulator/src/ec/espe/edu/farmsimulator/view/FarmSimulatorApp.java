@@ -25,7 +25,7 @@ public class FarmSimulatorApp {
 
         System.out.println("Enter the chicken name: ");
         String name = scanner.nextLine();
-
+        scanner.nextLine();
         System.out.println("Enter the chicken color: ");
         String color = scanner.nextLine();
 
