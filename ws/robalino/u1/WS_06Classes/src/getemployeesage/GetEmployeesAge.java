@@ -6,11 +6,7 @@ package getemployeesage;
  * @author Benjamin Robalino <jabasteam>
  */
 
-/**
- *
- * @author Benjamin Robalino <jabasteam>
- */
-    import com.google.gson.Gson;
+
 import java.io.FileWriter;
 import java.io.FileReader;
 import java.time.LocalDate;

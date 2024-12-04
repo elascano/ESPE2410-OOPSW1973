@@ -1,14 +1,10 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package getemployeesage;
 
 /**
  *
  * @author Benjamin Robalino <jabasteam>
  */
-import com.google.gson.Gson;
 import java.io.FileWriter;
 import java.io.FileReader;
 import java.time.LocalDate;
@@ -61,27 +57,4 @@ public class employeesAge {
     }
 }
 
-class Employee {
-    private String name;
-    private String birthdate;
-    private int age;
 
-    public Employee(String name, String birthdate) {
-        this.name = name;
-        this.birthdate = birthdate;
-        this.age = computeAge(birthdate);
-    }
-
-    // Method to compute age
-    private int computeAge(String birthdate) {
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
-        LocalDate birthDate = LocalDate.parse(birthdate, formatter);
-        LocalDate currentDate = LocalDate.now();
-        return currentDate.getYear() - birthDate.getYear() - (currentDate.getDayOfYear() < birthDate.getDayOfYear() ? 1 : 0);
-    }
-
-    @Override
-    public String toString() {
-        return "Employee{name='" + name + "', birthdate='" + birthdate + "', age=" + age + '}';
-    }
-}
