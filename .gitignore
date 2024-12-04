@@ -19,7 +19,9 @@
 *.tar.gz
 *.rar
 
-<<<<<<< HEAD
+
+/hw/maza/u1/HW10/TenantData/build/
+
 <<<<<<< HEAD
 /ws/pasquel/u1/WS no 8/ContactsBook/nbproject/private/
 <<<<<<< HEAD
@@ -88,3 +90,4 @@ replay_pid*
 /ws/quiroga/u1/WS11_DirectEngineering/JsonFileManager/build/
 
 >>>>>>> 4820b195b191f5d6619135c22785d7fa32cf88d2
+>>>>>>> e22ca58075e7528eb18c4918d68b88f91c17b147
