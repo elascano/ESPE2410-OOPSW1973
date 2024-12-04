@@ -1,0 +1,7 @@
+.@startuml
+annotation java.lang.Override
+class ec.edu.espe.contactsbook.model.Contact
+class java.util.Date
+ec.edu.espe.contactsbook.model.Contact ..> java.lang.Override
+ec.edu.espe.contactsbook.model.Contact ..> java.util.Date
+@enduml
