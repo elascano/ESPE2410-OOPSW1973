@@ -20,6 +20,7 @@
 *.rar
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /ws/pasquel/u1/WS no 8/ContactsBook/nbproject/private/
 <<<<<<< HEAD
 /ws/quiroga/u1/WS09_Collections/PrjContacts/nbproject/private/
@@ -85,3 +86,5 @@ replay_pid*
 >>>>>>> 26cff9171c1947ce31d5e6fc0a7e0df87b7333a6
 /ws/quiroga/u1/WS11_DirectEngineering/JsonFileManager/nbproject/private/
 /ws/quiroga/u1/WS11_DirectEngineering/JsonFileManager/build/
+
+>>>>>>> 4820b195b191f5d6619135c22785d7fa32cf88d2
