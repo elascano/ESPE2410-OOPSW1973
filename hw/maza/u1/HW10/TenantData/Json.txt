@@ -1,0 +1,245 @@
+//Buscar
+import org.json.JSONArray;
+import org.json.JSONObject;
+
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+
+public class BuscarJson {
+
+    public static void main(String[] args) {
+        String archivoJson = "apartamentos.json";
+        String nombreBuscado = "Maria Gomez"; // El nombre del inquilino que deseas buscar
+        
+        // Leer el archivo JSON
+        JSONArray apartamentos = leerJson(archivoJson);
+        
+        // Buscar el apartamento por nombre
+        buscarPorInquilino(apartamentos, nombreBuscado);
+    }
+
+    // Método para leer el archivo JSON
+    public static JSONArray leerJson(String archivo) {
+        try {
+            String contenido = new String(Files.readAllBytes(Paths.get(archivo)));
+            return new JSONArray(contenido);
+        } catch (IOException e) {
+            e.printStackTrace();
+            return new JSONArray();
+        }
+    }
+
+    // Método para buscar por inquilino en el JSONArray
+    public static void buscarPorInquilino(JSONArray apartamentos, String nombre) {
+        boolean encontrado = false;
+
+        for (int i = 0; i < apartamentos.length(); i++) {
+            JSONObject apartamento = apartamentos.getJSONObject(i);
+            String inquilino = apartamento.getString("inquilino");
+
+            // Si encontramos el inquilino, mostramos los detalles del apartamento
+            if (inquilino.equalsIgnoreCase(nombre)) {
+                System.out.println("Apartamento encontrado:");
+                System.out.println("ID Apartamento: " + apartamento.getInt("id_apartamento"));
+                System.out.println("Inquilino: " + apartamento.getString("inquilino"));
+                System.out.println("Número de Habitaciones: " + apartamento.getInt("num_habitaciones"));
+                System.out.println("Ocupado: " + (apartamento.getBoolean("ocupado") ? "Sí" : "No"));
+                encontrado = true;
+                break;
+            }
+        }
+
+        if (!encontrado) {
+            System.out.println("No se encontró ningún apartamento con el inquilino: " + nombre);
+        }
+    }
+}
+
+
+
+
+Agregar
+import org.json.JSONArray;
+import org.json.JSONObject;
+
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+
+public class AgregarJson {
+
+    public static void main(String[] args) {
+        String archivoJson = "apartamentos.json";
+        
+        // Leer el archivo JSON
+        JSONArray apartamentos = leerJson(archivoJson);
+        
+        // Crear un nuevo apartamento
+        JSONObject nuevoApartamento = new JSONObject();
+        nuevoApartamento.put("id_apartamento", 104);
+        nuevoApartamento.put("inquilino", "Laura Ramirez");
+        nuevoApartamento.put("num_habitaciones", 3);
+        nuevoApartamento.put("ocupado", false);
+        
+        // Agregar el nuevo apartamento al JSON
+        apartamentos.put(nuevoApartamento);
+
+        // Guardar los datos modificados de vuelta en el archivo JSON
+        guardarComoJson(apartamentos, archivoJson);
+    }
+
+    // Método para leer el archivo JSON
+    public static JSONArray leerJson(String archivo) {
+        try {
+            String contenido = new String(Files.readAllBytes(Paths.get(archivo)));
+            return new JSONArray(contenido);
+        } catch (IOException e) {
+            e.printStackTrace();
+            return new JSONArray();
+        }
+    }
+
+    // Método para guardar el contenido JSON de vuelta al archivo
+    public static void guardarComoJson(JSONArray apartamentos, String archivo) {
+        try (FileWriter writer = new FileWriter(new File(archivo))) {
+            writer.write(apartamentos.toString(4)); // El "4" es la cantidad de espacios para el formato de indentación
+            System.out.println("Nuevo apartamento agregado y datos guardados en " + archivo);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}
+
+
+
+Modificar 
+
+import org.json.JSONArray;
+import org.json.JSONObject;
+
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+
+public class ActualizarJson {
+
+    public static void main(String[] args) {
+        String archivoJson = "apartamentos.json";
+        
+        // Leer el archivo JSON
+        JSONArray apartamentos = leerJson(archivoJson);
+        
+        // Modificar un apartamento específico (por ejemplo, cambiar el nombre del inquilino)
+        actualizarInquilino(apartamentos, 102, "Maria Gomez", "Ana Lopez");
+
+        // Guardar los datos modificados de vuelta en el archivo JSON
+        guardarComoJson(apartamentos, archivoJson);
+    }
+
+    // Método para leer el archivo JSON
+    public static JSONArray leerJson(String archivo) {
+        try {
+            String contenido = new String(Files.readAllBytes(Paths.get(archivo)));
+            return new JSONArray(contenido);
+        } catch (IOException e) {
+            e.printStackTrace();
+            return new JSONArray();
+        }
+    }
+
+    // Método para actualizar el inquilino de un apartamento
+    public static void actualizarInquilino(JSONArray apartamentos, int idApartamento, String nombreActual, String nombreNuevo) {
+        for (int i = 0; i < apartamentos.length(); i++) {
+            JSONObject apartamento = apartamentos.getJSONObject(i);
+            // Verificamos si el id del apartamento coincide con el que queremos actualizar
+            if (apartamento.getInt("id_apartamento") == idApartamento) {
+                // Verificamos si el nombre del inquilino coincide
+                if (apartamento.getString("inquilino").equals(nombreActual)) {
+                    // Actualizamos el nombre del inquilino
+                    apartamento.put("inquilino", nombreNuevo);
+                }
+            }
+        }
+    }
+
+    // Método para guardar el contenido JSON de vuelta al archivo
+    public static void guardarComoJson(JSONArray apartamentos, String archivo) {
+        try (FileWriter writer = new FileWriter(new File(archivo))) {
+            writer.write(apartamentos.toString(4)); // El "4" es la cantidad de espacios para el formato de indentación
+            System.out.println("Datos actualizados y guardados en " + archivo);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}
+
+
+Eliminar
+import org.json.JSONArray;
+import org.json.JSONObject;
+
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+
+public class EliminarCampoJson {
+
+    public static void main(String[] args) {
+        String archivoJson = "apartamentos.json";
+
+        // Leer el archivo JSON
+        JSONArray apartamentos = leerJson(archivoJson);
+
+        // Eliminar un campo específico
+        eliminarCampo(apartamentos, 101, "numHabitaciones");
+
+        // Guardar los cambios en el archivo JSON
+        guardarComoJson(apartamentos, archivoJson);
+    }
+
+    // Método para leer el archivo JSON
+    public static JSONArray leerJson(String archivo) {
+        try {
+            String contenido = new String(Files.readAllBytes(Paths.get(archivo)));
+            return new JSONArray(contenido);
+        } catch (IOException e) {
+            e.printStackTrace();
+            return new JSONArray();
+        }
+    }
+
+    // Método para eliminar un campo de un apartamento por ID
+    public static void eliminarCampo(JSONArray apartamentos, int idApartamento, String campo) {
+        for (int i = 0; i < apartamentos.length(); i++) {
+            JSONObject apartamento = apartamentos.getJSONObject(i);
+
+            if (apartamento.getInt("id_apartamento") == idApartamento) {
+                // Verificar si el campo existe y eliminarlo
+                if (apartamento.has(campo)) {
+                    apartamento.remove(campo);
+                    System.out.println("Campo '" + campo + "' eliminado del apartamento con ID: " + idApartamento);
+                } else {
+                    System.out.println("El campo '" + campo + "' no existe en el apartamento con ID: " + idApartamento);
+                }
+                break; // Salir del bucle una vez que encontramos el apartamento
+            }
+        }
+    }
+
+    // Método para guardar el contenido JSON de vuelta al archivo
+    public static void guardarComoJson(JSONArray apartamentos, String archivo) {
+        try (FileWriter writer = new FileWriter(new File(archivo))) {
+            writer.write(apartamentos.toString(4)); // El "4" es la cantidad de espacios para la indentación
+            System.out.println("Archivo JSON actualizado correctamente.");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}
