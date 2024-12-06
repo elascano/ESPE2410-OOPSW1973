@@ -1,0 +1,20 @@
+[
+  {
+    "id": 46567,
+    "color": "rojo",
+    "material": "metal",
+    "tipo": "television"
+  },
+  {
+    "id": 67568,
+    "color": "amarillo",
+    "material": "madera",
+    "tipo": "microfono"
+  },
+  {
+    "id": 4654675,
+    "color": "Blu7e",
+    "material": "metal",
+    "tipo": "tvstand"
+  }
+]
