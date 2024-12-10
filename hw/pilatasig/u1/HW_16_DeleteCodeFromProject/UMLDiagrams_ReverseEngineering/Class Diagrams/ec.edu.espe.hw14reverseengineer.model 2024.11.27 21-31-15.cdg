@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="ec.edu.espe.hw14reverseengineer.model">
+  <ClassDiagramComponents>
+    <Class name="Customer" package="ec.edu.espe.hw14reverseengineer.model" visibility="public" xPosition="252.0" yPosition="386.0">
+      <Fields>
+        <Field name="name" type="String" visibility="private"/>
+        <Field name="email" type="String" visibility="private"/>
+        <Field name="CDI" type="String" visibility="private"/>
+        <Field name="companyName" type="String" visibility="private"/>
+        <Field name="list" type="Project[]" visibility="private"/>
+        <Field name="ruc" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getProjects" returnType="void" visibility="public"/>
+        <Method name="delateProject" returnType="void" visibility="public">
+          <Argument type="int" name="id"/>
+        </Method>
+        <Method name="addProject" returnType="Project" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Database" package="ec.edu.espe.hw14reverseengineer.model" visibility="public" xPosition="252.0" yPosition="709.0">
+      <Fields>
+        <Field name="developers" type="Developer[]" visibility="private"/>
+        <Field name="customers" type="Customer[]" visibility="private"/>
+        <Field name="projects" type="Project[]" visibility="private"/>
+        <Field name="isConected" type="boolean" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="conect" returnType="void" visibility="public"/>
+        <Method name="disconect" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Date" package="ec.edu.espe.hw14reverseengineer.model" visibility="public" xPosition="208.0" yPosition="177.0">
+      <Fields>
+        <Field name="day" type="int" visibility="private"/>
+        <Field name="month" type="int" visibility="private"/>
+        <Field name="year" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="gateFormatedDate" returnType="Date" visibility="public"/>
+        <Method name="getCurrentDate" returnType="Date" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Developer" package="ec.edu.espe.hw14reverseengineer.model" visibility="public" xPosition="578.0" yPosition="679.0">
+      <Fields>
+        <Field name="password" type="String" visibility="private"/>
+        <Field name="account" type="String" visibility="private"/>
+        <Field name="id" type="int" visibility="private"/>
+        <Field name="asignedProject" type="boolean" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="uploadProject" returnType="Project" visibility="public"/>
+        <Method name="createProject" returnType="void" visibility="public"/>
+        <Method name="CreateReport" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Notification" package="ec.edu.espe.hw14reverseengineer.model" visibility="public" xPosition="578.0" yPosition="49.0">
+      <Fields>
+        <Field name="id" type="int" visibility="private"/>
+        <Field name="title" type="String" visibility="private"/>
+        <Field name="sendDate" type="Date" visibility="private"/>
+        <Field name="status" type="String" visibility="private"/>
+        <Field name="message" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getMessage" returnType="void" visibility="public"/>
+        <Method name="updateStatus" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Project" package="ec.edu.espe.hw14reverseengineer.model" visibility="public" xPosition="549.0" yPosition="315.0">
+      <Fields>
+        <Field name="name" type="String" visibility="private"/>
+        <Field name="shortDescription" type="String" visibility="private"/>
+        <Field name="projectStartDate" type="Date" visibility="private"/>
+        <Field name="projectFinalDate" type="Date" visibility="private"/>
+        <Field name="quote" type="float" visibility="private"/>
+        <Field name="purchaseOrderDocument" type="String" visibility="private"/>
+        <Field name="customer" type="Customer" visibility="private"/>
+        <Field name="projectStatus" type="Status" visibility="private"/>
+        <Field name="statusNotification" type="Notification" visibility="private"/>
+        <Field name="developers" type="Developer[]" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="printProjectDescription" returnType="void" visibility="public" isStatic="true"/>
+        <Method name="writeProjectDescription" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Report" package="ec.edu.espe.hw14reverseengineer.model" visibility="public" xPosition="961.0" yPosition="95.0">
+      <Fields>
+        <Field name="id" type="Project" visibility="private"/>
+        <Field name="reportDate" type="Date" visibility="private"/>
+        <Field name="projectName" type="String" visibility="private"/>
+        <Field name="projectCodes" type="String[]" visibility="private"/>
+        <Field name="projectObservation" type="String" visibility="private"/>
+        <Field name="completedProjectsCount" type="int" visibility="private"/>
+        <Field name="onGoingProjectsCount" type="int" visibility="private"/>
+        <Field name="cancelledProjectsCount" type="int" visibility="private"/>
+        <Field name="observedProjectsCount" type="int" visibility="private"/>
+        <Field name="projectStatus" type="Status" visibility="private"/>
+        <Field name="totalCost" type="float" visibility="private"/>
+        <Field name="vat" type="float" visibility="private"/>
+        <Field name="subtotal" type="float" visibility="private"/>
+        <Field name="total" type="float" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="calculateSubtotal" returnType="float" visibility="public"/>
+        <Method name="calculateTotal" returnType="float" visibility="public"/>
+        <Method name="delateReport" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Status" package="ec.edu.espe.hw14reverseengineer.model" visibility="public" xPosition="971.0" yPosition="640.0">
+      <Fields>
+        <Field name="name" type="String" visibility="private"/>
+        <Field name="description" type="String" visibility="private"/>
+        <Field name="id" type="int" visibility="private"/>
+        <Field name="isCancelled" type="boolean" visibility="private"/>
+        <Field name="inProgress" type="boolean" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getStatus" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="statusNotification" source="ec.edu.espe.hw14reverseengineer.model.Project" target="ec.edu.espe.hw14reverseengineer.model.Notification" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="customer" source="ec.edu.espe.hw14reverseengineer.model.Project" target="ec.edu.espe.hw14reverseengineer.model.Customer" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="projectStartDate" source="ec.edu.espe.hw14reverseengineer.model.Project" target="ec.edu.espe.hw14reverseengineer.model.Date" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="projectStatus" source="ec.edu.espe.hw14reverseengineer.model.Project" target="ec.edu.espe.hw14reverseengineer.model.Status" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="projectStatus" source="ec.edu.espe.hw14reverseengineer.model.Report" target="ec.edu.espe.hw14reverseengineer.model.Status" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="id" source="ec.edu.espe.hw14reverseengineer.model.Report" target="ec.edu.espe.hw14reverseengineer.model.Project" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="developers" source="ec.edu.espe.hw14reverseengineer.model.Project" target="ec.edu.espe.hw14reverseengineer.model.Developer" type="Aggregation" sourceCardinality="0..1" targetCardinality="0..*" collectionType="List"/>
+    <HasRelation name="Developers" source="ec.edu.espe.hw14reverseengineer.model.Database" target="ec.edu.espe.hw14reverseengineer.model.Developer" type="Aggregation" sourceCardinality="0..1" targetCardinality="0..*" collectionType="ArrayList"/>
+    <HasRelation name="sendDate" source="ec.edu.espe.hw14reverseengineer.model.Notification" target="ec.edu.espe.hw14reverseengineer.model.Date" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="projectFinalDate" source="ec.edu.espe.hw14reverseengineer.model.Project" target="ec.edu.espe.hw14reverseengineer.model.Date" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="customers" source="ec.edu.espe.hw14reverseengineer.model.Database" target="ec.edu.espe.hw14reverseengineer.model.Customer" type="Aggregation" sourceCardinality="0..1" targetCardinality="0..*" collectionType="List"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
