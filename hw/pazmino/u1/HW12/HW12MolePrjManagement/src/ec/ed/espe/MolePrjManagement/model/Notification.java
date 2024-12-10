@@ -1,5 +1,7 @@
 package ec.ed.espe.MolePrjManagement.model;
 
+import java.util.Date;
+
 /**
  *
  * @author Brandon Pazmino
