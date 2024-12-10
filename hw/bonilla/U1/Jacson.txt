@@ -1,0 +1,23 @@
+<dependency>
+    <groupId>com.google.code.gson</groupId>
+    <artifactId>gson</artifactId>
+    <version>2.8.2</version>
+</dependency>
+
+////////////////////////////
+Pasos para subir un archivo en GitHub
+git pull
+git add hw/bonilla/U1/Jacson.txt
+git commit -m" "
+git push
+
+///////////////////////////////
+Maven 
+Descargar Apache Maven 3.9.9 y Descomprimir
+Este equipo configuraciones- configuraciones avanzadas
+Variables del sistema - Nueva nombre de la variable MAVEN_HOME
+Valor del la variable la ruta del archivo
+Busco la variable Path en usuario editar %Maven_HOME%\bin
+
+//////
+https://github.com/rebonilla/PruebaGitHub.git

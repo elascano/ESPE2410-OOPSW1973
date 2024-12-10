@@ -1,0 +1,22 @@
+[
+  {
+    "nrc": 101,
+    "students": []
+  },
+  {
+    "nrc": 102,
+    "students": [
+      {
+        "id": 123,
+        "name": "massd",
+        "lastname": "sdsd",
+        "email": "fggfg",
+        "nrc": 102
+      }
+    ]
+  },
+  {
+    "nrc": 103,
+    "students": []
+  }
+]
