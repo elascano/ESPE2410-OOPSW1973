@@ -1,0 +1,30 @@
+<Products>
+  <Product>
+    <id>1</id>
+    <name>T-shirt</name>
+    <color>Red</color>
+    <size>M</size>
+    <price>19.99</price>
+  </Product>
+  <Product>
+    <id>2</id>
+    <name>Jeans</name>
+    <color>Blue</color>
+    <size>L</size>
+    <price>39.99</price>
+  </Product>
+  <Product>
+    <id>3</id>
+    <name>Jacket</name>
+    <color>Black</color>
+    <size>XL</size>
+    <price>59.99</price>
+  </Product>
+  <Product>
+    <id>4</id>
+    <name>Sneakers</name>
+    <color>White</color>
+    <size>42</size>
+    <price>89.99</price>
+  </Product>
+</Products>

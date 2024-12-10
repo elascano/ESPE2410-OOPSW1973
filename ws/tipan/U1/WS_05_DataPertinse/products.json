@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "T-shirt",
+    "color": "Red",
+    "size": "M",
+    "price": 19.99
+  },
+  {
+    "id": 2,
+    "name": "Jeans",
+    "color": "Blue",
+    "size": "L",
+    "price": 39.99
+  },
+  {
+    "id": 3,
+    "name": "Jacket",
+    "color": "Black",
+    "size": "XL",
+    "price": 59.99
+  },
+  {
+    "id": 4,
+    "name": "Sneakers",
+    "color": "White",
+    "size": 42,
+    "price": 89.99
+  }
+]

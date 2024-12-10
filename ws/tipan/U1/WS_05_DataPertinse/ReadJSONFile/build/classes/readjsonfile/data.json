@@ -1,0 +1,42 @@
+{
+"products": [
+    {
+      "id": 101,
+      "name": "Wireless Headphones",
+      "brand": "TechSound",
+      "price": 99.99,
+      "in_stock": true,
+      "specifications": {
+        "color": "Black",
+        "battery_life": "20 hours",
+        "connectivity": "Bluetooth 5.0",
+        "weight": "250g"
+      },
+      "categories": ["Electronics", "Audio", "Wireless Devices"],
+      "ratings": {
+        "average": 4.5,
+        "reviews_count": 235
+      },
+      "release_date": "2023-07-15"
+    },
+    {
+      "id": 102,
+      "name": "Smartphone",
+      "brand": "SuperPhone",
+      "price": 599.99,
+      "in_stock": false,
+      "specifications": {
+        "color": "Silver",
+        "battery_life": "15 hours",
+        "connectivity": "5G",
+        "weight": "180g"
+      },
+      "categories": ["Electronics", "Mobile"],
+      "ratings": {
+        "average": 4.0,
+        "reviews_count": 100
+      },
+      "release_date": "2023-05-20"
+    }
+  ]
+}

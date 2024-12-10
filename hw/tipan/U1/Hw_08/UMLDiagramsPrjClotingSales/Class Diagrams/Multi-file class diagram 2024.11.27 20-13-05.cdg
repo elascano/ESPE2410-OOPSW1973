@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Multi-file class diagram">
+  <ClassDiagramComponents>
+    <Class name="Product" package="ec.espe.edu.model" visibility="public" xPosition="22.0" yPosition="-82.0">
+      <Fields>
+        <Field name="name" type="String" visibility="private"/>
+        <Field name="category" type="String" visibility="private"/>
+        <Field name="price" type="double" visibility="private"/>
+        <Field name="currentStock" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="name"/>
+          <Argument type="String" name="category"/>
+          <Argument type="double" name="price"/>
+          <Argument type="int" name="currentStock"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="updateStock" returnType="void" visibility="public">
+          <Argument type="int" name="quantity"/>
+        </Method>
+        <Method name="getProduct" returnType="String" visibility="public"/>
+        <Method name="calculatePrice" returnType="double" visibility="public"/>
+        <Method name="getName" returnType="String" visibility="public"/>
+        <Method name="setName" returnType="void" visibility="public">
+          <Argument type="String" name="name"/>
+        </Method>
+        <Method name="getCategory" returnType="String" visibility="public"/>
+        <Method name="setCategory" returnType="void" visibility="public">
+          <Argument type="String" name="category"/>
+        </Method>
+        <Method name="getPrice" returnType="double" visibility="public"/>
+        <Method name="setPrice" returnType="void" visibility="public">
+          <Argument type="double" name="price"/>
+        </Method>
+        <Method name="getCurrentStock" returnType="int" visibility="public"/>
+        <Method name="setCurrentStock" returnType="void" visibility="public">
+          <Argument type="int" name="currentStock"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Report" package="ec.espe.edu.model" visibility="public" xPosition="109.0" yPosition="197.0">
+      <Fields>
+        <Field name="type" type="String" visibility="private"/>
+        <Field name="startDate" type="Date" visibility="private"/>
+        <Field name="endDate" type="Date" visibility="private"/>
+        <Field name="data" type="List&lt;Transaction&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="type"/>
+          <Argument type="Date" name="startDate"/>
+          <Argument type="Date" name="endDate"/>
+          <Argument type="List&lt;Transaction&gt;" name="data"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="exportPDF" returnType="void" visibility="public"/>
+        <Method name="getType" returnType="String" visibility="public"/>
+        <Method name="setType" returnType="void" visibility="public">
+          <Argument type="String" name="type"/>
+        </Method>
+        <Method name="getStartDate" returnType="Date" visibility="public"/>
+        <Method name="setStartDate" returnType="void" visibility="public">
+          <Argument type="Date" name="startDate"/>
+        </Method>
+        <Method name="getEndDate" returnType="Date" visibility="public"/>
+        <Method name="setEndDate" returnType="void" visibility="public">
+          <Argument type="Date" name="endDate"/>
+        </Method>
+        <Method name="getData" returnType="List&lt;Transaction&gt;" visibility="public"/>
+        <Method name="setData" returnType="void" visibility="public">
+          <Argument type="List&lt;Transaction&gt;" name="data"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Transaction" package="ec.espe.edu.model" visibility="public" xPosition="587.0" yPosition="32.0">
+      <Fields>
+        <Field name="product" type="Product" visibility="private"/>
+        <Field name="quantity" type="int" visibility="private"/>
+        <Field name="type" type="String" visibility="private"/>
+        <Field name="timeDate" type="Date" visibility="private"/>
+        <Field name="user" type="String" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="Product" name="product"/>
+          <Argument type="String" name="type"/>
+          <Argument type="int" name="quantity"/>
+          <Argument type="Date" name="timeDate"/>
+          <Argument type="String" name="user"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="registerEntry" returnType="void" visibility="public">
+          <Argument type="int" name="quantity"/>
+        </Method>
+        <Method name="registerOutput" returnType="void" visibility="public">
+          <Argument type="int" name="quantity"/>
+        </Method>
+        <Method name="generateReport" returnType="Report" visibility="public"/>
+        <Method name="getProduct" returnType="Product" visibility="public"/>
+        <Method name="setProduct" returnType="void" visibility="public">
+          <Argument type="Product" name="product"/>
+        </Method>
+        <Method name="getQuantity" returnType="int" visibility="public"/>
+        <Method name="setQuantity" returnType="void" visibility="public">
+          <Argument type="int" name="quantity"/>
+        </Method>
+        <Method name="getType" returnType="String" visibility="public"/>
+        <Method name="setType" returnType="void" visibility="public">
+          <Argument type="String" name="type"/>
+        </Method>
+        <Method name="getTimeDate" returnType="Date" visibility="public"/>
+        <Method name="setTimeDate" returnType="void" visibility="public">
+          <Argument type="Date" name="timeDate"/>
+        </Method>
+        <Method name="getUser" returnType="String" visibility="public"/>
+        <Method name="setUser" returnType="void" visibility="public">
+          <Argument type="String" name="user"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="data" source="ec.espe.edu.model.Report" target="ec.espe.edu.model.Transaction" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="List&lt;Transaction&gt;"/>
+    <HasRelation name="product" source="ec.espe.edu.model.Transaction" target="ec.espe.edu.model.Product" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="ec.espe.edu.model.Transaction" target="ec.espe.edu.model.Report" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="ec.espe.edu.model.Report" target="ec.espe.edu.model.Transaction" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="ec.espe.edu.model.Transaction" target="ec.espe.edu.model.Product" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
