@@ -12,5 +12,12 @@
         "seats": 3,
         "brand": "GM1",
         "family": "G"
+    },
+    {
+        "truck_id": "23",
+        "wheels": 23,
+        "seats": 6,
+        "brand": "mazda",
+        "family": "F"
     }
 ]
