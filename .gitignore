@@ -20,8 +20,8 @@
 *.rar
 
 
-/hw/maza/u1/HW10/TenantData/build/
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 /ws/pasquel/u1/WS no 8/ContactsBook/nbproject/private/
 <<<<<<< HEAD
@@ -113,6 +113,7 @@ replay_pid*
 /ws/pilatasig/u1/WS_07_ChickenImplementingClasses/ChickenClassImplementation/nbproject/private/
 /ws/pilatasig/u1/WS_07_ChickenImplementingClasses/ChickenClassImplementation/build/
 >>>>>>> 83f420e3c5e8a64e532135eb22be9da1bd6fe33f
+<<<<<<< HEAD
 /ws/espinosa/U2/WS14/Taxes/nbproject/private/
 /ws/espinosa/U2/WS14/ShoesSalesStore/nbproject/private/
 /ws/espinosa/U2/WS14/TaxesLib/build/
@@ -122,3 +123,34 @@ replay_pid*
 /ws/espinosa/U2/WS14/JsonManager/nbproject/private/
 /ws/espinosa/U2/WS14/JsonManager/build/
 /ws/espinosa/U2/WS14/JsonManager/dist/
+=======
+<<<<<<< HEAD
+/ws/paucar/u2/WS14/Taxes/nbproject/private/
+/ws/paucar/u2/WS14/ShoesSalesStore/nbproject/private/
+/ws/paucar/u2/WS14/Taxes/build/
+/ws/paucar/u2/WS14/Taxes/dist/
+/ws/paucar/u2/WS14/TaxesLib/build/
+/ws/paucar/u2/WS14/TaxesLib/nbproject/private/
+/ws/paucar/u2/WS14/TaxesLib/dist/
+/ws/paucar/u2/WS14/ShoesSalesStore/build/
+/ws/paucar/u2/WS14/FileManager/nbproject/private/
+/ws/paucar/u2/WS14/FileManager/build/
+/ws/paucar/u2/WS14/FileManager/dist/
+=======
+<<<<<<< HEAD
+/ws/leiton/U2/WS14/Taxes/nbproject/private/
+/ws/leiton/U2/WS14/ShoesSalesStore/nbproject/private/
+/ws/leiton/U2/WS14/TaxesLib/nbproject/private/
+/ws/leiton/U2/WS14/TaxesLib/dist/
+/ws/leiton/U2/WS14/TaxesLib/build/
+/ws/leiton/U2/WS14/ShoesSalesStore/build/
+=======
+/ws/pazmino/u2/WS14Libreries/Taxes/nbproject/private/
+>>>>>>> af48662d2da9aef6bc2376469395c46f67c10c1f
+/ws/leiton/U2/WS14/FileManager/nbproject/private/
+/ws/leiton/U2/WS14/FileManager/build/
+/ws/leiton/U2/WS14/FileManager/dist/
+=======
+>>>>>>> 363dd4864df8a2c40fc34e30016545f4378bd843
+>>>>>>> 52705a106d079e173e1b50f739eab03bbc4f2219
+>>>>>>> 8cfea8a61fcb94ce68c72a3f782a29c2fde975e5
