@@ -1,0 +1,16 @@
+[
+  {
+    "customerId": "1",
+    "name": "Pepe",
+    "email": "pepe@.com",
+    "ruc": "1234567890",
+    "phoneNumber": "0987654321"
+  },
+  {
+    "customerId": "2",
+    "name": "Maria",
+    "email": "maria@.com",
+    "ruc": "0987654321",
+    "phoneNumber": "1234567890"
+  }
+]

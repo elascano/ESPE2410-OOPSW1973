@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="AmeStore">
+  <ClassDiagramComponents>
+    <Class name="Bill" package="ec.edu.espe.model" visibility="public" xPosition="-188.0" yPosition="20.0">
+      <Fields>
+        <Field name="numFaacture" type="String" visibility="package"/>
+        <Field name="date" type="Date" visibility="package"/>
+        <Field name="nameClient" type="String" visibility="package"/>
+        <Field name="numberOfClient" type="int" visibility="package"/>
+        <Field name="subTotal" type="float" visibility="package"/>
+        <Field name="iva" type="float" visibility="package"/>
+        <Field name="Total" type="float" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Category" package="ec.edu.espe.model" visibility="public" xPosition="313.0" yPosition="-2.0">
+      <Fields>
+        <Field name="name" type="String" visibility="private"/>
+        <Field name="clothingItems" type="ArrayList&lt;ClothingItem&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="name"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="addClothingItem" returnType="void" visibility="public">
+          <Argument type="ClothingItem" name="item"/>
+        </Method>
+        <Method name="getName" returnType="String" visibility="public"/>
+        <Method name="getClothingItems" returnType="ArrayList&lt;ClothingItem&gt;" visibility="public"/>
+        <Method name="getClothingItemByName" returnType="ClothingItem" visibility="public">
+          <Argument type="String" name="itemName"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Clothes" package="ec.edu.espe.model" visibility="public" xPosition="993.0" yPosition="578.0">
+      <Fields>
+        <Field name="idProduct" type="String" visibility="private"/>
+        <Field name="name" type="String" visibility="private"/>
+        <Field name="category" type="String" visibility="private"/>
+        <Field name="size" type="String" visibility="private"/>
+        <Field name="color" type="String" visibility="private"/>
+        <Field name="price" type="double" visibility="private"/>
+        <Field name="amount" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="idProduct"/>
+          <Argument type="String" name="name"/>
+          <Argument type="String" name="category"/>
+          <Argument type="String" name="size"/>
+          <Argument type="String" name="color"/>
+          <Argument type="double" name="price"/>
+          <Argument type="int" name="amount"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="getIdProduct" returnType="String" visibility="public"/>
+        <Method name="setIdProduct" returnType="void" visibility="public">
+          <Argument type="String" name="idProduct"/>
+        </Method>
+        <Method name="getName" returnType="String" visibility="public"/>
+        <Method name="setName" returnType="void" visibility="public">
+          <Argument type="String" name="name"/>
+        </Method>
+        <Method name="getCategory" returnType="String" visibility="public"/>
+        <Method name="setCategory" returnType="void" visibility="public">
+          <Argument type="String" name="category"/>
+        </Method>
+        <Method name="getSize" returnType="String" visibility="public"/>
+        <Method name="setSize" returnType="void" visibility="public">
+          <Argument type="String" name="size"/>
+        </Method>
+        <Method name="getColor" returnType="String" visibility="public"/>
+        <Method name="setColor" returnType="void" visibility="public">
+          <Argument type="String" name="color"/>
+        </Method>
+        <Method name="getPrice" returnType="double" visibility="public"/>
+        <Method name="setPrice" returnType="void" visibility="public">
+          <Argument type="double" name="price"/>
+        </Method>
+        <Method name="getAmount" returnType="int" visibility="public"/>
+        <Method name="setAmount" returnType="void" visibility="public">
+          <Argument type="int" name="amount"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="ClothingItem" package="ec.edu.espe.model" visibility="public" xPosition="839.0" yPosition="43.0">
+      <Fields>
+        <Field name="name" type="String" visibility="private"/>
+        <Field name="price" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="name"/>
+          <Argument type="double" name="price"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="getName" returnType="String" visibility="public"/>
+        <Method name="setName" returnType="void" visibility="public">
+          <Argument type="String" name="name"/>
+        </Method>
+        <Method name="getPrice" returnType="double" visibility="public"/>
+        <Method name="setPrice" returnType="void" visibility="public">
+          <Argument type="double" name="price"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Inventory" package="ec.edu.espe.model" visibility="public" xPosition="1436.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="List" package="ec.edu.espe.model" visibility="public" xPosition="1131.0" yPosition="20.0">
+      <Fields>
+        <Field name="IdRegistration" type="String" visibility="package"/>
+        <Field name="isThereAProduct" type="boolean" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="RegistrationProduct" package="ec.edu.espe.model" visibility="public" xPosition="1322.0" yPosition="141.0">
+      <Fields>
+        <Field name="id" type="String" visibility="private"/>
+        <Field name="category" type="String" visibility="private"/>
+        <Field name="name" type="String" visibility="private"/>
+        <Field name="size" type="String" visibility="private"/>
+        <Field name="quantity" type="int" visibility="private"/>
+        <Field name="color" type="String" visibility="private"/>
+        <Field name="price" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="id"/>
+          <Argument type="String" name="category"/>
+          <Argument type="String" name="name"/>
+          <Argument type="String" name="size"/>
+          <Argument type="int" name="quantity"/>
+          <Argument type="String" name="color"/>
+          <Argument type="double" name="price"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getId" returnType="String" visibility="public"/>
+        <Method name="setId" returnType="void" visibility="public">
+          <Argument type="String" name="id"/>
+        </Method>
+        <Method name="getCategory" returnType="String" visibility="public"/>
+        <Method name="setCategory" returnType="void" visibility="public">
+          <Argument type="String" name="category"/>
+        </Method>
+        <Method name="getName" returnType="String" visibility="public"/>
+        <Method name="setName" returnType="void" visibility="public">
+          <Argument type="String" name="name"/>
+        </Method>
+        <Method name="getSize" returnType="String" visibility="public"/>
+        <Method name="setSize" returnType="void" visibility="public">
+          <Argument type="String" name="size"/>
+        </Method>
+        <Method name="getQuantity" returnType="int" visibility="public"/>
+        <Method name="setQuantity" returnType="void" visibility="public">
+          <Argument type="int" name="quantity"/>
+        </Method>
+        <Method name="getColor" returnType="String" visibility="public"/>
+        <Method name="setColor" returnType="void" visibility="public">
+          <Argument type="String" name="color"/>
+        </Method>
+        <Method name="getPrice" returnType="double" visibility="public"/>
+        <Method name="setPrice" returnType="void" visibility="public">
+          <Argument type="double" name="price"/>
+        </Method>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="reduceStock" returnType="boolean" visibility="public">
+          <Argument type="int" name="quantity"/>
+        </Method>
+        <Method name="collectProductDetails" returnType="RegistrationProduct" visibility="public" isStatic="true">
+          <Argument type="Category" name="manCategory"/>
+          <Argument type="Category" name="womanCategory"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Sell" package="ec.edu.espe.model" visibility="public" xPosition="2120.0" yPosition="20.0">
+      <Fields>
+        <Field name="confirmationOfSale" type="boolean" visibility="package"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Transaction" package="ec.edu.espe.model" visibility="public" xPosition="183.0" yPosition="344.0">
+      <Fields>
+        <Field name="productId" type="String" visibility="private"/>
+        <Field name="productName" type="String" visibility="private"/>
+        <Field name="quantitySold" type="int" visibility="private"/>
+        <Field name="totalPrice" type="double" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="productId"/>
+          <Argument type="String" name="productName"/>
+          <Argument type="int" name="quantitySold"/>
+          <Argument type="double" name="totalPrice"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="getProductId" returnType="String" visibility="public"/>
+        <Method name="setProductId" returnType="void" visibility="public">
+          <Argument type="String" name="productId"/>
+        </Method>
+        <Method name="getProductName" returnType="String" visibility="public"/>
+        <Method name="setProductName" returnType="void" visibility="public">
+          <Argument type="String" name="productName"/>
+        </Method>
+        <Method name="getQuantitySold" returnType="int" visibility="public"/>
+        <Method name="setQuantitySold" returnType="void" visibility="public">
+          <Argument type="int" name="quantitySold"/>
+        </Method>
+        <Method name="getTotalPrice" returnType="double" visibility="public"/>
+        <Method name="setTotalPrice" returnType="void" visibility="public">
+          <Argument type="double" name="totalPrice"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="AmeStoreApp" package="ec.edu.espe.view" visibility="public" xPosition="1111.0" yPosition="173.0">
+      <Fields/>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="ProductManager" package="utils" visibility="public" xPosition="826.0" yPosition="334.0">
+      <Fields>
+        <Field name="productList" type="List&lt;RegistrationProduct&gt;" visibility="private"/>
+        <Field name="transactionHistory" type="List&lt;Transaction&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+      </Constructors>
+      <Methods>
+        <Method name="processSale" returnType="void" visibility="public">
+          <Argument type="Scanner" name="scanner"/>
+        </Method>
+        <Method name="showTransactionHistory" returnType="void" visibility="public"/>
+        <Method name="findProductById" returnType="RegistrationProduct" visibility="private">
+          <Argument type="String" name="id"/>
+        </Method>
+        <Method name="saveToJsonFile" returnType="void" visibility="public">
+          <Argument type="RegistrationProduct" name="newProduct"/>
+          <Argument type="String" name="fileName"/>
+        </Method>
+        <Method name="readFromJsonFile" returnType="List&lt;RegistrationProduct&gt;" visibility="public">
+          <Argument type="String" name="fileName"/>
+        </Method>
+        <Method name="deleteProductById" returnType="void" visibility="public">
+          <Argument type="Scanner" name="scanner"/>
+        </Method>
+        <Method name="updateJsonFile" returnType="void" visibility="private">
+          <Argument type="String" name="fileName"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="transactionHistory" source="utils.ProductManager" target="ec.edu.espe.model.Transaction" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="List&lt;Transaction&gt;"/>
+    <UseRelation source="utils.ProductManager" target="ec.edu.espe.model.RegistrationProduct" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="productList" source="utils.ProductManager" target="ec.edu.espe.model.RegistrationProduct" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="List&lt;RegistrationProduct&gt;"/>
+    <UseRelation source="ec.edu.espe.model.RegistrationProduct" target="ec.edu.espe.model.RegistrationProduct" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="ec.edu.espe.model.Category" target="ec.edu.espe.model.List" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="ec.edu.espe.model.Category" target="ec.edu.espe.model.ClothingItem" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="clothingItems" source="ec.edu.espe.model.Category" target="ec.edu.espe.model.ClothingItem" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;ClothingItem&gt;"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

@@ -2,26 +2,25 @@ package ec.edu.espe.contacts.model;
 
 /**
  *
- * @author Brandon Pazmino <www.espe.edu.ec>
+ * @author Brandon Pazmino
  */
 public class Person {
     private int id;
     private String name;
-    private String lastName;
+    private String lastname;
     private float salary;
 
     @Override
     public String toString() {
-        return "Person{" + "id=" + id + ", name=" + name + ", lastName=" + lastName + ", salary=" + salary + "}\n"';
+        return "Person{" + "id=" + id + ", name=" + name + ", lastname=" + lastname + ", salary=" + salary + '}';
     }
 
-    public Person(int id, String name, String lastName, float salary) {
+    public Person(int id, String name, String lastname, float salary) {
         this.id = id;
         this.name = name;
-        this.lastName = lastName;
+        this.lastname = lastname;
         this.salary = salary;
     }
-    
 
     /**
      * @return the id
@@ -52,17 +51,17 @@ public class Person {
     }
 
     /**
-     * @return the lastName
+     * @return the lastname
      */
-    public String getLastName() {
-        return lastName;
+    public String getLastname() {
+        return lastname;
     }
 
     /**
-     * @param lastName the lastName to set
+     * @param lastname the lastname to set
      */
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public void setLastname(String lastname) {
+        this.lastname = lastname;
     }
 
     /**
@@ -78,6 +77,13 @@ public class Person {
     public void setSalary(float salary) {
         this.salary = salary;
     }
-    
+
+    public void add(Person person) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
+
+    public int size() {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
     
 }
