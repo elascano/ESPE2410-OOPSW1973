@@ -1,0 +1,14 @@
+[
+  {
+    "notificationID": 1,
+    "title": "Tarea signada",
+    "status": "enviar",
+    "message": "Tienes notificaciones pendientes"
+  },
+  {
+    "notificationID": 2,
+    "title": "Recordatorio de fecha límite",
+    "status": "pendiente",
+    "message": "No olvides tu próxima fecha límite"
+  }
+]

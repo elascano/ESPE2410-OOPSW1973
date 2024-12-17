@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Multi-file class diagram">
+  <ClassDiagramComponents>
+    <Class name="A" package="ec.edu.espe.reverseengineering.model" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="a" type="int" visibility="private"/>
+        <Field name="b" type="B" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="a"/>
+          <Argument type="B" name="b"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="B" package="ec.edu.espe.reverseengineering.model" visibility="public" xPosition="287.0" yPosition="46.0">
+      <Fields>
+        <Field name="cs" type="ArrayList&lt;C&gt;" visibility="private"/>
+        <Field name="d" type="D" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="ArrayList&lt;C&gt;" name="cs"/>
+          <Argument type="D[]" name="d"/>
+        </Constructor>
+      </Constructors>
+      <Methods/>
+    </Class>
+    <Class name="C" package="ec.edu.espe.reverseengineering.model" visibility="public" xPosition="632.0" yPosition="103.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="E" package="ec.edu.espe.reverseengineering.model" visibility="public" xPosition="920.0" yPosition="20.0">
+      <Fields>
+        <Field name="a" type="int" visibility="private"/>
+        <Field name="f" type="float" visibility="private"/>
+        <Field name="c" type="char" visibility="private"/>
+        <Field name="s" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getA" returnType="int" visibility="public"/>
+        <Method name="setA" returnType="void" visibility="public">
+          <Argument type="int" name="a"/>
+        </Method>
+        <Method name="getF" returnType="float" visibility="public"/>
+        <Method name="setF" returnType="void" visibility="public">
+          <Argument type="float" name="f"/>
+        </Method>
+        <Method name="getC" returnType="char" visibility="public"/>
+        <Method name="setC" returnType="void" visibility="public">
+          <Argument type="char" name="c"/>
+        </Method>
+        <Method name="getS" returnType="String" visibility="public"/>
+        <Method name="setS" returnType="void" visibility="public">
+          <Argument type="String" name="s"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="F" package="ec.edu.espe.reverseengineering.model" visibility="public" xPosition="1220.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="b" source="ec.edu.espe.reverseengineering.model.A" target="ec.edu.espe.reverseengineering.model.B" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="cs" source="ec.edu.espe.reverseengineering.model.B" target="ec.edu.espe.reverseengineering.model.C" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="ArrayList&lt;C&gt;"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

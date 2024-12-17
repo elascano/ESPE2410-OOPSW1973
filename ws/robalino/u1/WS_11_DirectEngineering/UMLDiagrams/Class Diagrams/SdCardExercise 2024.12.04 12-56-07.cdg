@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="SdCardExercise">
+  <ClassDiagramComponents>
+    <Class name="SDCard" package="cd.es.edu.SDCardPrj.model" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="id" type="int" visibility="private"/>
+        <Field name="brand" type="String" visibility="private"/>
+        <Field name="storage" type="int" visibility="private"/>
+        <Field name="price" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="int" name="id"/>
+          <Argument type="String" name="brand"/>
+          <Argument type="int" name="storage"/>
+          <Argument type="int" name="price"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="toString" returnType="String" visibility="public"/>
+        <Method name="getId" returnType="int" visibility="public"/>
+        <Method name="setId" returnType="void" visibility="public">
+          <Argument type="int" name="id"/>
+        </Method>
+        <Method name="getBrand" returnType="String" visibility="public"/>
+        <Method name="setBrand" returnType="void" visibility="public">
+          <Argument type="String" name="brand"/>
+        </Method>
+        <Method name="getStorage" returnType="int" visibility="public"/>
+        <Method name="setStorage" returnType="void" visibility="public">
+          <Argument type="int" name="storage"/>
+        </Method>
+        <Method name="getPrice" returnType="int" visibility="public"/>
+        <Method name="setPrice" returnType="void" visibility="public">
+          <Argument type="int" name="price"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Main" package="cd.es.edu.SDCardPrj.view" visibility="public" xPosition="320.0" yPosition="20.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="void" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+        <Method name="getSDCardFromConsole" returnType="SDCard" visibility="private" isStatic="true">
+          <Argument type="Scanner" name="scanner"/>
+        </Method>
+        <Method name="readInt" returnType="int" visibility="private" isStatic="true">
+          <Argument type="Scanner" name="scanner"/>
+          <Argument type="String" name="fieldstorage"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="DataManager" package="utils" visibility="public" xPosition="620.0" yPosition="20.0">
+      <Fields>
+        <Field name="filePath" type="String" visibility="private" isFinal="true"/>
+        <Field name="gson" type="Gson" visibility="private" isFinal="true"/>
+        <Field name="sdcards" type="List&lt;SDCard&gt;" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="String" name="filePath"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="loadFromFile" returnType="void" visibility="private"/>
+        <Method name="saveToFile" returnType="void" visibility="private"/>
+        <Method name="addObject" returnType="void" visibility="public">
+          <Argument type="SDCard" name="sdcard"/>
+        </Method>
+        <Method name="updateObject" returnType="void" visibility="public">
+          <Argument type="int" name="id"/>
+          <Argument type="SDCard" name="updatedSDCard"/>
+          <Argument type="boolean" name="overwrite"/>
+        </Method>
+        <Method name="deleteObject" returnType="void" visibility="public">
+          <Argument type="int" name="id"/>
+        </Method>
+        <Method name="getAllObjects" returnType="List&lt;SDCard&gt;" visibility="public"/>
+        <Method name="searchById" returnType="SDCard" visibility="public">
+          <Argument type="int" name="id"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <HasRelation name="sdcards" source="utils.DataManager" target="cd.es.edu.SDCardPrj.model.SDCard" type="Aggregation" sourceCardinality="1..1" targetCardinality="0..*" collectionType="List&lt;SDCard&gt;"/>
+    <UseRelation source="cd.es.edu.SDCardPrj.view.Main" target="cd.es.edu.SDCardPrj.model.SDCard" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="utils.DataManager" target="cd.es.edu.SDCardPrj.model.SDCard" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
