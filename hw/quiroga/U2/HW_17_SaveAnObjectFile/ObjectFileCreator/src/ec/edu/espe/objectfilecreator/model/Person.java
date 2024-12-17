@@ -59,5 +59,11 @@ public class Person implements Serializable {
     public void setProffesion(String proffesion) {
         this.proffesion = proffesion;
     }
+
+    @Override
+    public String toString() {
+        return "Person{" + "age=" + age + ", name=" + name + ", proffesion=" + proffesion + '}';
+    }
+    
     
 }
