@@ -20,6 +20,7 @@
 *.rar
 
 
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -177,7 +178,7 @@ replay_pid*
 /ws/leiton/U2/WS14/TaxesLib/dist/
 /ws/leiton/U2/WS14/TaxesLib/build/
 /ws/leiton/U2/WS14/ShoesSalesStore/build/
-=======
+
 /ws/pazmino/u2/WS14Libreries/Taxes/nbproject/private/
 >>>>>>> af48662d2da9aef6bc2376469395c46f67c10c1f
 /ws/leiton/U2/WS14/FileManager/nbproject/private/
@@ -203,3 +204,5 @@ replay_pid*
 >>>>>>> 531235f2bcab7bdf6f23eccd1e3f5c1a8f13f19a
 /hw/quiroga/U2/HW_17_SaveAnObjectFile/ObjectFileCreator/nbproject/private/
 /hw/quiroga/U2/HW_17_SaveAnObjectFile/ObjectFileCreator/build/
+
+>>>>>>> 073914af3c794f37ca3369ea2f01f2b19e820ba9
