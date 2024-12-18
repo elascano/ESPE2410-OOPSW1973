@@ -20,6 +20,7 @@
 *.rar
 
 
+<<<<<<< HEAD
 
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -46,7 +47,7 @@
 /ws/robalino/u1/New Folder/AntsSimulatorPrj/nbproject/private/
 /ws/robalino/u1/New Folder/ReverseEngineering/nbproject/private/
 /ws/robalino/u1/New Folder/ReverseEngineering/build/
-=======
+
 <<<<<<< HEAD
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
@@ -77,7 +78,6 @@ replay_pid*
 /ws/cuichan/U1/WS10_ReverseEngineering/ReverseEngineering/build/
 <<<<<<< HEAD
 >>>>>>> 582bc8b630137684d23f02917dbae5a6f174927a
-=======
 >>>>>>> 81fa65dcf1b821ea4ff2710ea5c12a3c62779118
 <<<<<<< HEAD
 /ws/leiton/U1/NewFolder/AntSimulator/nbproject/private/
@@ -103,16 +103,108 @@ replay_pid*
 /ws/cuichan/U1/WS08_PrimitiveAndReferenced/PrjContactBook/nbproject/private/
 /ws/cuichan/U1/WS08_PrimitiveAndReferenced/PrjContactBook/build/
 >>>>>>> 02e2843074e7af1ca25c7c5e77a52a11619f5211
+<<<<<<< HEAD
+/ws/maza/u2/Taxes/nbproject/private/
+/ws/maza/u2/ShoesSalesStore/nbproject/private/
+/ws/maza/u2/TaxesLib/nbproject/private/
+/ws/maza/u2/TaxesLib/dist/
+/ws/maza/u2/TaxesLib/build/
+/ws/maza/u2/ShoesSalesStore/build/
+/ws/maza/u2/FileManager/nbproject/private/
+=======
 /ws/robalino/u1/WS_11_DirectEngineering/SdCardExercise/nbproject/private/
 /ws/robalino/u1/WS_11_DirectEngineering/SdCardExercise/build/
 /ws/robalino/u1/SdCardExercise/dist/
 <<<<<<< HEAD
+/hw/espinosa/U2/Homework 17/JavaApplication5/nbproject/private/
+/hw/espinosa/U2/Homework 17/JavaApplication5/build/
+=======
+<<<<<<< HEAD
+/ws/gongora/U2/WS14/Taxes/nbproject/private/
+/ws/gongora/U2/WS14/ShoesSalesStore/nbproject/private/
+/ws/gongora/U2/WS14/TaxesLib/build/
+/ws/gongora/U2/WS14/TaxesLib/dist/
+/ws/gongora/U2/WS14/TaxesLib/nbproject/private/
+/ws/gongora/U2/WS14/ShoesSalesStore/build/
+/ws/gongora/U2/WS14/FileManager/nbproject/private/
+/ws/gongora/U2/WS14/FileManager/build/
+/ws/gongora/U2/WS14/FileManager/dist/
+=======
+<<<<<<< HEAD
 /hw/pazmino/u1/HW12/HW12MolePrjManagement/build/
 /hw/pazmino/u1/HW13/HW13ChickenFarmSimulator/nbproject/private/
-=======
+
 /ws/pilatasig/u1/WS_07_ChickenImplementingClasses/ChickenClassImplementation/nbproject/private/
 /ws/pilatasig/u1/WS_07_ChickenImplementingClasses/ChickenClassImplementation/build/
 >>>>>>> 83f420e3c5e8a64e532135eb22be9da1bd6fe33f
+<<<<<<< HEAD
+/ws/cuichan/U2/WS14 Libraries/Taxes/nbproject/private/
+/ws/cuichan/U2/WS14 Libraries/ShoesSalesStore/nbproject/private/
+/ws/cuichan/U2/WS14 Libraries/TaxesLib/build/
+/ws/cuichan/U2/WS14 Libraries/TaxesLib/nbproject/private/
+/ws/cuichan/U2/WS14 Libraries/TaxesLib/dist/
+/ws/cuichan/U2/WS14 Libraries/ShoesSalesStore/build/
+/ws/cuichan/U2/WS14 Libraries/FileManager/nbproject/private/
+/ws/cuichan/U2/WS14 Libraries/FileManage/nbproject/private/
+=======
+<<<<<<< HEAD
+/ws/quiroga/u2/WS_14_Libraries/Taxes/nbproject/private/
+/ws/quiroga/u2/WS_14_Libraries/ShoesSalesStore/nbproject/private/
+/ws/quiroga/u2/WS_14_Libraries/TaxesLib/nbproject/private/
+/ws/quiroga/u2/WS_14_Libraries/TaxesLib/build/
+/ws/quiroga/u2/WS_14_Libraries/TaxesLib/dist/
+/ws/quiroga/u2/WS_14_Libraries/ShoesSalesStore/build/
+/ws/quiroga/u2/WS_14_Libraries/FileManager/nbproject/private/
+/ws/quiroga/u2/WS_14_Libraries/FileManager/build/
+/ws/quiroga/u2/WS_14_Libraries/FileManager/dist/
+
+<<<<<<< HEAD
+/ws/camacho/New Folder/TaxesLib/nbproject/private/
+/ws/camacho/New Folder/ShoesSales/nbproject/private/
+/ws/camacho/New Folder/TaxeLib/nbproject/private/
+/ws/camacho/New Folder/FileManager/nbproject/private/
+/ws/camacho/New Folder/FileManager/build/
+/ws/camacho/New Folder/FileManager/dist/
+/ws/camacho/New Folder/TaxeLib/dist/
+/ws/camacho/New Folder/TaxeLib/build/
+
+<<<<<<< Updated upstream
+<<<<<<< HEAD
+<<<<<<< HEAD
+/ws/pazmino/u2/WS14Libreries/Taxes/nbproject/private/
+/ws/pazmino/u2/WS14Libreries/ShoesSalesStore/nbproject/private/
+/ws/pazmino/u2/WS14Libreries/TaxesLib/build/
+/ws/pazmino/u2/WS14Libreries/TaxesLib/nbproject/private/
+/ws/pazmino/u2/WS14Libreries/TaxesLib/dist/
+/ws/pazmino/u2/WS14Libreries/ShoesSalesStore/build/
+/ws/pazmino/u2/WS14Libreries/FileManager/nbproject/private/
+/ws/pazmino/u2/WS14Libreries/FileManager/build/
+/ws/pazmino/u2/WS14Libreries/FileManager/dist/
+
+/ws/espinosa/U2/WS14/Taxes/nbproject/private/
+/ws/espinosa/U2/WS14/ShoesSalesStore/nbproject/private/
+/ws/espinosa/U2/WS14/TaxesLib/build/
+/ws/espinosa/U2/WS14/TaxesLib/nbproject/private/
+/ws/espinosa/U2/WS14/TaxesLib/dist/
+/ws/espinosa/U2/WS14/ShoesSalesStore/build/
+/ws/espinosa/U2/WS14/JsonManager/nbproject/private/
+/ws/espinosa/U2/WS14/JsonManager/build/
+/ws/espinosa/U2/WS14/JsonManager/dist/
+
+<<<<<<< HEAD
+/ws/paucar/u2/WS14/Taxes/nbproject/private/
+/ws/paucar/u2/WS14/ShoesSalesStore/nbproject/private/
+/ws/paucar/u2/WS14/Taxes/build/
+/ws/paucar/u2/WS14/Taxes/dist/
+/ws/paucar/u2/WS14/TaxesLib/build/
+/ws/paucar/u2/WS14/TaxesLib/nbproject/private/
+/ws/paucar/u2/WS14/TaxesLib/dist/
+/ws/paucar/u2/WS14/ShoesSalesStore/build/
+/ws/paucar/u2/WS14/FileManager/nbproject/private/
+/ws/paucar/u2/WS14/FileManager/build/
+/ws/paucar/u2/WS14/FileManager/dist/
+>>>>>>> 5f6ad4a3ae074773fe9557cbbfa317781fbcee48
+
 <<<<<<< HEAD
 /ws/leiton/U2/WS14/Taxes/nbproject/private/
 /ws/leiton/U2/WS14/ShoesSalesStore/nbproject/private/
@@ -120,14 +212,64 @@ replay_pid*
 /ws/leiton/U2/WS14/TaxesLib/dist/
 /ws/leiton/U2/WS14/TaxesLib/build/
 /ws/leiton/U2/WS14/ShoesSalesStore/build/
-=======
+
 /ws/pazmino/u2/WS14Libreries/Taxes/nbproject/private/
 >>>>>>> af48662d2da9aef6bc2376469395c46f67c10c1f
 /ws/leiton/U2/WS14/FileManager/nbproject/private/
 /ws/leiton/U2/WS14/FileManager/build/
 /ws/leiton/U2/WS14/FileManager/dist/
-=======
+>>>>>>> 52705a106d079e173e1b50f739eab03bbc4f2219
+
 >>>>>>> 363dd4864df8a2c40fc34e30016545f4378bd843
+<<<<<<< HEAD
 /hw/leiton/U2/NewFolder/vynilRecord/nbproject/private/
 /hw/leiton/U2/NewFolder/vynilRecord/build/
 /ws/leiton/U2/WS15/ZooApp/target/
+=======
+>>>>>>> 52705a106d079e173e1b50f739eab03bbc4f2219
+>>>>>>> 8cfea8a61fcb94ce68c72a3f782a29c2fde975e5
+<<<<<<< HEAD
+=======
+/ws/maza/u2/WS14/FileManager/nbproject/private/
+/ws/maza/u2/WS14/ShoesSalesStore/nbproject/private/
+/ws/maza/u2/WS14/TaxesLib/nbproject/private/
+/ws/maza/u2/WS14/TaxesLib/build/
+/ws/maza/u2/WS14/TaxesLib/dist/
+/ws/maza/u2/WS14/FileManager/build/
+/ws/maza/u2/WS14/FileManager/dist/
+/ws/maza/u2/WS14/ShoesSalesStore/build/
+
+/ws/pazmino/u1/WS9/PrjContacts/dist/
+>>>>>>> Stashed changes
+<<<<<<< HEAD
+/hw/pazmino/u2/HW17/JavaApplication4/nbproject/private/
+/hw/pazmino/u2/HW17/HW17Table/nbproject/private/
+/hw/pazmino/u2/HW17/HW17Table/build/
+/hw/pazmino/u2/HW17/HW17TablePython/nbproject/
+/hw/pazmino/u2/HW17/PythonProject/nbproject/
+/hw/pazmino/u2/HW17/HW17TablePython/.ropeproject/
+/hw/pazmino/u2/HW17/HW17TablePython/Model/__pycache__/
+=======
+>>>>>>> d3e3193718dc76c0a9ade036402775cb58c961f0
+>>>>>>> 531235f2bcab7bdf6f23eccd1e3f5c1a8f13f19a
+<<<<<<< HEAD
+/hw/paucar/u2/W17_SaveObjects/StandApp/nbproject/private/
+/hw/paucar/u2/W17_SaveObjects/StandApp/build/
+=======
+/hw/quiroga/U2/HW_17_SaveAnObjectFile/ObjectFileCreator/nbproject/private/
+/hw/quiroga/U2/HW_17_SaveAnObjectFile/ObjectFileCreator/build/
+
+>>>>>>> 073914af3c794f37ca3369ea2f01f2b19e820ba9
+>>>>>>> 30424a00e4b6bb8f74d3437f4ada8ecdbd37a48e
+<<<<<<< HEAD
+/ws/gongora/U2/WS14/Cable/nbproject/private/
+=======
+>>>>>>> 2fbdc9f1220e1d53ed5a35833b8924e1a2a425b5
+>>>>>>> d173d8496ba4320da07ab96194bdd075e040446d
+>>>>>>> 498c44db91fdd9e2f27602243478ee212e2b58c1
+>>>>>>> f94348a3016f062d8083454d4d97088b11088e7a
+>>>>>>> 62e6945ec5edd059cdbbbd445b1165087a983b20
+/hw/cuichan/U2/HW17 SavingObjects/SoundMixer/nbproject/private/
+/hw/cuichan/U2/HW17 SavingObjects/SoundMixer/build/
+>>>>>>> 0964adf499019aebdb04f6e2a5dcdf84db689550
+>>>>>>> 1c5ec65b27ed65091e8af72b4d919cb58f01ef9a
