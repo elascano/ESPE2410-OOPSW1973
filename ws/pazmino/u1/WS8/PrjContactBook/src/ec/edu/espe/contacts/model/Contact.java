@@ -4,7 +4,7 @@ import java.util.Date;
 
 /**
  *
- * @author Brandon Pazmino <www.espe.edu.ec>
+ * @author Brandon Pazmino
  */
 public class Contact {
     private int id;
@@ -14,27 +14,24 @@ public class Contact {
     private int numberOfMutualFriends;
     private int numberOfOtherFriends;
     private int totalFriends;
-    
-      public Contact(int id, String name, Date birthDate, String email, int numberOfMutualFriends, int numberOfOtherFriends) {
+
+    @Override
+    public String toString() {
+        return "Contact{" + "\n\tid=" + id + ", \n\tname=" + name + ", \n\tbirthDate=" 
+                + birthDate + ", \n\temail=" + email + ", \n\tnumberOfMutualFriends=" 
+                + numberOfMutualFriends + ", \n\tnumberOfOtherFriends=" 
+                + numberOfOtherFriends + ", \n\ttotalFriends=" + totalFriends + '}';
+    }
+
+    public Contact(int id, String name, Date birthDate, String email, int numberOfMutualFriends, int numberOfOtherFriends) {
         this.id = id;
         this.name = name;
         this.birthDate = birthDate;
         this.email = email;
         this.numberOfMutualFriends = numberOfMutualFriends;
         this.numberOfOtherFriends = numberOfOtherFriends;
-        this.totalFriends = numberOfMutualFriends + numberOfOtherFriends;
-    } 
-      
-      
-        @Override
-    public String toString() {
-        return "Contact{" + "\n\tid=" + id + ", name=" + name + ",\n\tbirthDate=" 
-                + birthDate + ", \n\temail=" + email + ", \n\tnumberOfMutualFriends=" 
-                + numberOfMutualFriends + ", \n\tnumberOfOtherFriends=" 
-                + numberOfOtherFriends + ", \n\ttotalFriends=" + totalFriends + '}';
+        this.totalFriends = numberOfMutualFriends + numberOfOtherFriends ;
     }
-
-
 
     /**
      * @return the id
@@ -133,7 +130,5 @@ public class Contact {
     public void setTotalFriends(int totalFriends) {
         this.totalFriends = totalFriends;
     }
-    
-    
     
 }
