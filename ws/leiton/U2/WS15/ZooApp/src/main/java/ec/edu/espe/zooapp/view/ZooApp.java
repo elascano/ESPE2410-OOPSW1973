@@ -10,14 +10,13 @@ import java.util.Date;
 
 /**
  *
- * @author Brandon Pazmino
+ * @author Jose Leiton
  */
 public class ZooApp {
 
     public static void main(String[] args) {
         System.out.println("Hello World!");
-        System.out.println("This is BRADNON's zoo");
-        
+        System.out.println("This is Jose's Zoo");
         
         Animal animal;
         int animalId;
@@ -27,44 +26,42 @@ public class ZooApp {
         char sex;
         ArrayList<Vaccine> vaccines;
         int vaccineId;
-        String vaccineName;
         
         vaccineId=4;
-        vaccineName="Paracetamol";
+        String vaccineName = "Paracetamol";
         
         animalId=1;
         name="Lucy";
-        bornOnDate = new Date(2024, 1, 21);
-        weight=4.57F;
+        bornOnDate = new Date(2024, 0, 21);
+        weight = 4.5F;
         sex='f';
+        
         Vaccine vaccine;
-        vaccine= new Vaccine(vaccineId, vaccineName);
-        vaccines= new ArrayList<>();
+        int VaccineId = 0;
+        vaccine = new Vaccine(VaccineId, vaccineName);
+        vaccines = new ArrayList<>();
         vaccines.add(vaccine);
         
-        animal = new Animal(animalId, name, bornOnDate, weight, sex, vaccines);
-        System.out.println("My animal is ---> \n" + animal);     
-        
-        ArrayList<Animal> animals = new ArrayList<>();
+        ArrayList<Animal>animals = new ArrayList<>();
         Cage cage;
-        cage = new Cage(1,animals);
-        Mammal mammal = new Mammal(0.21F, 2 , animalId, name, bornOnDate, weight, sex, vaccines);
+        cage = new Cage(animalId, animals);
+                
+        animal = new Animal(animalId, name, bornOnDate, weight, sex, vaccines);
+        System.out.println("My animal is -->"+animal);
         
-        System.out.println("my mammal is --> " + mammal);
+        Mammal mammal = new Mammal(0.21F, 2, animalId, name, bornOnDate, weight, sex, vaccines);
+        System.out.println("My mammal is -->"+mammal);
         
-        mammal.breastfeed();
+        vaccine = new Vaccine(5, "Ibuprofeno");
+        
+        mammal.breastFeed();
         mammal.assignCage(cage);
-        
-        vaccine = new Vaccine (5, "Ibuprophene");
-        
-        mammal.feed(new Food(1,5.2F,"mouse"));
+        mammal.feed(new Food());
         mammal.register();
         mammal.provideVaccination(vaccine);
         
-        System.out.println("Mammal --> "+ mammal);
+        System.out.println("Mammal -->"+mammal);
         
-        System.out.println("cage --> " + cage);
-        
-       
+        System.out.println("cage --> "+cage);
     }
 }
