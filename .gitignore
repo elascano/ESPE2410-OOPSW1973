@@ -221,10 +221,17 @@ replay_pid*
 >>>>>>> 52705a106d079e173e1b50f739eab03bbc4f2219
 
 >>>>>>> 363dd4864df8a2c40fc34e30016545f4378bd843
+<<<<<<< HEAD
+/hw/leiton/U2/NewFolder/vynilRecord/nbproject/private/
+/hw/leiton/U2/NewFolder/vynilRecord/build/
+/ws/leiton/U2/WS15/ZooApp/target/
 >>>>>>> 52705a106d079e173e1b50f739eab03bbc4f2219
 >>>>>>> 8cfea8a61fcb94ce68c72a3f782a29c2fde975e5
 <<<<<<< HEAD
+/ws/espinosa/U2/WS15/ZooApp/target/
 =======
+<<<<<<< HEAD
+
 /ws/maza/u2/WS14/FileManager/nbproject/private/
 /ws/maza/u2/WS14/ShoesSalesStore/nbproject/private/
 /ws/maza/u2/WS14/TaxesLib/nbproject/private/
@@ -244,13 +251,13 @@ replay_pid*
 /hw/pazmino/u2/HW17/PythonProject/nbproject/
 /hw/pazmino/u2/HW17/HW17TablePython/.ropeproject/
 /hw/pazmino/u2/HW17/HW17TablePython/Model/__pycache__/
-=======
+
 >>>>>>> d3e3193718dc76c0a9ade036402775cb58c961f0
 >>>>>>> 531235f2bcab7bdf6f23eccd1e3f5c1a8f13f19a
 <<<<<<< HEAD
 /hw/paucar/u2/W17_SaveObjects/StandApp/nbproject/private/
 /hw/paucar/u2/W17_SaveObjects/StandApp/build/
-=======
+
 /hw/quiroga/U2/HW_17_SaveAnObjectFile/ObjectFileCreator/nbproject/private/
 /hw/quiroga/U2/HW_17_SaveAnObjectFile/ObjectFileCreator/build/
 
@@ -258,8 +265,10 @@ replay_pid*
 >>>>>>> 30424a00e4b6bb8f74d3437f4ada8ecdbd37a48e
 <<<<<<< HEAD
 /ws/gongora/U2/WS14/Cable/nbproject/private/
-=======
 >>>>>>> 2fbdc9f1220e1d53ed5a35833b8924e1a2a425b5
+<<<<<<< HEAD
+/ws/quiroga/u2/WS_15_Inheritance/ZooApp/target/
+
 >>>>>>> d173d8496ba4320da07ab96194bdd075e040446d
 >>>>>>> 498c44db91fdd9e2f27602243478ee212e2b58c1
 >>>>>>> f94348a3016f062d8083454d4d97088b11088e7a
@@ -267,4 +276,13 @@ replay_pid*
 /hw/cuichan/U2/HW17 SavingObjects/SoundMixer/nbproject/private/
 /hw/cuichan/U2/HW17 SavingObjects/SoundMixer/build/
 >>>>>>> 0964adf499019aebdb04f6e2a5dcdf84db689550
+<<<<<<< HEAD
 /ws/paucar/u2/WS15/ZooApp/target/
+=======
+<<<<<<< HEAD
+/ws/pazmino/u2/WS15Inheritance/ZooApp/target/
+=======
+>>>>>>> 1c5ec65b27ed65091e8af72b4d919cb58f01ef9a
+>>>>>>> 13bb872936b77892472e76cf31f5b71a69085d6a
+>>>>>>> a34113cba27dbb5c3cfc0aa6f269752d180d6117
+>>>>>>> bc0daa7dee243497c97c3924e79188f5bf657859
