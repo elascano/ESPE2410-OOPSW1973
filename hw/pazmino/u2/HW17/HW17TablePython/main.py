@@ -1,23 +1,33 @@
-from model import Table
+from controller.table_controller import TableController
 
-class SaveObjectTable:
-    def __init__(self):
-        self.table = None
+def main():
+    controller = TableController()
+    while True:
+        print("\n--- Menú de Gestión de Mesas ---")
+        print("1. Crear una mesa")
+        print("2. Mostrar mesas")
+        print("3. Guardar una mesa en archivo")
+        print("4. Cargar una mesa desde archivo")
+        print("5. Salir")
 
-def create_table(self):
-    material = "Caoba"
-    cantidad_patas = 4
-    altura = 1.2
-    color = "Marrón"
-    self.table = Table(material, cantidad_patas, altura, color)
+        option = input("Seleccione una opción: ")
 
-self.table.serialize("table_data")
-
-def show_table(self):
-    loaded_table = Table.deserialize("table_data")
-    print(f"Object loaded: {loaded_table}")
+        if option == "1":
+            controller.create_table()
+        elif option == "2":
+            controller.display_tables()
+        elif option == "3":
+            index = int(input("Ingrese el índice de la mesa a guardar: "))
+            file_path = input("Ingrese la ruta del archivo: ")
+            controller.save_table(file_path, index)
+        elif option == "4":
+            file_path = input("Ingrese la ruta del archivo: ")
+            controller.load_table(file_path)
+        elif option == "5":
+            print("Saliendo del programa. ¡Adiós!")
+            break
+        else:
+            print("Opción no válida. Intente de nuevo.")
 
 if __name__ == "__main__":
-    view = TableView()
-    view.create_table()  
-    view.show_table()    
+    main()
