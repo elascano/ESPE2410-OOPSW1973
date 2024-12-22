@@ -34,7 +34,7 @@ public class Animal {
         vaccines.add(vaccine);
     }
 
-    public Animal(int id, String name, Date bornOnDate, float weight, char sex, ArrayList<Vaccine> vaccine) {
+    public Animal(int id, String name, Date bornOnDate, float weight, char sex, ArrayList<Vaccine> vaccines) {
         this.id = id;
         this.name = name;
         this.bornOnDate = bornOnDate;
