@@ -4,6 +4,8 @@ from vaccine import Vaccine
 from animal import Animal
 from food import Food  
 from cage import Cage
+from mammal import Mammal
+
 
 
 
@@ -27,9 +29,12 @@ def main():
         add_vaccine = input("Do you want to add a vaccine? (yes/no): ").lower()
         if add_vaccine == "no":
             break
-        vaccine_id = int(input("Enter vaccine ID: "))
-        description = input("Enter vaccine description: ")
-        vaccines.append(Vaccine(vaccine_id, description))
+        try:
+            vaccine_id = int(input("Enter vaccine ID: "))
+            description = input("Enter vaccine description: ")
+            vaccines.append(Vaccine(vaccine_id, description))
+        except ValueError:
+            print("Invalid vaccine ID. Please enter a numeric value.")
 
     # Create Animal
     animal = Animal(animal_id, name, born_on_date, weight, sex, vaccines)
