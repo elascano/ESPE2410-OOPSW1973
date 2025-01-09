@@ -19,7 +19,6 @@ public class ZooApp {
         System.out.println("");
         
         Animal animal;
-        int id;
         int animalId;
         String name;
         Date bornOnDate;
