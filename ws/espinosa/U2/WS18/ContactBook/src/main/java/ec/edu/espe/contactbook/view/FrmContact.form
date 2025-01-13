@@ -363,6 +363,8 @@
                   <Component id="btnadd" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="64" max="-2" attributes="0"/>
                   <Component id="btnfind" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="58" max="-2" attributes="0"/>
+                  <Component id="btndelete" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
@@ -374,6 +376,7 @@
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="btnadd" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="btnfind" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="btndelete" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace pref="45" max="32767" attributes="0"/>
               </Group>
@@ -389,6 +392,11 @@
         <Component class="javax.swing.JButton" name="btnfind">
           <Properties>
             <Property name="text" type="java.lang.String" value="Find"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="btndelete">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Delete"/>
           </Properties>
         </Component>
       </SubComponents>

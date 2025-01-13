@@ -51,6 +51,7 @@ public class FrmContact extends javax.swing.JFrame {
         pmlFooted = new javax.swing.JPanel();
         btnadd = new javax.swing.JButton();
         btnfind = new javax.swing.JButton();
+        btndelete = new javax.swing.JButton();
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -211,6 +212,8 @@ public class FrmContact extends javax.swing.JFrame {
 
         btnfind.setText("Find");
 
+        btndelete.setText("Delete");
+
         javax.swing.GroupLayout pmlFootedLayout = new javax.swing.GroupLayout(pmlFooted);
         pmlFooted.setLayout(pmlFootedLayout);
         pmlFootedLayout.setHorizontalGroup(
@@ -220,6 +223,8 @@ public class FrmContact extends javax.swing.JFrame {
                 .addComponent(btnadd)
                 .addGap(64, 64, 64)
                 .addComponent(btnfind)
+                .addGap(58, 58, 58)
+                .addComponent(btndelete)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         pmlFootedLayout.setVerticalGroup(
@@ -228,7 +233,8 @@ public class FrmContact extends javax.swing.JFrame {
                 .addGap(32, 32, 32)
                 .addGroup(pmlFootedLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnadd)
-                    .addComponent(btnfind))
+                    .addComponent(btnfind)
+                    .addComponent(btndelete))
                 .addContainerGap(45, Short.MAX_VALUE))
         );
 
@@ -298,6 +304,7 @@ public class FrmContact extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnadd;
+    private javax.swing.JButton btndelete;
     private javax.swing.JButton btnfind;
     private javax.swing.JComboBox<String> cmbmaritalstatus;
     private javax.swing.JComboBox<String> cmdgender;
