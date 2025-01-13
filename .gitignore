@@ -197,11 +197,7 @@ replay_pid*
 /ws/leiton/U2/WS14/FileManager/dist/
 >>>>>>> 52705a106d079e173e1b50f739eab03bbc4f2219
 
->>>>>>> 363dd4864df8a2c40fc34e30016545f4378bd843
->>>>>>> 52705a106d079e173e1b50f739eab03bbc4f2219
->>>>>>> 8cfea8a61fcb94ce68c72a3f782a29c2fde975e5
-<<<<<<< HEAD
-=======
+
 /ws/maza/u2/WS14/FileManager/nbproject/private/
 /ws/maza/u2/WS14/ShoesSalesStore/nbproject/private/
 /ws/maza/u2/WS14/TaxesLib/nbproject/private/
@@ -237,6 +233,10 @@ replay_pid*
 /ws/gongora/U2/WS14/Cable/nbproject/private/
 
 
+<<<<<<< HEAD
+>>>>>>> 99333eb77621efac327ca3496610f222f94e2db6
+/ws/espinosa/U2/WS18/ContactBook/target/
+=======
 /hw/quiroga/U2/HW_22_Mongo/MongoJava/MongoAsker/target/
 =======
 /ws/cuichan/U2/WS15 Inheritance/Inheritance/nbproject/private/
@@ -246,4 +246,9 @@ replay_pid*
 /hw/pazmino/u2/HW21Mongo/HWMongoSearchJava/target/
 /hw/pazmino/u2/HW21Mongo/HW21PythonInsertInMongo/nbproject/
 /hw/pazmino/u2/HW21Mongo/HW21PythonInsertInMongo/.ropeproject/
+<<<<<<< HEAD
 /ws/maza/u2/ContactBook/target/
+=======
+/ws/pazmino/u2/WS17/ContactBook/target/
+>>>>>>> 9d9ac7081af1d227ec8600fc837e91c6676e90cc
+>>>>>>> f6eb09319df38c0f63bb2027d0162c41fd401100
