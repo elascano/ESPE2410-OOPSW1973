@@ -1,13 +1,11 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
 package ec.edu.espe.contactbook.view;
 
+import ec.edu.espe.contactbook.controller.ContactController;
 import ec.edu.espe.contactbook.model.Contact;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Locale;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -22,6 +20,7 @@ public class FrmContact extends javax.swing.JFrame {
     Calendar dateOfBrith;
     ArrayList<String> favoriteSports;
     String comments;
+    ContactController contactController= new ContactController();
     /**
      * Creates new form FrmContact
      */
@@ -59,9 +58,9 @@ public class FrmContact extends javax.swing.JFrame {
         jScrollPane2 = new javax.swing.JScrollPane();
         txaComments = new javax.swing.JTextArea();
         pnlFooter = new javax.swing.JPanel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
+        btnAdd = new javax.swing.JButton();
+        btnFind = new javax.swing.JButton();
+        btnDelete = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -201,16 +200,26 @@ public class FrmContact extends javax.swing.JFrame {
                         .addGap(15, 15, 15))))
         );
 
-        jButton1.setText("ADD");
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnAdd.setText("ADD");
+        btnAdd.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnAddActionPerformed(evt);
             }
         });
 
-        jButton2.setText("FIND");
+        btnFind.setText("FIND");
+        btnFind.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnFindActionPerformed(evt);
+            }
+        });
 
-        jButton3.setText("Delete");
+        btnDelete.setText("DELETE");
+        btnDelete.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnDeleteActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout pnlFooterLayout = new javax.swing.GroupLayout(pnlFooter);
         pnlFooter.setLayout(pnlFooterLayout);
@@ -218,11 +227,11 @@ public class FrmContact extends javax.swing.JFrame {
             pnlFooterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pnlFooterLayout.createSequentialGroup()
                 .addGap(49, 49, 49)
-                .addComponent(jButton1)
+                .addComponent(btnAdd)
                 .addGap(37, 37, 37)
-                .addComponent(jButton2)
+                .addComponent(btnFind)
                 .addGap(34, 34, 34)
-                .addComponent(jButton3)
+                .addComponent(btnDelete)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         pnlFooterLayout.setVerticalGroup(
@@ -230,9 +239,9 @@ public class FrmContact extends javax.swing.JFrame {
             .addGroup(pnlFooterLayout.createSequentialGroup()
                 .addGap(28, 28, 28)
                 .addGroup(pnlFooterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton1)
-                    .addComponent(jButton2)
-                    .addComponent(jButton3))
+                    .addComponent(btnAdd)
+                    .addComponent(btnFind)
+                    .addComponent(btnDelete))
                 .addContainerGap(37, Short.MAX_VALUE))
         );
 
@@ -264,7 +273,7 @@ public class FrmContact extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btnAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAddActionPerformed
         id=Integer.parseInt(txtId.getText());
         name= txtName.getText();
         if("male".equals(cmbSex.getSelectedItem().toString())){
@@ -288,9 +297,53 @@ public class FrmContact extends javax.swing.JFrame {
         comments=txaComments.getText();
         Contact contact= new Contact(id, name, sex, gender, maritalStatus, dateOfBrith, favoriteSports, comments);
         
-        System.out.println("contact -->"+ contact); 
-    }//GEN-LAST:event_jButton1ActionPerformed
+        if(contactController.add(contact)){
+            JOptionPane.showMessageDialog(rootPane,"Succes saving " + contact);
+        }
+        System.out.println("Contact -->" + contact);
+         
+        
+    }//GEN-LAST:event_btnAddActionPerformed
 
+    private void btnFindActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnFindActionPerformed
+        Contact contact= (Contact)contactController.find(txtId.getText());
+        
+        if (contact==null){
+            emptyFields();
+        }
+        txtId.setText(String.valueOf(contact.getId()));
+        txtName.setText(String.valueOf(contact.getName()));
+        cmbGender.setSelectedItem(contact.getGender());
+        btnDelete.setEnabled(true);
+    }//GEN-LAST:event_btnFindActionPerformed
+
+    private void btnDeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDeleteActionPerformed
+        if(JOptionPane.showConfirmDialog(rootPane, "Are you sure")==JOptionPane.YES_OPTION){
+            System.out.println("yes delete it");
+            emptyFields();
+            btnDelete.setEnabled(false);
+        }
+        if(JOptionPane.showConfirmDialog(rootPane, "Are you sure")==JOptionPane.NO_OPTION){
+            System.out.println("");
+            emptyFields();
+        }
+            
+        if(JOptionPane.showConfirmDialog(rootPane, "Are you sure")==JOptionPane.CANCEL_OPTION){
+            System.out.println("");
+        }
+    }//GEN-LAST:event_btnDeleteActionPerformed
+
+    
+    
+    private void emptyFields() {
+        txtId.setText("");
+        txtName.setText("");
+        cmbSex.setSelectedItem('m');
+        cmbGender.setSelectedItem("man");
+        cmbMaritalStatus.setSelectedItem("married");
+        favoriteSports.clear();
+        txaComments.setText("");
+    }
     /**
      * @param args the command line arguments
      */
@@ -327,12 +380,12 @@ public class FrmContact extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnAdd;
+    private javax.swing.JButton btnDelete;
+    private javax.swing.JButton btnFind;
     private javax.swing.JComboBox<String> cmbGender;
     private javax.swing.JComboBox<String> cmbMaritalStatus;
     private javax.swing.JComboBox<String> cmbSex;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
