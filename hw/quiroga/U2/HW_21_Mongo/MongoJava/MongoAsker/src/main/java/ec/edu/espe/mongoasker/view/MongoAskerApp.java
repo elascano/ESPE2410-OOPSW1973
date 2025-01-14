@@ -34,7 +34,7 @@ public class MongoAskerApp {
             
             MongoDatabase database = mongoClient.getDatabase("oop");            
            
-            MongoCollection<Document> collection = database.getCollection("students");
+            MongoCollection<Document> collection = database.getCollection("contacts");
             
             Document filtro = new Document("name", "Esteban");
             
