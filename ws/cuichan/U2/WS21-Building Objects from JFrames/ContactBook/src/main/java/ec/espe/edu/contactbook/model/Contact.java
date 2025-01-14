@@ -28,6 +28,11 @@ public class Contact {
         this.comments = comments;
     }
 
+    @Override
+    public String toString() {
+        return "Contact{" + "id=" + id + ", name=" + name + ", sex=" + sex + ", gender=" + gender + ", maritalStatus=" + maritalStatus + ", dateOfBirth=" + dateOfBirth + ", favoriteSports=" + favoriteSports + ", comments=" + comments + '}';
+    }
+
     /**
      * @return the id
      */
