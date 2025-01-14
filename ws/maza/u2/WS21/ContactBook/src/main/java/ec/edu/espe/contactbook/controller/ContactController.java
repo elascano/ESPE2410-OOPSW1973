@@ -22,9 +22,9 @@ public class ContactController {
         ArrayList<String>favoriteSport = new ArrayList<>();
         favoriteSport.add("Chess");
         Calendar dateOfBirth = Calendar.getInstance();
-        dateOfBirth.set(Calendar.YEAR,2020);
-        dateOfBirth.set(Calendar.MONTH,1);
-        dateOfBirth.set(Calendar.DAY_OF_MONTH,1);
+        dateOfBirth.set(Calendar.YEAR,2022);
+        dateOfBirth.set(Calendar.MONTH,+1);
+        dateOfBirth.set(Calendar.DAY_OF_MONTH,01);
         Object object = new Contact(3, "Brandon", 'm', "man", "single", dateOfBirth, favoriteSport, "he has a problem");
         if(findString.equals("1")){
             return object;

@@ -306,9 +306,9 @@ public class FrmContact extends javax.swing.JFrame {
         gender = cmbGender.getSelectedItem().toString();
         maritalStatus = cmbMaritalStatus.getSelectedItem().toString();
         dateOfBirth = Calendar.getInstance();
-        dateOfBirth.set(Calendar.YEAR, 2024);
-        dateOfBirth.set(Calendar.MONTH, 17);
-        dateOfBirth.set(Calendar.DAY_OF_MONTH, 17);
+        dateOfBirth.set(Calendar.YEAR, 2021);
+        dateOfBirth.set(Calendar.MONTH, 11);
+        dateOfBirth.set(Calendar.DAY_OF_MONTH, 16);
         favoriteSport = new ArrayList<>();
         favoriteSport = new ArrayList<>(lstFavoriteSport.getSelectedValuesList());
         comments = txaComments.getText();

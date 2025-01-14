@@ -1,5 +1,6 @@
 utils\MongoDbManager.class
 ec\edu\espe\contactbook\view\FrmContact.class
+ec\edu\espe\contactbook\view\FrmContact$8.class
 ec\edu\espe\contactbook\view\FrmContact$7.class
 ec\edu\espe\contactbook\view\FrmContact$1.class
 ec\edu\espe\contactbook\controller\ContactController.class
