@@ -47,6 +47,38 @@
               <Properties>
                 <Property name="text" type="java.lang.String" value="Social"/>
               </Properties>
+              <SubComponents>
+                <MenuItem class="javax.swing.JMenuItem" name="itmFacebook">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Facebook"/>
+                  </Properties>
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="itmInstagram">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Instagram"/>
+                  </Properties>
+                </MenuItem>
+              </SubComponents>
+            </Menu>
+            <Menu class="javax.swing.JMenu" name="mnuEmails">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Emails"/>
+              </Properties>
+              <SubComponents>
+                <MenuItem class="javax.swing.JMenuItem" name="itmGmail">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Gmail"/>
+                  </Properties>
+                </MenuItem>
+                <MenuItem class="javax.swing.JMenuItem" name="itmYahoo">
+                  <Properties>
+                    <Property name="text" type="java.lang.String" value="Yahoo"/>
+                  </Properties>
+                  <Events>
+                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itmYahooActionPerformed"/>
+                  </Events>
+                </MenuItem>
+              </SubComponents>
             </Menu>
           </SubComponents>
         </Menu>

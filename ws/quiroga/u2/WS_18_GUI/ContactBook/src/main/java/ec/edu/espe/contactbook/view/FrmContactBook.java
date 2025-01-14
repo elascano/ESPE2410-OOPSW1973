@@ -34,6 +34,11 @@ public class FrmContactBook extends javax.swing.JFrame {
         itmExit = new javax.swing.JMenuItem();
         jMenu3 = new javax.swing.JMenu();
         jMenu1 = new javax.swing.JMenu();
+        itmFacebook = new javax.swing.JMenuItem();
+        itmInstagram = new javax.swing.JMenuItem();
+        mnuEmails = new javax.swing.JMenu();
+        itmGmail = new javax.swing.JMenuItem();
+        itmYahoo = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -63,7 +68,29 @@ public class FrmContactBook extends javax.swing.JFrame {
         jMenu3.setText("Cloud Contact");
 
         jMenu1.setText("Social");
+
+        itmFacebook.setText("Facebook");
+        jMenu1.add(itmFacebook);
+
+        itmInstagram.setText("Instagram");
+        jMenu1.add(itmInstagram);
+
         jMenu3.add(jMenu1);
+
+        mnuEmails.setText("Emails");
+
+        itmGmail.setText("Gmail");
+        mnuEmails.add(itmGmail);
+
+        itmYahoo.setText("Yahoo");
+        itmYahoo.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                itmYahooActionPerformed(evt);
+            }
+        });
+        mnuEmails.add(itmYahoo);
+
+        jMenu3.add(mnuEmails);
 
         jMenuBar1.add(jMenu3);
 
@@ -86,6 +113,10 @@ public class FrmContactBook extends javax.swing.JFrame {
     private void itmAddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itmAddActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_itmAddActionPerformed
+
+    private void itmYahooActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itmYahooActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_itmYahooActionPerformed
 
     /**
      * @param args the command line arguments
@@ -125,11 +156,16 @@ public class FrmContactBook extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JMenuItem itmAdd;
     private javax.swing.JMenuItem itmExit;
+    private javax.swing.JMenuItem itmFacebook;
+    private javax.swing.JMenuItem itmGmail;
+    private javax.swing.JMenuItem itmInstagram;
+    private javax.swing.JMenuItem itmYahoo;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenu mnuContacts;
     private javax.swing.JMenu mnuData;
+    private javax.swing.JMenu mnuEmails;
     // End of variables declaration//GEN-END:variables
 }
