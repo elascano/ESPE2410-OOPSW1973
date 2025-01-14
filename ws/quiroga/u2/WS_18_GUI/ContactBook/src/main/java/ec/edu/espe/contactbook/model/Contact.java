@@ -32,9 +32,11 @@ public class Contact {
 
     @Override
     public String toString() {
-        return "Contact{" + "id=" + id + ", name=" + name + ", sex=" + sex + ", gender=" + gender + ", maritalStatus=" + maritalStatus + ", dateOfBirth=" + dateOfBirth + ", favoriteSports=" + favoriteSports + ", comments=" + comments + '}';
+        return "Contact{" + "id-->" + id + "\nname-->" + name +
+                "\nsex-->" + sex + "\ngender-->" + gender + 
+                "\nmaritalStatus-->" + maritalStatus + "\ndateOfBirth-->" + dateOfBirth.get(Calendar.MONTH + 1) + 
+                "\nfavoriteSport-->" + favoriteSports + "\n comments-->" + comments + '}';
     }
-    
     
     
     /**
