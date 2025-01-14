@@ -3,10 +3,9 @@ package ec.edu.espe.contactbook.model;
 import java.util.ArrayList;
 import java.util.Calendar;
 
-
 /**
  *
- * @author Alexander
+ * @author Alexander Maza
  */
 public class Contact {
     private int id;
@@ -15,34 +14,31 @@ public class Contact {
     private String gender;
     private String maritalStatus;
     private Calendar dateOfBirth;
-    private ArrayList<String> favoriteSports;
+    private ArrayList<String> favoriteSport;
     private String comments;
 
-    public Contact(int id, String name, char sex, String gender, String maritalStatus, Calendar dateOfBirth, String comments, String hellow) {
+    public Contact(int id, String name, char sex, String gender, String maritalStatus, Calendar dateOfBirth, ArrayList<String> favoriteSport, String comments) {
         this.id = id;
         this.name = name;
         this.sex = sex;
         this.gender = gender;
         this.maritalStatus = maritalStatus;
         this.dateOfBirth = dateOfBirth;
-        this.favoriteSports = favoriteSports;
+        this.favoriteSport = favoriteSport;
         this.comments = comments;
     }
 
     @Override
     public String toString() {
-        return "Contact{" + "id=" + id + 
-                ", \nname=" + name + 
-                ", \nsex=" + sex + 
-                ", \ngender=" + gender + 
-                ", \nmaritalStatus=" + maritalStatus + 
-                ", \ndateOfBirth=" + dateOfBirth.get(Calendar.MONTH+1) + 
-                ", \nfavoriteSports=" + favoriteSports + 
-                ", \ncomments=\n" + comments + '}';
+        return "Contact{" + "id-->" + id + "\nname-->" + name +
+                "\nsex-->" + sex + "\ngender-->" + gender + 
+                "\nmaritalStatus-->" + maritalStatus + "\ndateOfBirth-->" + dateOfBirth.get(Calendar.MONTH + 1) + 
+                "\nfavoriteSport-->" + favoriteSport + "\n comments-->" + comments + '}';
     }
 
+  
     
-    
+
     /**
      * @return the id
      */
@@ -128,17 +124,17 @@ public class Contact {
     }
 
     /**
-     * @return the favoriteSports
+     * @return the favoriteSport
      */
-    public ArrayList<String> getFavoriteSports() {
-        return favoriteSports;
+    public ArrayList<String> getFavoriteSport() {
+        return favoriteSport;
     }
 
     /**
-     * @param favoriteSports the favoriteSports to set
+     * @param favoriteSport the favoriteSport to set
      */
-    public void setFavoriteSports(ArrayList<String> favoriteSports) {
-        this.favoriteSports = favoriteSports;
+    public void setFavoriteSport(ArrayList<String> favoriteSport) {
+        this.favoriteSport = favoriteSport;
     }
 
     /**
@@ -157,4 +153,6 @@ public class Contact {
     
     
     
+    
+
 }

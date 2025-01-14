@@ -26,76 +26,84 @@ public class FrmContactBook extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jMenu3 = new javax.swing.JMenu();
-        jMenuBar1 = new javax.swing.JMenuBar();
-        jMenu1 = new javax.swing.JMenu();
-        jMenu4 = new javax.swing.JMenu();
-        mnuContacts = new javax.swing.JMenuItem();
-        jMenu2 = new javax.swing.JMenu();
-        mnuSocial = new javax.swing.JMenu();
-        jMenu6 = new javax.swing.JMenu();
+        jMenuItem1 = new javax.swing.JMenuItem();
         jMenuItem2 = new javax.swing.JMenuItem();
         jMenuItem3 = new javax.swing.JMenuItem();
+        jMenuItem6 = new javax.swing.JMenuItem();
+        jMenuBar2 = new javax.swing.JMenuBar();
+        jMenu3 = new javax.swing.JMenu();
+        jMenu4 = new javax.swing.JMenu();
+        jMenuBar1 = new javax.swing.JMenuBar();
+        mnuData = new javax.swing.JMenu();
+        mnuContact = new javax.swing.JMenu();
+        itmAdd = new javax.swing.JMenuItem();
+        mnuContactBook = new javax.swing.JMenu();
+        itmExit = new javax.swing.JMenuItem();
+        mnuCloudOptions = new javax.swing.JMenu();
         mnuEmails = new javax.swing.JMenu();
-        mnuGmail = new javax.swing.JMenuItem();
-        mnuYahoo = new javax.swing.JMenuItem();
+        itmFacebook = new javax.swing.JMenuItem();
+        itmInstagram = new javax.swing.JMenuItem();
+        jMenu7 = new javax.swing.JMenu();
+        itmGmail = new javax.swing.JMenuItem();
+        itmYahoo = new javax.swing.JMenuItem();
 
-        jMenu3.setText("jMenu3");
+        jMenuItem1.setText("jMenuItem1");
+
+        jMenuItem2.setText("jMenuItem2");
+
+        jMenuItem3.setText("jMenuItem3");
+
+        jMenuItem6.setText("jMenuItem6");
+
+        jMenu3.setText("File");
+        jMenuBar2.add(jMenu3);
+
+        jMenu4.setText("Edit");
+        jMenuBar2.add(jMenu4);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jMenu1.setText("Data");
+        mnuData.setText("Data");
 
-        jMenu4.setText("Contacts");
+        mnuContact.setText("Contact");
 
-        mnuContacts.setText("Add");
-        mnuContacts.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                mnuContactsActionPerformed(evt);
-            }
-        });
-        jMenu4.add(mnuContacts);
+        itmAdd.setText("add");
+        mnuContact.add(itmAdd);
 
-        jMenu1.add(jMenu4);
+        mnuData.add(mnuContact);
 
-        jMenuBar1.add(jMenu1);
+        jMenuBar1.add(mnuData);
 
-        jMenu2.setText("ContactBook");
-        jMenuBar1.add(jMenu2);
+        mnuContactBook.setText("ContactBook");
 
-        mnuSocial.setText("Cloud Options");
+        itmExit.setText("exit");
+        mnuContactBook.add(itmExit);
 
-        jMenu6.setText("Social");
+        jMenuBar1.add(mnuContactBook);
 
-        jMenuItem2.setText("Facebook");
-        jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem2ActionPerformed(evt);
-            }
-        });
-        jMenu6.add(jMenuItem2);
+        mnuCloudOptions.setText("Cloud Options");
 
-        jMenuItem3.setText("Instagram");
-        jMenu6.add(jMenuItem3);
+        mnuEmails.setText("Social");
 
-        mnuSocial.add(jMenu6);
+        itmFacebook.setText("Facebook");
+        mnuEmails.add(itmFacebook);
 
-        mnuEmails.setText("Emails");
+        itmInstagram.setText("Intagram");
+        mnuEmails.add(itmInstagram);
 
-        mnuGmail.setText("Gmail");
-        mnuGmail.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                mnuGmailActionPerformed(evt);
-            }
-        });
-        mnuEmails.add(mnuGmail);
+        mnuCloudOptions.add(mnuEmails);
 
-        mnuYahoo.setText("Yahoo");
-        mnuEmails.add(mnuYahoo);
+        jMenu7.setText("Emails");
 
-        mnuSocial.add(mnuEmails);
+        itmGmail.setText("Gmail");
+        jMenu7.add(itmGmail);
 
-        jMenuBar1.add(mnuSocial);
+        itmYahoo.setText("Yahoo");
+        jMenu7.add(itmYahoo);
+
+        mnuCloudOptions.add(jMenu7);
+
+        jMenuBar1.add(mnuCloudOptions);
 
         setJMenuBar(jMenuBar1);
 
@@ -103,27 +111,15 @@ public class FrmContactBook extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 400, Short.MAX_VALUE)
+            .addGap(0, 467, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 277, Short.MAX_VALUE)
+            .addGap(0, 315, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
-    private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jMenuItem2ActionPerformed
-
-    private void mnuGmailActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuGmailActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_mnuGmailActionPerformed
-
-    private void mnuContactsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuContactsActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_mnuContactsActionPerformed
 
     /**
      * @param args the command line arguments
@@ -161,18 +157,25 @@ public class FrmContactBook extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JMenu jMenu1;
-    private javax.swing.JMenu jMenu2;
+    private javax.swing.JMenuItem itmAdd;
+    private javax.swing.JMenuItem itmExit;
+    private javax.swing.JMenuItem itmFacebook;
+    private javax.swing.JMenuItem itmGmail;
+    private javax.swing.JMenuItem itmInstagram;
+    private javax.swing.JMenuItem itmYahoo;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu4;
-    private javax.swing.JMenu jMenu6;
+    private javax.swing.JMenu jMenu7;
     private javax.swing.JMenuBar jMenuBar1;
+    private javax.swing.JMenuBar jMenuBar2;
+    private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem3;
-    private javax.swing.JMenuItem mnuContacts;
+    private javax.swing.JMenuItem jMenuItem6;
+    private javax.swing.JMenu mnuCloudOptions;
+    private javax.swing.JMenu mnuContact;
+    private javax.swing.JMenu mnuContactBook;
+    private javax.swing.JMenu mnuData;
     private javax.swing.JMenu mnuEmails;
-    private javax.swing.JMenuItem mnuGmail;
-    private javax.swing.JMenu mnuSocial;
-    private javax.swing.JMenuItem mnuYahoo;
     // End of variables declaration//GEN-END:variables
 }
