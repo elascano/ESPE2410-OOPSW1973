@@ -1,10 +1,8 @@
-
-
 package ec.espe.edu.farm.model;
 
 /**
  *
- * @author LABS-DCCO
+ * @author David cuichan
  */
 class FoodType {
 

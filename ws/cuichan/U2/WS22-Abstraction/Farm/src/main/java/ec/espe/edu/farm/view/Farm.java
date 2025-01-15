@@ -1,3 +1,5 @@
+package ec.espe.edu.farm.view;
+
 
 import ec.espe.edu.farm.model.FarmAnimal;
 
