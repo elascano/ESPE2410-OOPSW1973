@@ -18,6 +18,13 @@ public class Contact {
     private ArrayList<String> favoriteSports;
     private String comments;
 
+    @Override
+    public String toString() {
+        return "\nid -> " + id + "\nname -> " + name + "\nsex -> " + sex + "\ngender -> " + gender + "\nmaritalStatus -> " + maritalStatus + "\ndateOfBirth -> " + dateOfBirth.get(Calendar.MONTH+1) + "\nfavoriteSports -> " + favoriteSports + "\ncomments:\n" + comments + '}';
+    }
+    
+    
+
     public Contact(int id, String name, char sex, String gender, String maritalStatus, Calendar dateOfBirth, ArrayList<String> favoriteSports, String comments) {
         this.id = id;
         this.name = name;
