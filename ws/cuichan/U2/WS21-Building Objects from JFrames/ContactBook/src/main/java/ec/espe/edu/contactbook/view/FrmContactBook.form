@@ -63,11 +63,7 @@
                               </Group>
                               <EmptySpace type="unrelated" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" attributes="0">
-                                      <Component id="cbSex" min="-2" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="139" max="-2" attributes="0"/>
-                                      <Component id="lBirth" min="-2" max="-2" attributes="0"/>
-                                  </Group>
+                                  <Component id="cbSex" min="-2" max="-2" attributes="0"/>
                                   <Component id="txtID" min="-2" pref="304" max="-2" attributes="0"/>
                                   <Component id="cbMarital" min="-2" max="-2" attributes="0"/>
                                   <Component id="cbSports" min="-2" max="-2" attributes="0"/>
@@ -101,22 +97,14 @@
                   <Component id="txtName" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="12" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
-                      <Component id="lBirth" min="-2" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="0" attributes="0">
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="lSex" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="cbSex" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                      <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="3" attributes="0">
-                          <Component id="cbGender" alignment="3" min="-2" max="-2" attributes="0"/>
-                          <Component id="lGender" alignment="3" min="-2" max="-2" attributes="0"/>
-                      </Group>
-                  </Group>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="lSex" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="cbSex" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="33" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="cbGender" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="lGender" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
@@ -198,11 +186,6 @@
     <Component class="javax.swing.JLabel" name="lMarital">
       <Properties>
         <Property name="text" type="java.lang.String" value="Marital Status:"/>
-      </Properties>
-    </Component>
-    <Component class="javax.swing.JLabel" name="lBirth">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Date of Birth"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="lSports">
