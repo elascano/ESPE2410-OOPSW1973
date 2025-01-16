@@ -5,6 +5,6 @@ package ec.edu.espe.farm.model;
  *
  * @author marlo
  */
-class FoodType {
+public class FoodType {
 
 }
