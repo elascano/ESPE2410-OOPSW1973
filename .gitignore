@@ -217,6 +217,15 @@ replay_pid*
 /hw/cuichan/U2/HW17-SavingObjects/SoundMixer/build/
 /hw/cuichan/U2/HW21-MongoDBWhitJava/JavaMongoDB/target/
 /ws/pazmino/u2/WS22Abstraccion/Farm/target/
+<<<<<<< HEAD
+/ws/espinosa/U2/WS22/Farm/target/
+/ws/espinosa/U2/WS24/Calculator/target/
+/ws/espinosa/U2/WS24/Calculator/nbproject/
+=======
 /ws/cuichan/U2/WS22-Abstraction/Farm/target/
 >>>>>>> 39d1e442438ffe75bb1656e923d1356b900627c6
+<<<<<<< HEAD
 /ws/pasquel/u2/Ws-24-UnitTest/Calculator/nbproject/
+=======
+>>>>>>> 598b37f557cbe6f10b587d392d7fd74350a55bf3
+>>>>>>> 9dc001bd196047f8a6e708c8cf69b33015214979
