@@ -29,6 +29,14 @@ public class Contact {
         this.favoriteSports = favoriteSports;
         this.comments = comments;
     }
+
+    @Override
+    public String toString() {
+        return "Contact{" + "id-->" + id + "\nname-->" + name +
+                "\nsex-->" + sex + "\ngender-->" + gender + 
+                "\nmaritalStatus-->" + maritalStatus + "\ndateOfBirth-->" + dateOfBirth.get(Calendar.MONTH + 1) + 
+                "\nfavoriteSport-->" + favoriteSports + "\n comments-->" + comments + '}';
+    }
     
     
     /**

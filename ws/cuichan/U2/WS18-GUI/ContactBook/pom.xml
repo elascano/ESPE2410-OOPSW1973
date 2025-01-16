@@ -5,9 +5,16 @@
     <artifactId>ContactBook</artifactId>
     <version>1.0</version>
     <packaging>jar</packaging>
+    <dependencies>
+        <dependency>
+            <groupId>com.toedter</groupId>
+            <artifactId>jcalendar</artifactId>
+            <version>1.4</version>
+        </dependency>
+    </dependencies>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.release>23</maven.compiler.release>
-        <exec.mainClass>ec.espe.edu.contactbook.view.PrjContactBook</exec.mainClass>
+        <exec.mainClass>ec.espe.edu.contactbook.view.FrmContact</exec.mainClass>
     </properties>
 </project>

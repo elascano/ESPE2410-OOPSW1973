@@ -1,8 +1,10 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
 package ec.edu.espe.contactbook.view;
+
+import ec.edu.espe.contactbook.controller.ContactController;
+import ec.edu.espe.contactbook.model.Contact;
+import java.util.ArrayList;
+import java.util.Calendar;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -10,6 +12,14 @@ package ec.edu.espe.contactbook.view;
  */
 public class FrmContact extends javax.swing.JFrame {
 
+        int id;
+        String name;
+        char sex;
+        String gender;
+        String maritalStatus;
+        Calendar dateOfBirth;
+        ArrayList<String> favoriteSports;
+        String comments;
     /**
      * Creates new form FrmContact
      */
@@ -209,10 +219,25 @@ public class FrmContact extends javax.swing.JFrame {
         );
 
         btnadd.setText("Add");
+        btnadd.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnaddActionPerformed(evt);
+            }
+        });
 
         btnfind.setText("Find");
+        btnfind.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnfindActionPerformed(evt);
+            }
+        });
 
         btndelete.setText("Delete");
+        btndelete.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btndeleteActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout pmlFootedLayout = new javax.swing.GroupLayout(pmlFooted);
         pmlFooted.setLayout(pmlFootedLayout);
@@ -266,6 +291,64 @@ public class FrmContact extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnaddActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnaddActionPerformed
+        id = Integer.parseInt(txtid.getText());
+        name = txtname.getText();
+        if(cmdsex.getSelectedItem().toString().equals("male"))
+            sex = 'm';
+        else
+            sex = 'f';
+        gender = cmdgender.getSelectedItem().toString();
+        maritalStatus = cmbmaritalstatus.getSelectedItem().toString();
+        dateOfBirth = Calendar.getInstance();
+        dateOfBirth.set(Calendar.YEAR,1970);
+        dateOfBirth.set(Calendar.MONDAY,11);
+        dateOfBirth.set(Calendar.DAY_OF_MONTH,28);
+        favoriteSports = new ArrayList<>();
+        favoriteSports = (ArrayList<String>) lstfavoritesports.getSelectedValuesList();
+        comments = txa.getText();
+        
+        Contact contact = new Contact(id, name, sex, gender, maritalStatus, dateOfBirth, favoriteSports, comments);
+        System.out.println("Contact -->" + contact);
+        
+        ContactController contactController = new ContactController();
+        
+        if (contactController.add(contact))
+            JOptionPane.showMessageDialog(rootPane,"succes" + contact);
+        System.out.println("results" + contact.toString());
+    }//GEN-LAST:event_btnaddActionPerformed
+
+    private void btnfindActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnfindActionPerformed
+        // TODO add your handling code here:
+        Contact contact = (Contact) ContactController.find(txtid.getText());
+
+        if (contact == null) {
+            txtid.setText("");
+            txtname.setText("");
+            cmdsex.setSelectedItem("m");
+            cmdgender.setSelectedItem("man");
+            cmbmaritalstatus.setSelectedItem("married");
+            favoriteSports.clear();
+            txa.setText("");
+
+        }
+
+        txtid.setText(String.valueOf(contact.getId()));
+        txtname.setText(contact.getName());
+        btndelete.setEnabled(true);
+    }//GEN-LAST:event_btnfindActionPerformed
+
+    private void btndeleteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btndeleteActionPerformed
+        JOptionPane.showConfirmDialog(rootPane, "Are you sure");
+        txtid.setText("");
+        txtname.setText("");
+        cmdsex.setSelectedItem("m");
+        cmdgender.setSelectedItem("man");
+        cmbmaritalstatus.setSelectedItem("married");
+        favoriteSports.clear();
+        txa.setText("");
+    }//GEN-LAST:event_btndeleteActionPerformed
 
     /**
      * @param args the command line arguments
@@ -330,4 +413,8 @@ public class FrmContact extends javax.swing.JFrame {
     private javax.swing.JTextField txtid;
     private javax.swing.JTextField txtname;
     // End of variables declaration//GEN-END:variables
+
+    private Contact Contact(Object find) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    }
 }
