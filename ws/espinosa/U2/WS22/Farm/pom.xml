@@ -8,6 +8,6 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.release>18</maven.compiler.release>
-        <exec.mainClass>ec.edu.espe.farm.Farm</exec.mainClass>
+        <exec.mainClass>ec.edu.espe.farm.view.Farm</exec.mainClass>
     </properties>
 </project>
