@@ -1,4 +1,4 @@
-package ec.espe.edu.farm.model;
+package ec.edu.espe.farm.model;
 
 /**
  *
@@ -7,13 +7,13 @@ package ec.espe.edu.farm.model;
 class Product {
     private String description;
 
+    public Product(String description) {
+        this.description = description;
+    }
+
     @Override
     public String toString() {
         return "Product{" + "description=" + getDescription() + '}';
-    }
-
-    public Product(String description) {
-        this.description = description;
     }
 
     /**

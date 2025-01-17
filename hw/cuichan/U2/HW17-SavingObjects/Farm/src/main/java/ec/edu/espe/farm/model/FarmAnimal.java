@@ -1,4 +1,4 @@
-package ec.espe.edu.farm.model;
+package ec.edu.espe.farm.model;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -11,30 +11,28 @@ public abstract class FarmAnimal {
     private int id;
     private String breed;
     private Date bornOnDate;
-    private ArrayList<FoodType> FoodTypes;
+    private ArrayList<FoodType> foodTypes;
 
-
-    public FarmAnimal(int id, String breed, Date bornOnDate, ArrayList<FoodType> FoodTypes) {
+    public FarmAnimal(int id, String breed, Date bornOnDate, ArrayList<FoodType> foodTypes) {
         this.id = id;
         this.breed = breed;
         this.bornOnDate = bornOnDate;
-        this.FoodTypes = FoodTypes;
-    }
-    
-    @Override
-    public String toString() {
-        return "FarmAnimal{" + "id=" + id + ", breed=" + breed + ", bornOnDate=" + bornOnDate + ", FoodTypes=" + FoodTypes + '}';
+        this.foodTypes = foodTypes;
     }
 
-    public int getAgeInMonths(){
-        //TODO
+    @Override
+    public String toString() {
+        return "FarmAnimal{" + "id=" + getId() + ", breed=" + getBreed() + ", bornOnDate=" + getBornOnDate() + ", foodTypes=" + getFoodTypes() + '}';
+    }
+    
+    public int ageInMontrhs(){
+        //TODO compute age based in current date in months
         return getBornOnDate().getYear();
     }
     
-    public abstract FoodType food();
+    public abstract FoodType feed();
     public abstract Product produce();
     public abstract float computeCostOfFood();
-
     /**
      * @return the id
      */
@@ -78,17 +76,17 @@ public abstract class FarmAnimal {
     }
 
     /**
-     * @return the FoodTypes
+     * @return the foodTypes
      */
     public ArrayList<FoodType> getFoodTypes() {
-        return FoodTypes;
+        return foodTypes;
     }
 
     /**
-     * @param FoodTypes the FoodTypes to set
+     * @param foodTypes the foodTypes to set
      */
-    public void setFoodTypes(ArrayList<FoodType> FoodTypes) {
-        this.FoodTypes = FoodTypes;
+    public void setFoodTypes(ArrayList<FoodType> foodTypes) {
+        this.foodTypes = foodTypes;
     }
     
 }

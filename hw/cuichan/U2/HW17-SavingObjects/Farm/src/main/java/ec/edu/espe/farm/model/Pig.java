@@ -1,4 +1,4 @@
-package ec.espe.edu.farm.model;
+package ec.edu.espe.farm.model;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -10,25 +10,24 @@ import java.util.Date;
 public class Pig extends FarmAnimal{
     private boolean isProducingMeat;
     private float weight;
-    
 
-    public Pig(boolean isProducingMeat, float weight, int id, String breed, Date bornOnDate, ArrayList<FoodType> FoodTypes) {
-        super(id, breed, bornOnDate, FoodTypes);
+    public Pig(boolean isProducingMeat, float weight, int id, String breed, Date bornOnDate, ArrayList<FoodType> foodTypes) {
+        super(id, breed, bornOnDate, foodTypes);
         this.isProducingMeat = isProducingMeat;
         this.weight = weight;
     }
 
     @Override
     public String toString() {
-        return "Pig{" + "isProducingMeat=" + isProducingMeat + ", weight=" + weight + super.toString() + '}';
+        return "Pig{" + "isProducingMeat=" + isIsProducingMeat() + ", weight=" + getWeight() + "},{" + super.toString() + '}';
     }
+    
 
     @Override
-    public FoodType food() {
-        //TODO feed the animal
-        System.out.println("feeding the pig with my food");
-        System.out.println("feeding the pig with plantains");
-        
+    public FoodType feed() {
+        //TODO feed the pig
+        System.out.println("Feeding the pig with my food");
+        System.out.println("Feeding the pig with plantains");
         return new FoodType();
     }
 
@@ -36,13 +35,13 @@ public class Pig extends FarmAnimal{
     public Product produce() {
         Product product;
         product = new Product("Legs");
-        System.out.println("Pig is Producing.." + product);
+        System.out.println("Pig is producing --> " + product);
         return product;
     }
 
     @Override
     public float computeCostOfFood() {
-        System.out.println("Computing the cost of pig produce");
+        System.out.println("Computing the cost of Food");
         return 0.1F;
     }
 
@@ -73,5 +72,5 @@ public class Pig extends FarmAnimal{
     public void setWeight(float weight) {
         this.weight = weight;
     }
-    
+
 }
