@@ -2,12 +2,20 @@ from typing import List
 
 
 class Cage:
-    def __init__(self, id: int, animals: List['Animal']):
-        self._id = id
-        self._animals = animals
+    
+    def __init__(self, cage_id: int, animals: list):
+        self.cage_id = cage_id
+        self.animals = animals  # List to hold assigned animals
 
-    def __str__(self) -> str:
-        return f"Cage(id={self._id}, animals={self._animals})"
+    def add_animal(self, animal):
+        self.animals.append(animal)  # Add animal to the cage
+        print(f"Animal {animal.name} added to cage {self.cage_id}.")
+
+    def __repr__(self):
+        return f"Cage(id={self.cage_id}, animals={[animal.name for animal in self.animals]})"
+
+
+    
 
     @property
     def id(self) -> int:

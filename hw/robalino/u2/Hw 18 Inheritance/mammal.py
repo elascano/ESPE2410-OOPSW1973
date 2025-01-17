@@ -1,33 +1,31 @@
-from datetime import date
 from typing import List
+from datetime import date
+from animal import Animal  # Ensure 'animal.py' contains the Animal class
+from vaccine import Vaccine  # Ensure 'vaccine.py' contains the Vaccine class
 
 
 class Mammal(Animal):
-    def __init__(self, maximum_hair_size: float, mammary_glands_number: int, id: int, name: str, born_on_date: date, weight: float, sex: str, vaccines: List['Vaccine']):
-        super().__init__(id, name, born_on_date, weight, sex, vaccines)
-        self._maximum_hair_size = maximum_hair_size
-        self._mammary_glands_number = mammary_glands_number
+    def __init__(self, maximum_hair_size: float, mammary_glands_number: int, animal_id: int, name: str,
+                 born_on_date: date, weight: float, sex: str, vaccines: List[Vaccine]):
+        super().__init__(animal_id, name, born_on_date, weight, sex, vaccines)
+        self.maximum_hair_size = maximum_hair_size
+        self.mammary_glands_number = mammary_glands_number
+        self.cage = None
 
-    def breastfeed(self):
-        print("Breastfeeding the children")
+    def assign_cage(self, cage):
+        self.cage = cage
+        cage.add_animal(self)
 
-    @property
-    def maximum_hair_size(self) -> float:
-        return self._maximum_hair_size
+    def feed(self, food):
+        print(f"Feeding {self.name} with {food.amount} kg of {food.food_type}.")
 
-    @maximum_hair_size.setter
-    def maximum_hair_size(self, value: float):
-        self._maximum_hair_size = value
+    def register(self):
+        print(f"Registering mammal {self.name}.")
 
-    @property
-    def mammary_glands_number(self) -> int:
-        return self._mammary_glands_number
+    def provide_vaccination(self, vaccine: Vaccine):
+        self.vaccines.append(vaccine)
+        print(f"Provided vaccine {vaccine} to {self.name}.")
 
-    @mammary_glands_number.setter
-    def mammary_glands_number(self, value: int):
-        self._mammary_glands_number = value
-
-    def __str__(self) -> str:
-        return (f"Mammal({super().__str__()}, maximum_hair_size={self._maximum_hair_size}, "
-                f"mammary_glands_number={self._mammary_glands_number})")
-
+    def __repr__(self):
+        return (f"Mammal(maximum_hair_size={self.maximum_hair_size}, "
+                f"mammary_glands_number={self.mammary_glands_number}, animal={super().__repr__()})")
