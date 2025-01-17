@@ -17,7 +17,7 @@ public class OperationController {
     
     public float addition(BasicOperation basicOperation){
         float sum;
-        sum = basicOperation.getNum1() + basicOperation.getNum2();
+        sum = basicOperation.getTerm1() + basicOperation.getTerm2();
         return sum;
     }
     
