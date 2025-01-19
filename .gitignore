@@ -179,6 +179,12 @@ replay_pid*
 /ws/gongora/U2/WS14/Cable/nbproject/private/
 
 
+<<<<<<< HEAD
+>>>>>>> 99333eb77621efac327ca3496610f222f94e2db6
+/ws/leiton/U2/WS17/ContactBook/target/
+/ws/leiton/U2/WS22/Farm/target/
+/ws/leiton/U2/NewFolder/Calculator/nbproject/
+=======
 /ws/espinosa/U2/WS18/ContactBook/target/
 /hw/quiroga/U2/HW_22_Mongo/MongoJava/MongoAsker/target/
 /ws/cuichan/U2/WS15 Inheritance/Inheritance/nbproject/private/
@@ -233,5 +239,9 @@ replay_pid*
 /ws/cuichan/U2/Farm/target/
 /ws/cuichan/U2/WS24-UnitTest/calculator/nbproject/
 /ws/cuichan/U2/WS24-UnitTest/calculator/target/
+<<<<<<< HEAD
 /ws/pazmino/u2/WS23/Farm/target/
 /ws/pazmino/u2/WS18GUI/ContactBook/target/
+=======
+>>>>>>> fdb8e0cbc293db5f05a3d158a52bd173127e92fb
+>>>>>>> 7e91315f0f434f5881c70bcfa84574727898790e
