@@ -179,6 +179,12 @@ replay_pid*
 /ws/gongora/U2/WS14/Cable/nbproject/private/
 
 
+<<<<<<< HEAD
+>>>>>>> 99333eb77621efac327ca3496610f222f94e2db6
+/ws/leiton/U2/WS17/ContactBook/target/
+/ws/leiton/U2/WS22/Farm/target/
+/ws/leiton/U2/NewFolder/Calculator/nbproject/
+=======
 /ws/espinosa/U2/WS18/ContactBook/target/
 /hw/quiroga/U2/HW_22_Mongo/MongoJava/MongoAsker/target/
 /ws/cuichan/U2/WS15 Inheritance/Inheritance/nbproject/private/
@@ -202,6 +208,9 @@ replay_pid*
 =======
 /ws/cuichan/U2/WS18-GUI/ContactBook/target/
 >>>>>>> b76a318dd75ddc76bd5f5f5f3ab6101a9d9e6bcc
+<<<<<<< HEAD
+/ws/pasquel/u2/Ws-21-abstraction/Farm/target/
+=======
 <<<<<<< Updated upstream
 >>>>>>> 38c20076b0793f26f2fdf7f02cb7f45aff6118b0
 =======
@@ -213,3 +222,38 @@ replay_pid*
 /hw/cuichan/U2/HW17-SavingObjects/SoundMixer/nbproject/private/
 /hw/cuichan/U2/HW17-SavingObjects/SoundMixer/build/
 /hw/cuichan/U2/HW21-MongoDBWhitJava/JavaMongoDB/target/
+<<<<<<< HEAD
+/ws/quiroga/u2/WS_22_Farm/Farm/target/
+/ws/quiroga/u2/WS_24_Calculator/Claculator/nbproject/
+/ws/quiroga/u2/WS_25_Interfaces/AnimalsDrawing/target/
+=======
+/ws/pazmino/u2/WS22Abstraccion/Farm/target/
+<<<<<<< HEAD
+/ws/espinosa/U2/WS22/Farm/target/
+/ws/espinosa/U2/WS24/Calculator/target/
+/ws/espinosa/U2/WS24/Calculator/nbproject/
+=======
+/ws/cuichan/U2/WS22-Abstraction/Farm/target/
+>>>>>>> 39d1e442438ffe75bb1656e923d1356b900627c6
+<<<<<<< HEAD
+/ws/pasquel/u2/Ws-24-UnitTest/Calculator/nbproject/
+=======
+>>>>>>> 598b37f557cbe6f10b587d392d7fd74350a55bf3
+>>>>>>> 9dc001bd196047f8a6e708c8cf69b33015214979
+/hw/cuichan/U2/HW17-SavingObjects/Farm/target/
+/ws/cuichan/U2/Farm/target/
+/ws/cuichan/U2/WS24-UnitTest/calculator/nbproject/
+/ws/cuichan/U2/WS24-UnitTest/calculator/target/
+<<<<<<< HEAD
+/ws/pazmino/u2/WS23/Farm/target/
+/ws/pazmino/u2/WS18GUI/ContactBook/target/
+
+/ws/pasquel/u2/Ws-25-Interfaces/AnimalDrawing/target/
+<<<<<<< Updated upstream
+>>>>>>> d69b424205a1bfee12857766e389f44b65bccce9
+=======
+/ws/cuichan/U2/WS26/Calculator/nbproject/
+>>>>>>> Stashed changes
+/hw/cuichan/U2/HW17-SavingObjects/JavaMongoDB/target/
+/ws/cuichan/U2/WS26-UnitTest2/Calculator/nbproject/
+/ws/cuichan/U2/WS25-Interfaces/AnimalDrawing/target/
