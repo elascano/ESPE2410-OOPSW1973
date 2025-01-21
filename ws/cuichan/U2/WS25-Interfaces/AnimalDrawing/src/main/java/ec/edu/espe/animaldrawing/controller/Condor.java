@@ -18,12 +18,12 @@ public class Condor implements Bird{
 
     @Override
     public void drawFeathers() {
-        System.out.println("drawing the condor feathers");
+        System.out.println("Drawing the condor feathers");
     }
 
     @Override
     public void drawClaws() {
-        System.out.println("drawing the claws of the condor");
+        System.out.println("Drawing the claws of the condor");
     }
 
     @Override

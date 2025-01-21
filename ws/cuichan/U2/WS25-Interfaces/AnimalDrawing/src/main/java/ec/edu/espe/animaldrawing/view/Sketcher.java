@@ -36,6 +36,7 @@ public class Sketcher {
         Bird bird;
         bird = new Condor(3.5F);
         bird.born();
+        bird.feed();
         bird.drawBeak();
         bird.drawClaws();
         bird.drawFeathers();
