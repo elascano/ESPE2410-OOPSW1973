@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: com.mycompany.calculator.controller.BasicOperationControllerTest
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.240 s <<< FAILURE! -- in com.mycompany.calculator.controller.BasicOperationControllerTest
-com.mycompany.calculator.controller.BasicOperationControllerTest.testAdd_float_float -- Time elapsed: 0.022 s <<< FAILURE!
+Tests run: 6, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.116 s <<< FAILURE! -- in com.mycompany.calculator.controller.BasicOperationControllerTest
+com.mycompany.calculator.controller.BasicOperationControllerTest.testAdd_float_float -- Time elapsed: 0.013 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <3.6> but was: <3.6000001>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
@@ -15,7 +15,7 @@ org.opentest4j.AssertionFailedError: expected: <3.6> but was: <3.6000001>
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 
-com.mycompany.calculator.controller.BasicOperationControllerTest.testAdd_float_floatBigNumbers -- Time elapsed: 0.007 s <<< FAILURE!
+com.mycompany.calculator.controller.BasicOperationControllerTest.testAdd_float_floatBigNumbers -- Time elapsed: 0.003 s <<< FAILURE!
 org.opentest4j.AssertionFailedError: expected: <20912.6> but was: <20912.602>
 	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
 	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
