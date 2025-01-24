@@ -5,11 +5,6 @@
     <artifactId>JavaMongoDB</artifactId>
     <version>1.0</version>
     <packaging>jar</packaging>
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.release>23</maven.compiler.release>
-        <exec.mainClass>JavaMongoDB</exec.mainClass>
-    </properties>
     
     <dependencies>
     <dependency>
@@ -18,4 +13,10 @@
         <version>5.3.0</version>
     </dependency>
     </dependencies>
+    
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.release>23</maven.compiler.release>
+        <exec.mainClass>ec.edu.espe.javamongoDB.view.JavaMongoDB</exec.mainClass>
+    </properties>
 </project>

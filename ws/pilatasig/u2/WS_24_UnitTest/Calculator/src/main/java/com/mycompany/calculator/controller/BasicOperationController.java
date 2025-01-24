@@ -34,6 +34,4 @@ public class BasicOperationController {
         this.basicOperation = basicOperation;
     }
     
-   
-    
 }

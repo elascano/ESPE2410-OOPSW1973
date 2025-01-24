@@ -222,6 +222,11 @@ replay_pid*
 /hw/cuichan/U2/HW17-SavingObjects/SoundMixer/nbproject/private/
 /hw/cuichan/U2/HW17-SavingObjects/SoundMixer/build/
 /hw/cuichan/U2/HW21-MongoDBWhitJava/JavaMongoDB/target/
+<<<<<<< HEAD
+/ws/quiroga/u2/WS_22_Farm/Farm/target/
+/ws/quiroga/u2/WS_24_Calculator/Claculator/nbproject/
+/ws/quiroga/u2/WS_25_Interfaces/AnimalsDrawing/target/
+=======
 /ws/pazmino/u2/WS22Abstraccion/Farm/target/
 <<<<<<< HEAD
 /ws/espinosa/U2/WS22/Farm/target/
@@ -242,7 +247,21 @@ replay_pid*
 <<<<<<< HEAD
 /ws/pazmino/u2/WS23/Farm/target/
 /ws/pazmino/u2/WS18GUI/ContactBook/target/
+
+/ws/pasquel/u2/Ws-25-Interfaces/AnimalDrawing/target/
+<<<<<<< Updated upstream
+>>>>>>> d69b424205a1bfee12857766e389f44b65bccce9
 =======
+<<<<<<< HEAD
 >>>>>>> fdb8e0cbc293db5f05a3d158a52bd173127e92fb
 >>>>>>> 7e91315f0f434f5881c70bcfa84574727898790e
-/ws/pasquel/u2/Ws-25-Interfaces/AnimalDrawing/target/
+/ws/pazmino/u2/WSI25nterfaces/AnimalsDrawing/target/
+/ws/pazmino/u2/WS24Calculator/Calculator/target/
+/ws/pazmino/u2/WS24Calculator/Calculator/nbproject/
+=======
+/ws/cuichan/U2/WS26/Calculator/nbproject/
+>>>>>>> Stashed changes
+/hw/cuichan/U2/HW17-SavingObjects/JavaMongoDB/target/
+/ws/cuichan/U2/WS26-UnitTest2/Calculator/nbproject/
+/ws/cuichan/U2/WS25-Interfaces/AnimalDrawing/target/
+>>>>>>> 9e8e5147a9d034f620c076eb3c6401b05cbad5c5
