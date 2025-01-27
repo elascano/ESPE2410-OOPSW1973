@@ -12,6 +12,11 @@ import ec.edu.espe.model.J;
 import ec.edu.espe.view.ViewClass;
 import javax.swing.text.View;
 
+/*
+*
+* @user Brandon PAzmino
+*/
+
 public class ControllerClass {
     private A aInstance;
     private B bInstance;

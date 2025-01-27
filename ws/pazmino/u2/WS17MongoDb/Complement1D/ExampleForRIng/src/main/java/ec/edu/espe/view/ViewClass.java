@@ -5,7 +5,7 @@ import ec.edu.espe.model.*;
 
 /**
  *
- * @author Alex Cuzco, HoneyBadgers, DCCO-ESPE
+ * @author Brandon Pazmino
  */
 public class ViewClass {
     
