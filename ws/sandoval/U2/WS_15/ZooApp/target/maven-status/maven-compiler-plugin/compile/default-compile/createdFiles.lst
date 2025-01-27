@@ -1,0 +1,6 @@
+ec\edu\espe\zooapp\model\model\Food.class
+ec\edu\espe\zooapp\view\ZooApp.class
+ec\edu\espe\zooapp\model\model\Mammal.class
+ec\edu\espe\zooapp\model\model\Animal.class
+ec\edu\espe\zooapp\model\model\Cage.class
+ec\edu\espe\zooapp\model\model\Vaccine.class

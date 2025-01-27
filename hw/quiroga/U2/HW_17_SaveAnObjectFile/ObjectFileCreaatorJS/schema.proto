@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+message Persona {
+  string nombre = 1;
+  int32 edad = 2;
+  bool activo = 3;
+}

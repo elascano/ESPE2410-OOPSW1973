@@ -1,0 +1,7 @@
+com\mycompany\farm\model\FarmAnimal.class
+com\mycompany\farm\model\Product.class
+com\mycompany\farm\model\Donkey.class
+com\mycompany\farm\model\FoodType.class
+com\mycompany\farm\view\Farm.class
+com\mycompany\farm\controller\FoodController.class
+com\mycompany\farm\model\Pig.class
