@@ -1,15 +1,15 @@
 
-package ec.edu.espe.controller;
+package ec.edu.espe.q3851.controller;
 
-import ec.edu.espe.model.A;
-import ec.edu.espe.model.B;
-import ec.edu.espe.model.C;
-import ec.edu.espe.model.D;
-import ec.edu.espe.model.E;
-import ec.edu.espe.model.F;
-import ec.edu.espe.model.G;
-import ec.edu.espe.model.J;
-import ec.edu.espe.view.Main;
+import ec.edu.espe.q3851.model.A;
+import ec.edu.espe.q3851.model.B;
+import ec.edu.espe.q3851.model.C;
+import ec.edu.espe.q3851.model.D;
+import ec.edu.espe.q3851.model.E;
+import ec.edu.espe.q3851.model.F;
+import ec.edu.espe.q3851.model.G;
+import ec.edu.espe.q3851.model.J;
+import ec.edu.espe.q3851.view.Main;
 import javax.swing.text.View;
 
 /*
