@@ -1,5 +1,5 @@
 
-package ec.edu.espe.model;
+package ec.edu.espe.q3851.model;
 
 /**
  *

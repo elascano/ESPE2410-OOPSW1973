@@ -1,8 +1,15 @@
 
-package ec.edu.espe.view;
-import ec.edu.espe.controller.DisplayedInformation;
-import ec.edu.espe.controller.ControllerClass;
-import ec.edu.espe.model.*;
+package ec.edu.espe.q3851.view;
+import ec.edu.espe.q3851.model.B;
+import ec.edu.espe.q3851.model.A;
+import ec.edu.espe.q3851.model.J;
+import ec.edu.espe.q3851.model.F;
+import ec.edu.espe.q3851.model.D;
+import ec.edu.espe.q3851.model.E;
+import ec.edu.espe.q3851.model.C;
+import ec.edu.espe.q3851.model.G;
+import ec.edu.espe.q3851.controller.DisplayedInformation;
+import ec.edu.espe.q3851.controller.ControllerClass;
 
 /**
  *
