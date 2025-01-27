@@ -5,24 +5,33 @@
 package ec.edu.espe.contactbook.model;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Date;
 
 /**
  *
  * @author Benjamin Robalino <jabasteam>
  */
+
+
+
 public class Contact {
+
+    @Override
+    public String toString() {
+        return "Contact{" + "id=" + getId() + ", name=" + getName() + ", sex=" + getSex() + ", gender=" + getGender() + ", maritalStatus=" + getMaritalStatus() + ", dateOfBirth=" + getDateOfBirth().get(Calendar.MONTH+1) + ", favoriteSports=" + getFavoriteSports() + ", comments=" + getComments() + '}';
+    }
 
   private int id;
   private String name;
   private char sex;
   private String gender;
   private String maritalStatus;
-  private Date dateOfBirth;
+  private Calendar dateOfBirth;
   private ArrayList<String> favoriteSports;
   private String comments; 
 
-    public Contact(int id, String name, char sex, String gender, String maritalStatus, Date dateOfBirth, ArrayList<String> favoriteSports, String comments) {
+    public Contact(int id, String name, char sex, String gender, String maritalStatus, Calendar dateOfBirth, ArrayList<String> favoriteSports, String comments) {
         this.id = id;
         this.name = name;
         this.sex = sex;
@@ -106,14 +115,14 @@ public class Contact {
     /**
      * @return the dateOfBirth
      */
-    public Date getDateOfBirth() {
+    public Calendar getDateOfBirth() {
         return dateOfBirth;
     }
 
     /**
      * @param dateOfBirth the dateOfBirth to set
      */
-    public void setDateOfBirth(Date dateOfBirth) {
+    public void setDateOfBirth(Calendar dateOfBirth) {
         this.dateOfBirth = dateOfBirth;
     }
 
@@ -144,6 +153,5 @@ public class Contact {
     public void setComments(String comments) {
         this.comments = comments;
     }
-  
-  
+
 }

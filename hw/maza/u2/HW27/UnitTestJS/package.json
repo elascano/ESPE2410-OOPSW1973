@@ -1,0 +1,12 @@
+{
+  "name": "javascript",
+  "version": "1.0.0",
+  "main": "Calculator.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "devDependencies": {
+    "glob": "^11.0.1",
+    "jest": "^29.7.0"
+  }
+}
