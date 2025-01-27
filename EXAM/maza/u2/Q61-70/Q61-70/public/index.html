@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Park</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f9;
+        }
+        h1 {
+            text-align: center;
+        }
+        .form-container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label, input {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+        }
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Park Finder</h1>
+    <div class="form-container">
+        <label for="park-id">Enter Park ID:</label>
+        <input type="text" id="park-id" placeholder="Enter park ID (e.g., 1)">
+        <button onclick="searchPark()">Search</button>
+    </div>
+    
+    <div id="result-container"></div>
+
+    <script>
+        async function searchPark() {
+            const parkId = document.getElementById('park-id').value.trim();
+            const resultContainer = document.getElementById('result-container');
+            resultContainer.innerHTML = '';  // Clear previous results
+
+            if (!parkId) {
+                resultContainer.innerHTML = '<p class="error">Please enter a Park ID.</p>';
+                return;
+            }
+
+            try {
+                const response = await fetch(`http://localhost:3001/api/park/${parkId}`);
+                const data = await response.json();
+
+                if (response.ok) {
+                    resultContainer.innerHTML = `
+                        <div class="result">
+                            <h2>${data.name}</h2>
+                            <p><strong>Location:</strong> ${data.location}</p>
+                            <p><strong>Size:</strong> ${data.size} hectares</p>
+                        </div>
+                    `;
+                } else {
+                    resultContainer.innerHTML = `<p class="error">${data.error}</p>`;
+                }
+            } catch (error) {
+                resultContainer.innerHTML = '<p class="error">An error occurred while fetching the data.</p>';
+            }
+        }
+    </script>
+</body>
+</html>
