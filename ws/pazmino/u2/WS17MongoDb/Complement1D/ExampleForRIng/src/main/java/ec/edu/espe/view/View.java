@@ -3,7 +3,7 @@ package ec.edu.espe.view;
 
 /**
  *
- * @author Alex Cuzco, HoneyBadgers, DCCO-ESPE
+ * @author Brandon Pazmino
  */
 public class View {
      public void displayInformation(String information) {

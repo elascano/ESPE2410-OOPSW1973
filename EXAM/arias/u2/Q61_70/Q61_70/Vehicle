@@ -1,0 +1,95 @@
+import tkinter as tk
+from tkinter import messagebox
+from pymongo import MongoClient
+
+class VehicleManagementApp:
+    def __init__(self, root):
+        self.root = root
+        self.root.title("Vehicle Management")
+
+        self.client = MongoClient("mongodb+srv://ajarias:ajarias@cluster0.8efem.mongodb.net/?retryWrites=true&w=majority")
+        self.db = self.client["Q61_70"]
+        self.collection = self.db["Vehicles"]
+
+        # GUI elements
+        tk.Label(root, text="ID:").grid(row=0, column=0)
+        self.id_entry = tk.Entry(root)
+        self.id_entry.grid(row=0, column=1)
+
+        tk.Label(root, text="Name:").grid(row=1, column=0)
+        self.name_entry = tk.Entry(root)
+        self.name_entry.grid(row=1, column=1)
+
+        tk.Label(root, text="Price:").grid(row=2, column=0)
+        self.price_entry = tk.Entry(root)
+        self.price_entry.grid(row=2, column=1)
+
+        tk.Label(root, text="Distance Traveled:").grid(row=3, column=0)
+        self.distance_entry = tk.Entry(root)
+        self.distance_entry.grid(row=3, column=1)
+
+        tk.Label(root, text="Total Price:").grid(row=4, column=0)
+        self.total_price_entry = tk.Entry(root, state="readonly")
+        self.total_price_entry.grid(row=4, column=1)
+
+        tk.Label(root, text="Approximated Mileage:").grid(row=5, column=0)
+        self.mileage_entry = tk.Entry(root, state="readonly")
+        self.mileage_entry.grid(row=5, column=1)
+
+        tk.Button(root, text="Add Vehicle", command=self.add_vehicle).grid(row=6, column=0)
+        tk.Button(root, text="Clear", command=self.clear_fields).grid(row=6, column=2)
+
+    def calculate_totals(self, price, distance):
+        total_price = price + (distance * 0.1)
+        approximated_mileage = distance * 1.1
+        return total_price, approximated_mileage
+
+    def clear_fields(self):
+        self.id_entry.delete(0, tk.END)
+        self.name_entry.delete(0, tk.END)
+        self.price_entry.delete(0, tk.END)
+        self.distance_entry.delete(0, tk.END)
+        self.total_price_entry.config(state="normal")
+        self.total_price_entry.delete(0, tk.END)
+        self.total_price_entry.config(state="readonly")
+        self.mileage_entry.config(state="normal")
+        self.mileage_entry.delete(0, tk.END)
+        self.mileage_entry.config(state="readonly")
+
+    def add_vehicle(self):
+        try:
+            vehicle_id = int(self.id_entry.get())
+            name = self.name_entry.get()
+            price = float(self.price_entry.get())
+            distance = float(self.distance_entry.get())
+
+            total_price, approximated_mileage = self.calculate_totals(price, distance)
+
+            vehicle_data = {
+                "id": vehicle_id,
+                "name": name,
+                "price": price,
+                "distanceTraveled": distance,
+                "totalPrice": total_price,
+                "approximatedMileage": approximated_mileage
+            }
+
+            self.collection.insert_one(vehicle_data)
+            messagebox.showinfo("Success", "Vehicle added successfully!")
+
+            self.total_price_entry.config(state="normal")
+            self.mileage_entry.config(state="normal")
+            self.total_price_entry.delete(0, tk.END)
+            self.mileage_entry.delete(0, tk.END)
+            self.total_price_entry.insert(0, f"{total_price:.2f}")
+            self.mileage_entry.insert(0, f"{approximated_mileage:.2f}")
+            self.total_price_entry.config(state="readonly")
+            self.mileage_entry.config(state="readonly")
+
+        except Exception as e:
+            messagebox.showerror("Error", f"Failed to add vehicle: {str(e)}")
+
+if __name__ == "__main__":
+    root = tk.Tk()
+    app = VehicleManagementApp(root)
+    root.mainloop()
