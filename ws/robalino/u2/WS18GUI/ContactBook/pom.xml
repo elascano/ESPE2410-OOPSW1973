@@ -3,11 +3,31 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>ec.edu.espe</groupId>
     <artifactId>ContactBook</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>0.1</version>
     <packaging>jar</packaging>
+    <dependencies>
+        <dependency>
+            <groupId>com.elastisys.scale</groupId>
+            <artifactId>cloudpool.aws.commons</artifactId>
+            <version>5.2.3</version>
+            <type>jar</type>
+        </dependency>
+        <dependency>
+            <groupId>love.forte.nacos4k</groupId>
+            <artifactId>nacos4k-api</artifactId>
+            <version>0.0.1</version>
+            <type>jar</type>
+        </dependency>
+        <dependency>
+            <groupId>org.wso2.carbon.identity.framework</groupId>
+            <artifactId>org.wso2.carbon.identity.user.profile.stub</artifactId>
+            <version>7.7.87</version>
+            <type>bundle</type>
+        </dependency>
+    </dependencies>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.release>23</maven.compiler.release>
-        <exec.mainClass>ec.edu.espe.contactbook.ContactBook</exec.mainClass>
+        <exec.mainClass>ec.edu.espe.contactbook.view.FrmContact</exec.mainClass>
     </properties>
 </project>
