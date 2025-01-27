@@ -1,0 +1,272 @@
+[
+  {
+    "id": "1456",
+    "category": "man",
+    "name": "pants",
+    "size": "S",
+    "quantity": 25,
+    "color": "rojo",
+    "price": 30.0
+  },
+  {
+    "id": "A1222",
+    "category": "man",
+    "name": "shirt",
+    "size": "S",
+    "quantity": 2,
+    "color": "white",
+    "price": 20.0
+  },
+  {
+    "id": "P0017",
+    "category": "man",
+    "name": "shirt",
+    "size": "S",
+    "quantity": 2,
+    "color": "2",
+    "price": 20.0
+  },
+  {
+    "id": "A221",
+    "category": "man",
+    "name": "shirt",
+    "size": "S",
+    "quantity": 2,
+    "color": "white",
+    "price": 20.0
+  },
+  {
+    "id": "P002",
+    "category": "woman",
+    "name": "blouse",
+    "size": "M",
+    "quantity": 2,
+    "color": "white",
+    "price": 15.0
+  },
+  {
+    "id": "A2564",
+    "category": "man",
+    "name": "jacket",
+    "size": "L",
+    "quantity": 10,
+    "color": "verde",
+    "price": 40.0
+  },
+  {
+    "id": "J1523",
+    "category": "man",
+    "name": "pants",
+    "size": "XL",
+    "quantity": 5,
+    "color": "black",
+    "price": 30.0
+  },
+  {
+    "id": "1452",
+    "category": "man",
+    "name": "scarf",
+    "size": "S",
+    "quantity": 6,
+    "color": "black",
+    "price": 5.0
+  },
+  {
+    "id": "14263",
+    "category": "man",
+    "name": "sweater",
+    "size": "S",
+    "quantity": 3,
+    "color": "red",
+    "price": 35.0
+  },
+  {
+    "id": "1246",
+    "category": "man",
+    "name": "boxer shorts",
+    "size": "XL",
+    "quantity": 15,
+    "color": "blue",
+    "price": 25.0
+  },
+  {
+    "id": "1452",
+    "category": "woman",
+    "name": "panties",
+    "size": "S",
+    "quantity": 10,
+    "color": "red",
+    "price": 10.0
+  },
+  {
+    "id": "00112",
+    "category": "man",
+    "name": "pants",
+    "size": "M",
+    "quantity": 2,
+    "color": "white",
+    "price": 30.0
+  },
+  {
+    "id": "0011A",
+    "category": "man",
+    "name": "gloves",
+    "size": "S",
+    "quantity": 2,
+    "color": "white",
+    "price": 18.0
+  },
+  {
+    "id": "2123",
+    "category": "man",
+    "name": "shirt",
+    "size": "M",
+    "quantity": 3,
+    "color": "brown",
+    "price": 20.0
+  },
+  {
+    "id": "54",
+    "category": "man",
+    "name": "scarf",
+    "size": "S",
+    "quantity": 20,
+    "color": "white",
+    "price": 5.0
+  },
+  {
+    "id": "22",
+    "category": "man",
+    "name": "scarf",
+    "size": "S",
+    "quantity": 0,
+    "color": "white",
+    "price": 5.0
+  },
+  {
+    "id": "14152",
+    "category": "man",
+    "name": "scarf",
+    "size": "S",
+    "quantity": 2,
+    "color": "black",
+    "price": 5.0
+  },
+  {
+    "id": "14521",
+    "category": "man",
+    "name": "Sweater",
+    "size": "XL",
+    "quantity": 10,
+    "color": "BLACK",
+    "price": 35.0
+  },
+  {
+    "id": "145214",
+    "category": "man",
+    "name": "scarf",
+    "size": "S",
+    "quantity": 15,
+    "color": "gris",
+    "price": 5.0
+  },
+  {
+    "id": "14546",
+    "category": "man",
+    "name": "sweater",
+    "size": "L",
+    "quantity": 15,
+    "color": "GRIS",
+    "price": 35.0
+  },
+  {
+    "id": "111544",
+    "category": "man",
+    "name": "sweater",
+    "size": "L",
+    "quantity": 15,
+    "color": "gris",
+    "price": 35.0
+  },
+  {
+    "id": "14521",
+    "category": "man",
+    "name": "scarf",
+    "size": "L",
+    "quantity": 14,
+    "color": "gris",
+    "price": 5.0
+  },
+  {
+    "id": "14254",
+    "category": "man",
+    "name": "scarf",
+    "size": "S",
+    "quantity": 14,
+    "color": "gris",
+    "price": 5.0
+  },
+  {
+    "id": "1452",
+    "category": "man",
+    "name": "scarf",
+    "size": "S",
+    "quantity": 12,
+    "color": "gris",
+    "price": 5.0
+  },
+  {
+    "id": "1452",
+    "category": "man",
+    "name": "scarf",
+    "size": "L",
+    "quantity": 10,
+    "color": "gris",
+    "price": 5.0
+  },
+  {
+    "id": "001ss",
+    "category": "man",
+    "name": "hat",
+    "size": "S",
+    "quantity": 1,
+    "color": "white",
+    "price": 15.0
+  },
+  {
+    "id": "0015s",
+    "category": "man",
+    "name": "hat",
+    "size": "S",
+    "quantity": 3,
+    "color": "white",
+    "price": 15.0
+  },
+  {
+    "id": "R001",
+    "category": "man",
+    "name": "Suit",
+    "size": "M",
+    "quantity": 3,
+    "color": "Blue",
+    "price": 50.0
+  },
+  {
+    "id": "R001",
+    "category": "man",
+    "name": "Suit",
+    "size": "S",
+    "quantity": 10,
+    "color": "Red",
+    "price": 50.0
+  },
+  {
+    "id": "1000",
+    "category": "man",
+    "name": "Hat",
+    "size": "S",
+    "quantity": 10,
+    "color": "Blue",
+    "price": 15.0
+  }
+]
