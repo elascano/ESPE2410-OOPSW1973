@@ -9,7 +9,7 @@ import ec.edu.espe.model.E;
 import ec.edu.espe.model.F;
 import ec.edu.espe.model.G;
 import ec.edu.espe.model.J;
-import ec.edu.espe.view.ViewClass;
+import ec.edu.espe.view.Main;
 import javax.swing.text.View;
 
 /*
@@ -26,7 +26,7 @@ public class ControllerClass {
     private F fInstance;
     private G gInstance;
     private J jInstance;
-    private ViewClass viewClass;
+    private Main viewClass;
 
     public ControllerClass(A aInstance, B bInstance, C cInstance, D dInstance, E eInstance, F fInstance, G gInstance,J jInstance, View view) {
         this.aInstance = aInstance;
@@ -41,7 +41,6 @@ public class ControllerClass {
     }
 
     public void executeLogic() {
-        // Ejemplo: Mostrar información sobre las instancias
-        System.out.println("Lógica del controlador ejecutada con instancias de las clases A, B, C, D, E, F, G, H, J");
+        System.out.println("Lógica del constructur de instancias de las clases In the UML Diagram");
     }
 }
