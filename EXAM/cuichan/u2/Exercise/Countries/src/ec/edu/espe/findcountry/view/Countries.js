@@ -15,36 +15,25 @@ async function main() {
         
         while (true) {
             console.log("\n======== COUNTRIES MANAGEMENT SYSTEM ========");
-            console.log("1. View existing databases");
-            console.log("2. View existing collections");
-            console.log("3. Create new database and collection");
-            console.log("4. Delete database");
-            console.log("5. Insert country data");
-            console.log("6. Search countries");
-            console.log("7. Exit");
+            console.log("1. Insert country data");
+            console.log("2. Search countries");
+            console.log("3. Delete database");
+            console.log("4. Exit");
             
             const option = await questionAsync("Select a number option: ");
             
             switch (option) {
+                
                 case "1":
-                    await showDatabases(client);
-                    break;
-                case "2":
-                    await showCollections(client);
-                    break;
-                case "3":
-                    await createNewDatabase(client);
-                    break;
-                case "4":
-                    await deleteDatabase(client);
-                    break;
-                case "5":
                     await insertCountry(client);
                     break;
-                case "6":
+                case "2":
                     await searchCountries(client);
                     break;
-                case "7":
+                case "3":
+                    await deleteDatabase(client);
+                    break;
+                case "4":
                     console.log("¡Good Bye!");
                     await client.close();
                     rl.close();
@@ -58,44 +47,6 @@ async function main() {
     }
 }
 
-async function showDatabases(client) {
-    const dbs = await client.db().admin().listDatabases();
-    console.log("\nExisting databases:");
-    dbs.databases.forEach(db => {
-        console.log(`- ${db.name}`);
-    });
-}
-
-async function showCollections(client) {
-    const dbName = await questionAsync("Database Name: ");
-    const collections = await client.db(dbName).listCollections().toArray();
-    console.log(`\nCollections in '${dbName}':`);
-    collections.forEach(collection => {
-        console.log(`- ${collection.name}`);
-    });
-}
-
-async function createNewDatabase(client) {
-    const dbName = await questionAsync("Name for the New Database: ");
-    const collectionName = await questionAsync("Name for the New Collection: ");
-    
-    try {
-        await client.db(dbName).createCollection(collectionName);
-        console.log(`Database '${dbName}' and Collection '${collectionName}' created!`);
-    } catch (error) {
-        console.error("Error to create Database:", error);
-    }
-}
-
-async function deleteDatabase(client) {
-    const dbName = await questionAsync("Name of the database to delete: ");
-    try {
-        await client.db(dbName).dropDatabase();
-        console.log(`Database '${dbName}' deleted!`);
-    } catch (error) {
-        console.error("Error deleting database:", error);
-    }
-}
 
 async function insertCountry(client) {
     const dbName = await questionAsync("Database Name: ");
@@ -121,28 +72,34 @@ async function insertCountry(client) {
 async function searchCountries(client) {
     const dbName = await questionAsync("Database Name: ");
     const collectionName = await questionAsync("Collection Name: ");
-    const searchField = await questionAsync("Enter field name to search: ");
-    const searchValue = await questionAsync("Enter search value: ");
-    
+
     try {
-        const query = { [searchField]: { $regex: searchValue, $options: 'i' } };
-        const results = await client.db(dbName).collection(collectionName).find(query).toArray();
-        
-        console.log("\nSearch Results:");
+        const results = await client.db(dbName).collection(collectionName).find().toArray();
+
         if (results.length === 0) {
-            console.log("No matches found.");
+            console.log("\nNo data found.");
         } else {
+            console.log("\nCollection Data:");
             results.forEach(doc => {
-                console.log("\n------------------------");
-                Object.entries(doc).forEach(([key, value]) => {
-                    if (key !== '_id') {
-                        console.log(`${key}: ${value}`);
-                    }
+                const { _id, ...rest } = doc; // Excluir el campo _id
+                console.log("------------------------");
+                Object.entries(rest).forEach(([key, value]) => {
+                    console.log(`${key}: ${value}`);
                 });
             });
         }
     } catch (error) {
-        console.error("Error searching data:", error);
+        console.error("Error retrieving data:", error);
+    }
+}
+
+async function deleteDatabase(client) {
+    const dbName = await questionAsync("Name of the database to delete: ");
+    try {
+        await client.db(dbName).dropDatabase();
+        console.log(`Database '${dbName}' deleted!`);
+    } catch (error) {
+        console.error("Error deleting database:", error);
     }
 }
 
