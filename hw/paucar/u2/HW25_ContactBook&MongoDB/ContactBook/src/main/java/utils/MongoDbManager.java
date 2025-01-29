@@ -1,4 +1,4 @@
-package utils;
+Spackage utils;
 
 import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoClients;
