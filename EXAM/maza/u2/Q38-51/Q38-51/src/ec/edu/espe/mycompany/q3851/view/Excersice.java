@@ -14,7 +14,7 @@ import java.util.ArrayList;
 /**
  * author Alexander Maza
  */
-public class TheoryExcercise {
+public class Excersice {
 
     public static void main(String[] args) {
         ArrayList<A> as = new ArrayList<>();
