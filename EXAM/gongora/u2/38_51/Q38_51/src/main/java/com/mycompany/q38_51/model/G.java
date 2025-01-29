@@ -6,7 +6,7 @@ package com.mycompany.q38_51.model;
  */
 public class G implements H{
     
-    public void methodUseJ(J j){
+    public void m(J j){
         System.out.println(j);
     }
 }

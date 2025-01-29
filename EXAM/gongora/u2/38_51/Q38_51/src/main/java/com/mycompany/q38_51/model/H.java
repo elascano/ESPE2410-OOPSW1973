@@ -6,7 +6,7 @@ package com.mycompany.q38_51.model;
  */
 public interface H {
     
-    
+    public void m(J j);
     
     
 }

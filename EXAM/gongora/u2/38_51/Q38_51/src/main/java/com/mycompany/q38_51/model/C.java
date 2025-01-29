@@ -6,14 +6,15 @@ import java.util.ArrayList;
  *
  * @author Lucas Góngora
  */
-public class C {
+public class C extends A {
+
     private ArrayList<E> es;
 
-    public C(ArrayList<E> es) {
+    public C(ArrayList<E> es, ArrayList<A> as) {
+        super(as);
         this.es = es;
     }
 
-       
     /**
      * @return the es
      */
@@ -27,5 +28,5 @@ public class C {
     public void setEs(ArrayList<E> es) {
         this.es = es;
     }
-    
+
 }

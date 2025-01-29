@@ -7,7 +7,7 @@ import java.util.ArrayList;
  * @author Lucas Góngora
  */
 public class D {
-    private E[] es;
+    private E[] es = new E[5];
     private ArrayList<F> fs;
 
     public D(E[] es,ArrayList<F> fs) {
