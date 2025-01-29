@@ -13,7 +13,7 @@ import utils.MongoDbManager;
  */
 public class ContactController {
     public ContactController() {
-        String uri = "mongodb+srv://ajarias:ajarias@cluster0.8efem.mongodb.net/?retryWrites=true&w=majority";
+        String uri = "mongodb+srv://mpasquel:mpasquel@cluster0.be8gs.mongodb.net/";
         MongoDbManager.connect(uri);
     }
     

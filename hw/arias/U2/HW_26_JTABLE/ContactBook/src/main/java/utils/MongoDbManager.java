@@ -13,7 +13,7 @@ import org.bson.Document;
 import java.util.Calendar;
 /**
  *
- * @author Alan Arias
+ * @author Marlon Pasquel
  */
 
 public class MongoDbManager {
