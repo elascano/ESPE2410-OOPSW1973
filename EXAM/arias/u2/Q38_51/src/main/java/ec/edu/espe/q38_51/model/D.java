@@ -1,4 +1,4 @@
-package espe.edu.ec.q38.model;
+package ec.edu.espe.q38_51.model;
 import java.util.ArrayList;
 
 /**
