@@ -8,7 +8,7 @@ import ec.edu.espe.q38.model.*;
 public class Q38_51 {
     public static void main(String[] args) {
         A a = new A(new A());
-        B b = new B();
+        ArrayList <B> b = new B();
         C c = new C();
         D d = new D();
         E e = new E();
