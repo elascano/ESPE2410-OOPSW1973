@@ -2,7 +2,6 @@
 
 package cd.es.edu.SDCardPrj.view;
 import cd.es.edu.SDCardPrj.model.SDCard;
-import java.util.Scanner;
 
 
 import java.util.InputMismatchException;
