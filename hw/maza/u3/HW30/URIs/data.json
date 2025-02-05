@@ -1,0 +1,97 @@
+{
+  "facturas": [
+    {
+      "id": "1",
+      "monto": 1500,
+      "fecha": "2025-02-01",
+      "condominioId": "123"
+    },
+    {
+      "id": "2",
+      "monto": 2000,
+      "fecha": "2025-02-02",
+      "condominioId": "124"
+    },
+    {
+      "id": "3",
+      "monto": 1800,
+      "fecha": "2025-02-03",
+      "condominioId": "123"
+    }
+  ],
+  "pagos": [
+    {
+      "id": "1",
+      "facturaId": "1",
+      "monto": 1500,
+      "fecha": "2025-02-02",
+      "metodoPago": "Transferencia bancaria"
+    },
+    {
+      "id": "2",
+      "facturaId": "2",
+      "monto": 2000,
+      "fecha": "2025-02-03",
+      "metodoPago": "Tarjeta de crédito"
+    }
+  ],
+  "residentes": [
+    {
+      "id": "1",
+      "nombre": "Juan Pérez",
+      "edad": 35,
+      "condominioId": "123"
+    },
+    {
+      "id": "2",
+      "nombre": "Ana López",
+      "edad": 28,
+      "condominioId": "124"
+    },
+    {
+      "id": "3",
+      "nombre": "Carlos Martínez",
+      "edad": 42,
+      "condominioId": "123"
+    },
+    {
+      "id": "4",
+      "nombre": "Alexander Maza",
+      "condominioId": "123"
+    }
+  ],
+  "avisos": [
+    {
+      "id": "1",
+      "titulo": "Mantenimiento programado",
+      "descripcion": "Se realizará mantenimiento de ascensores el 15 de febrero.",
+      "condominioId": "123"
+    },
+    {
+      "id": "2",
+      "titulo": "Reunión de vecinos",
+      "descripcion": "Reunión general de propietarios el 20 de febrero.",
+      "condominioId": "124"
+    },
+    {
+      "id": "1",
+      "mensaje": "Se realizarán reparaciones el 25 de febrero.",
+      "condominioId": "123"
+    },
+    {
+      "id": "1",
+      "mensaje": "Se realizarán reparaciones el 25 de febrero.",
+      "condominioId": "123"
+    },
+    {
+      "id": 1,
+      "mensaje": "Mantenimiento de alcantarillas el 5 de febrero.",
+      "condominioId": 125
+    },
+    {
+      "id": 1,
+      "mensaje": "Mantenimiento de alcantarillas el 5 de febrero.",
+      "condominioId": 125
+    }
+  ]
+}
