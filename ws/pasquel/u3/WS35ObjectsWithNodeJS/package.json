@@ -1,0 +1,13 @@
+{
+  "name": "ws-35-nodejs",
+  "version": "1.0.0",
+  "description": "Marlon Pasquel's projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Marlon Pasquel",
+  "license": "ISC",
+  "type": "commonjs"
+}
