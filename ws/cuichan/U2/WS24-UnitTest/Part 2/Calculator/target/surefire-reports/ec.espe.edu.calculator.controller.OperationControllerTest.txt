@@ -1,0 +1,34 @@
+-------------------------------------------------------------------------------
+Test set: ec.espe.edu.calculator.controller.OperationControllerTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 1, Errors: 3, Skipped: 0, Time elapsed: 0.167 s <<< FAILURE! -- in ec.espe.edu.calculator.controller.OperationControllerTest
+ec.espe.edu.calculator.controller.OperationControllerTest.testAdd_floatBigNumber -- Time elapsed: 0.065 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: The test case is a prototype.
+	at org.junit.jupiter.api.AssertionUtils.fail(AssertionUtils.java:38)
+	at org.junit.jupiter.api.Assertions.fail(Assertions.java:138)
+	at ec.espe.edu.calculator.controller.OperationControllerTest.testAdd_floatBigNumber(OperationControllerTest.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+
+ec.espe.edu.calculator.controller.OperationControllerTest.testSetBasicOperation -- Time elapsed: 0.005 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "ec.espe.edu.calculator.controller.OperationController.setBasicOperation(ec.espe.edu.calculator.model.BasicOperation)" because "instance" is null
+	at ec.espe.edu.calculator.controller.OperationControllerTest.testSetBasicOperation(OperationControllerTest.java:81)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+
+ec.espe.edu.calculator.controller.OperationControllerTest.testAddition -- Time elapsed: 0.003 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "ec.espe.edu.calculator.controller.OperationController.addition(ec.espe.edu.calculator.model.BasicOperation)" because "instance" is null
+	at ec.espe.edu.calculator.controller.OperationControllerTest.testAddition(OperationControllerTest.java:55)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+
+ec.espe.edu.calculator.controller.OperationControllerTest.testGetBasicOperation -- Time elapsed: 0.006 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "ec.espe.edu.calculator.controller.OperationController.getBasicOperation()" because "instance" is null
+	at ec.espe.edu.calculator.controller.OperationControllerTest.testGetBasicOperation(OperationControllerTest.java:68)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+

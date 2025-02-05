@@ -1,0 +1,23 @@
+[
+    {
+        "truck_id": "1",
+        "wheels": 4,
+        "seats": 2,
+        "brand": "FMA",
+        "family": "F"
+    },
+    {
+        "truck_id": "2",
+        "wheels": 5,
+        "seats": 3,
+        "brand": "GM1",
+        "family": "G"
+    },
+    {
+        "truck_id": "23",
+        "wheels": 23,
+        "seats": 6,
+        "brand": "mazda",
+        "family": "F"
+    }
+]

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Park Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f9;
+        }
+        h1 {
+            text-align: center;
+        }
+        .form-container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        label, input {
+            display: block;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+        }
+        .error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Park Management</h1>
+
+    <div class="form-container">
+        <label for="park-id">Enter Park ID:</label>
+        <input type="text" id="park-id" placeholder="Enter park ID (e.g., park1, park2)">
+        <button onclick="searchPark()">Search</button>
+    </div>
+
+    <div class="form-container">
+        <h2>Create Park</h2>
+        <label for="park-name">Park Name:</label>
+        <input type="text" id="park-name">
+        <label for="park-location">Location:</label>
+        <input type="text" id="park-location">
+        <label for="park-size">Size (hectares):</label>
+        <input type="number" id="park-size">
+        <button onclick="createPark()">Create Park</button>
+    </div>
+
+    <div id="result-container"></div>
+
+    <script>
+        async function searchPark() {
+            const parkId = document.getElementById('park-id').value.trim();
+            const resultContainer = document.getElementById('result-container');
+            resultContainer.innerHTML = '';  // Clear previous results
+
+            if (!parkId) {
+                resultContainer.innerHTML = '<p class="error">Please enter a Park ID.</p>';
+                return;
+            }
+
+            try {
+                const response = await fetch(`http://localhost:3001/api/park/${parkId}`);
+                const data = await response.json();
+
+                if (response.ok) {
+                    resultContainer.innerHTML = `
+                        <div class="result">
+                            <h2>${data.name}</h2>
+                            <p><strong>Location:</strong> ${data.location}</p>
+                            <p><strong>Size:</strong> ${data.size} hectares</p>
+                        </div>
+                    `;
+                } else {
+                    resultContainer.innerHTML = `<p class="error">${data.error}</p>`;
+                }
+            } catch (error) {
+                resultContainer.innerHTML = '<p class="error">An error occurred while fetching the data.</p>';
+            }
+        }
+
+        async function createPark() {
+            const name = document.getElementById('park-name').value.trim();
+            const location = document.getElementById('park-location').value.trim();
+            const size = document.getElementById('park-size').value.trim();
+
+            if (!name || !location || !size) {
+                alert('Please fill in all fields.');
+                return;
+            }
+
+            const response = await fetch('http://localhost:3001/api/park', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ name, location, size }),
+            });
+
+            const data = await response.json();
+
+            if (response.ok) {
+                alert('Park created successfully!');
+                document.getElementById('park-name').value = '';
+                document.getElementById('park-location').value = '';
+                document.getElementById('park-size').value = '';
+            } else {
+                alert(`Error: ${data.error}`);
+            }
+        }
+    </script>
+</body>
+</html>

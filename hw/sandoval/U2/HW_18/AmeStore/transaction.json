@@ -1,0 +1,68 @@
+[
+  {
+    "productId": "1456",
+    "productName": "pants",
+    "quantitySold": 5.0,
+    "totalPrice": 150.0
+  },
+  {
+    "productId": "1456",
+    "productName": "pants",
+    "quantitySold": 6.0,
+    "totalPrice": 180.0
+  },
+  {
+    "productId": "54",
+    "productName": "scarf",
+    "quantitySold": 30.0,
+    "totalPrice": 150.0
+  },
+  {
+    "productId": "54",
+    "productName": "scarf",
+    "quantitySold": 10.0,
+    "totalPrice": 50.0
+  },
+  {
+    "productId": "54",
+    "productName": "scarf",
+    "quantitySold": 30.0,
+    "totalPrice": 150.0
+  },
+  {
+    "productId": "22",
+    "productName": "scarf",
+    "quantitySold": 4.0,
+    "totalPrice": 20.0
+  },
+  {
+    "productId": "54",
+    "productName": "scarf",
+    "quantitySold": 15.0,
+    "totalPrice": 75.0
+  },
+  {
+    "productId": "22",
+    "productName": "scarf",
+    "quantitySold": 5.0,
+    "totalPrice": 25.0
+  },
+  {
+    "productId": "001ss",
+    "productName": "hat",
+    "quantitySold": 1.0,
+    "totalPrice": 15.0
+  },
+  {
+    "productId": "0015s",
+    "productName": "hat",
+    "quantitySold": 2.0,
+    "totalPrice": 30.0
+  },
+  {
+    "productId": "22",
+    "productName": "scarf",
+    "quantitySold": 5,
+    "totalPrice": 25.0
+  }
+]

@@ -1,0 +1,14 @@
+[
+  {
+    "id": "1",
+    "type": "optical",
+    "numberOfConductors": "4",
+    "price": "5.99"
+  },
+  {
+    "id": "5",
+    "type": "1",
+    "numberOfConductors": "2",
+    "price": "6"
+  }
+]

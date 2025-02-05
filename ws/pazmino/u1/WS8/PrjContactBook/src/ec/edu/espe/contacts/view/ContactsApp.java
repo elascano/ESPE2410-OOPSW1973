@@ -5,12 +5,11 @@ import java.util.Date;
 
 /**
  *
- * @author Brandon Pazmino <www.espe.edu.ec>
+ * @author Brandon Pazmino
  */
 public class ContactsApp {
-
     public static void main(String[] args) {
-        System.out.println("Contact book from Brandon Pazmino");
+        System.out.println("Contact Book From Brandon Pazmino");
         
         int id;
         String name;
@@ -19,34 +18,26 @@ public class ContactsApp {
         int numberOfMutualFriends;
         int numberOfOtherFriends;
         int totalFriends;
-        id = 1;
-        name = "Brandon";
+        
+        id=1;
+        name="Brandon";
         birthDate = new Date(2005, 6, 9);
-        email = "bapazmino5@espe.edu.ec";
+        email = "bapazmino5@espe.edu,ec";
         numberOfMutualFriends = 23;
         numberOfOtherFriends = 5;
         totalFriends = numberOfMutualFriends + numberOfOtherFriends;
-        
+    
         Contact contact = new Contact(id, name, birthDate, email, numberOfMutualFriends, numberOfOtherFriends);
-        System.out.println("My first Class is --> \n" + contact );
-        int total = computeTotalFriends(numberOfMutualFriends, numberOfOtherFriends)
-       
-        System.out.println("The total number of friends is -->" + computeTotalFriends(numberOfMutualFriends, numberOfOtherFriends));
-        System.out.println("");
-        System.out.println("total --> " + computeTotalFriends(numberOfMutualFriends, numberOfOtherFriends));
+        System.out.println("My first contact is --> \n" +contact);
         
-        changeContact(contact);
-        System.out.println("contact name -->" + contact.getName());
- 
+        System.out.println("The total number of friends is --> " +computeTotalFriends(numberOfMutualFriends, numberOfOtherFriends));
+        
     }
-    public static int computeTotalFriends(int numerOfMutualFriends,int numberOfOtherFriends){
+   
+     public static int computeTotalFriends(int numberOfMutualFriends, int numberOfOtherFriends){
         int total;
-        int numberOfMutualFriends = 90;
-        total = numerOfMutualFriends + numberOfOtherFriends
+        total = numberOfMutualFriends + numberOfOtherFriends;
         return total;
     }
-    public static void changeContact(Contact contact) {
-        contact.setName("Brandon");
-        
-    }
+    
 }

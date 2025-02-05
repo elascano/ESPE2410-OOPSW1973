@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="E">
+  <ClassDiagramComponents>
+    <Class name="E" package="ec.edu.espe.reverseengineering.model" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="a" type="int" visibility="private"/>
+        <Field name="f" type="float" visibility="private"/>
+        <Field name="c" type="char" visibility="private"/>
+        <Field name="s" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="getA" returnType="int" visibility="public"/>
+        <Method name="setA" returnType="void" visibility="public">
+          <Argument type="int" name="a"/>
+        </Method>
+        <Method name="getF" returnType="float" visibility="public"/>
+        <Method name="setF" returnType="void" visibility="public">
+          <Argument type="float" name="f"/>
+        </Method>
+        <Method name="getC" returnType="char" visibility="public"/>
+        <Method name="setC" returnType="void" visibility="public">
+          <Argument type="char" name="c"/>
+        </Method>
+        <Method name="getS" returnType="String" visibility="public"/>
+        <Method name="setS" returnType="void" visibility="public">
+          <Argument type="String" name="s"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>

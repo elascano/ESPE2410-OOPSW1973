@@ -1,0 +1,14 @@
+[
+    {
+        "id": "123",
+        "brand": "sony",
+        "model": "a123",
+        "price": 150.0
+    },
+    {
+        "id": "2",
+        "brand": "blue yeti",
+        "model": "condensador",
+        "price": 146.0
+    }
+]
