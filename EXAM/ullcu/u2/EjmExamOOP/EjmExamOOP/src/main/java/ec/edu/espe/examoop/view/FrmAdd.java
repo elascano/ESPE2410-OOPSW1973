@@ -11,7 +11,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author USER
+ * @author Alexander Ullco
  */
 public class FrmAdd extends javax.swing.JFrame {
 private CloudDB cloudDB;
