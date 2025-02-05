@@ -8,5 +8,8 @@
   "keywords": [],
   "author": "Brandon Pazmino",
   "license": "ISC",
-  "description": "Objects in a web service"
+  "description": "Objects in a web service",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
 }
