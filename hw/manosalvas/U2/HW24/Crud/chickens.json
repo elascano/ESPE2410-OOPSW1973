@@ -1,0 +1,10 @@
+[
+    {
+        "id": 1,
+        "name": "caldo",
+        "color": "black",
+        "ageInMonths": 39,
+        "bornOnDate": "2021-09-19",
+        "notMolting": false
+    }
+]
