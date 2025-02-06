@@ -9,5 +9,8 @@
   "keywords": [],
   "author": "Marlon Pasquel",
   "license": "ISC",
-  "type": "commonjs"
+  "type": "commonjs",
+  "dependencies": {
+    "mongoose": "^8.10.0"
+  }
 }
