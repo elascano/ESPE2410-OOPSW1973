@@ -1,5 +1,5 @@
 //Hector's port 3006
-const port = 3006
+const port = 3006;
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
