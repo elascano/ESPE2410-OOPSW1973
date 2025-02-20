@@ -11,8 +11,8 @@ import java.util.Arrays;
 public class SortApp {
 
     public static void main(String[] args) {
-        RandomNumberGenerator randomNumberGenerator = new RandomNumberGenerator();
-        int data[] = randomNumberGenerator.generate();
+        RandomNumberGenerator randomNumber = new RandomNumberGenerator();
+        int data[] = randomNumber.generate();
         
         System.out.println("\nOriginal Array: " + Arrays.toString(data));
         
