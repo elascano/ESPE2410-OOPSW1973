@@ -27,11 +27,11 @@ public class Q38_51 {
         J j = null;
         
         System.out.println("A -->" + a);
-        System.out.println("B-->" + b);
-        System.out.println("B --->" + c);
-        System.out.println("B --->" + d);
-        System.out.println("B --->" + e);
-        System.out.println("B --->" + h);
-        System.out.println("B --->" + j);
+        System.out.println("B-->" + d);
+        System.out.println("C --->" + c);
+        System.out.println("D --->" + d);
+        System.out.println("F --->" + e);
+        System.out.println("G --->" + d);
+        System.out.println("J --->" + j);
     }
 }
