@@ -1,0 +1,18 @@
+[
+  {
+    "customer": {
+      "name": "Alan Arias",
+      "idCard": "1726392515",
+      "email": "ariasalan634@gmail.com",
+      "address": "Turubamba Bajo",
+      "phoneNumber": "0991541777",
+      "orders": []
+    },
+    "order": {
+      "Mixto seco de costilla y guata": 2,
+      "Guata pequenia": 2
+    },
+    "total": 10.0,
+    "date": "2024-12-09 22:05:44"
+  }
+]

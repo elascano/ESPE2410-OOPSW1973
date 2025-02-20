@@ -1,0 +1,8 @@
+ec\edu\espe\sortapp\controller\SortingController.class
+ec\edu\espe\sortapp\model\BubbleSort.class
+ec\edu\espe\sortapp\model\InsertionSort.class
+ec\edu\espe\sortapp\model\SortingContext.class
+ec\edu\espe\sortapp\model\SortingModel.class
+ec\edu\espe\sortapp\model\SortingStrategy.class
+ec\edu\espe\sortapp\view\SortApp.class
+ec\edu\espe\sortapp\model\QuickSort.class
