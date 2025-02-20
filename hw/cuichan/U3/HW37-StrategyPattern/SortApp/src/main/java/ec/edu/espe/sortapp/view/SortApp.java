@@ -14,7 +14,7 @@ public class SortApp {
         RandomNumberGenerator randomNumberGenerator = new RandomNumberGenerator();
         int data[] = randomNumberGenerator.generate();
         
-        System.out.println("\n Original Array: " + Arrays.toString(data));
+        System.out.println("\nOriginal Array: " + Arrays.toString(data));
         
         SortingContext sortingContext = new SortingContext();
         int sortedList[] = sortingContext.sort(data);
