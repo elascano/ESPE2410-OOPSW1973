@@ -27,38 +27,25 @@ public class SortApp {
             System.out.print("Option: ");
             
             int option = scanner.nextInt();
-            long startTime, endTime, duration;
 
             switch (option) {
                 case 1:
                     SortingStrategy bubbleSort = new BubbleSort();
                     context.setSortStrategy(bubbleSort);
-                    startTime = System.nanoTime();
-                    context.sort();
-                    endTime = System.nanoTime();
-                    duration = endTime - startTime;
-                    double seconds = duration / 1_000_000_000.0;
-                    System.out.println("Execution time: " + seconds + " seconds.");
+                    double bubbleSortTime = measureExecutionTime(context);
+                    System.out.println("BubbleSort execution time: " + bubbleSortTime + " seconds.");
                     break;
                 case 2:
                     SortingStrategy insertionSort = new InsertionSort();
                     context.setSortStrategy(insertionSort);
-                    startTime = System.nanoTime();
-                    context.sort();
-                    endTime = System.nanoTime();
-                    duration = endTime - startTime;
-                    seconds = duration / 1_000_000_000.0;
-                    System.out.println("Execution time: " + seconds + " seconds.");
+                    double insertionSortTime = measureExecutionTime(context);
+                    System.out.println("InsertionSort execution time: " + insertionSortTime + " seconds.");
                     break;
                 case 3:
                     SortingStrategy quickSort = new QuickSort();
                     context.setSortStrategy(quickSort);
-                    startTime = System.nanoTime();
-                    context.sort();
-                    endTime = System.nanoTime();
-                    duration = endTime - startTime;
-                    seconds = duration / 1_000_000_000.0;
-                    System.out.println("Execution time: " + seconds + " seconds.");
+                    double quickSortTime = measureExecutionTime(context);
+                    System.out.println("QuickSort execution time: " + quickSortTime + " seconds.");
                     break;
                 default:
                     System.out.println("Invalid option.");
@@ -67,13 +54,21 @@ public class SortApp {
         }
     }
 
-    public static boolean isSorted(int[] array) {
+    private static boolean isSorted(int[] array) {
         for (int i = 0; i < array.length - 1; i++) {
             if (array[i] > array[i + 1]) {
-                return false;  
+                return false;
             }
         }
-        return true;  
+        return true;
+    }
+
+    private static double measureExecutionTime(SortingContext context) {
+        long startTime = System.nanoTime();
+        context.sort();
+        long endTime = System.nanoTime();
+        long duration = endTime - startTime;
+        return duration / 1_000_000_000.0;
     }
 }
 
