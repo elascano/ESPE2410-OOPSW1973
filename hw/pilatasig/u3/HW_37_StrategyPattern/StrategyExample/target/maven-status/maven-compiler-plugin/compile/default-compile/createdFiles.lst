@@ -1,0 +1,6 @@
+com\mycompany\strategyexample\controller\SortingStrategy.class
+com\mycompany\strategyexample\controller\InsertionSort.class
+com\mycompany\strategyexample\model\SortingContext.class
+com\mycompany\strategyexample\controller\BubbleSort.class
+com\mycompany\strategyexample\view\SortApp.class
+com\mycompany\strategyexample\controller\QuickSort.class
