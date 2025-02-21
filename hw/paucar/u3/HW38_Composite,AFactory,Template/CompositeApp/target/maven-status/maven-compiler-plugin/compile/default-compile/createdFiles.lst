@@ -1,0 +1,8 @@
+ec\edu\espe\compositeapp\model\Clerk.class
+ec\edu\espe\compositeapp\view\Setup.class
+ec\edu\espe\compositeapp\model\Client.class
+ec\edu\espe\compositeapp\model\President.class
+ec\edu\espe\compositeapp\model\Supervisor.class
+ec\edu\espe\compositeapp\model\Teller.class
+ec\edu\espe\compositeapp\model\Manager.class
+ec\edu\espe\compositeapp\model\Employee.class
