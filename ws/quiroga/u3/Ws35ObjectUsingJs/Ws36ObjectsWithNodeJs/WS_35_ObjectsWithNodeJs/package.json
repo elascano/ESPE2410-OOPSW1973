@@ -1,0 +1,16 @@
+{
+  "name": "ws_35_objectwithnodejs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Esteban Quiroga",
+  "license": "ISC",
+  "description": "Objects in a Web service",
+  "dependencies": {
+    "express": "^4.21.2",
+    "mongoose": "^8.10.0"
+  }
+}
