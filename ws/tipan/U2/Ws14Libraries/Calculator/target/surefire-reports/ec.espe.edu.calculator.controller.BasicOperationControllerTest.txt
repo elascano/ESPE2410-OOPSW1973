@@ -1,0 +1,44 @@
+-------------------------------------------------------------------------------
+Test set: ec.espe.edu.calculator.controller.BasicOperationControllerTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 2, Errors: 2, Skipped: 0, Time elapsed: 0.138 s <<< FAILURE! -- in ec.espe.edu.calculator.controller.BasicOperationControllerTest
+ec.espe.edu.calculator.controller.BasicOperationControllerTest.testSetBasicOperation -- Time elapsed: 0.053 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "ec.espe.edu.calculator.controller.BasicOperationController.setBasicOperation(ec.espe.edu.calculator.model.BasicOperation)" because "instance" is null
+	at ec.espe.edu.calculator.controller.BasicOperationControllerTest.testSetBasicOperation(BasicOperationControllerTest.java:67)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+
+ec.espe.edu.calculator.controller.BasicOperationControllerTest.testAdd_float_float -- Time elapsed: 0.013 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <3.6> but was: <3.6000001>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:118)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:113)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:860)
+	at ec.espe.edu.calculator.controller.BasicOperationControllerTest.testAdd_float_float(BasicOperationControllerTest.java:28)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+
+ec.espe.edu.calculator.controller.BasicOperationControllerTest.testGetBasicOperation -- Time elapsed: 0.006 s <<< ERROR!
+java.lang.NullPointerException: Cannot invoke "ec.espe.edu.calculator.controller.BasicOperationController.getBasicOperation()" because "instance" is null
+	at ec.espe.edu.calculator.controller.BasicOperationControllerTest.testGetBasicOperation(BasicOperationControllerTest.java:53)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+
+ec.espe.edu.calculator.controller.BasicOperationControllerTest.testAdd_0args -- Time elapsed: 0.005 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <0.0> but was: <4.8>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:118)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:113)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:860)
+	at ec.espe.edu.calculator.controller.BasicOperationControllerTest.testAdd_0args(BasicOperationControllerTest.java:41)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+
