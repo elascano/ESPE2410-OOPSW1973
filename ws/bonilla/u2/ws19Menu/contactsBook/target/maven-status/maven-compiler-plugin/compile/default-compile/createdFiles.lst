@@ -1,0 +1,11 @@
+ec\edu\espe\contactsbook\model\Contact.class
+ec\edu\espe\contactsbook\view\FrmContactBook$1.class
+utils\MongoDbManager.class
+ec\edu\espe\contactsbook\view\FrmContact$4.class
+ec\edu\espe\contactsbook\view\FrmContact$1.class
+ec\edu\espe\contactsbook\view\FrmContact$2.class
+ec\edu\espe\contactsbook\controller\ContactController.class
+ec\edu\espe\contactsbook\view\FrmContact$3.class
+ec\edu\espe\contactsbook\view\FrmContact$5.class
+ec\edu\espe\contactsbook\view\FrmContact.class
+ec\edu\espe\contactsbook\view\FrmContactBook.class
