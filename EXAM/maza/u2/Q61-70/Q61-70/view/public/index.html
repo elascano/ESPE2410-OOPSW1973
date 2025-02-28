@@ -30,6 +30,7 @@
         button {
             width: 100%;
             padding: 10px;
+            margin-top: 5px;
             background-color: #4CAF50;
             color: white;
             border: none;
@@ -38,6 +39,12 @@
         }
         button:hover {
             background-color: #45a049;
+        }
+        .delete-button {
+            background-color: #d9534f;
+        }
+        .delete-button:hover {
+            background-color: #c9302c;
         }
         .result {
             margin-top: 20px;
@@ -58,10 +65,11 @@
         <label for="park-id">Enter Park ID:</label>
         <input type="text" id="park-id" placeholder="Enter park ID (e.g., park1, park2)">
         <button onclick="searchPark()">Search</button>
+        <button class="delete-button" onclick="deletePark()">Delete</button>
     </div>
 
     <div class="form-container">
-        <h2>Create Park</h2>
+        <h2>Create/Update Park</h2>
         <label for="park-name">Park Name:</label>
         <input type="text" id="park-name">
         <label for="park-location">Location:</label>
@@ -69,6 +77,7 @@
         <label for="park-size">Size (hectares):</label>
         <input type="number" id="park-size">
         <button onclick="createPark()">Create Park</button>
+        <button onclick="updatePark()">Update Park</button>
     </div>
 
     <div id="result-container"></div>
@@ -77,7 +86,7 @@
         async function searchPark() {
             const parkId = document.getElementById('park-id').value.trim();
             const resultContainer = document.getElementById('result-container');
-            resultContainer.innerHTML = '';  // Clear previous results
+            resultContainer.innerHTML = '';
 
             if (!parkId) {
                 resultContainer.innerHTML = '<p class="error">Please enter a Park ID.</p>';
@@ -89,6 +98,9 @@
                 const data = await response.json();
 
                 if (response.ok) {
+                    document.getElementById('park-name').value = data.name;
+                    document.getElementById('park-location').value = data.location;
+                    document.getElementById('park-size').value = data.size;
                     resultContainer.innerHTML = `
                         <div class="result">
                             <h2>${data.name}</h2>
@@ -116,22 +128,53 @@
 
             const response = await fetch('http://localhost:3001/api/park', {
                 method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                body: JSON.stringify({ name, location, size }),
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ name, location, size })
             });
 
             const data = await response.json();
+            alert(response.ok ? 'Park created successfully!' : `Error: ${data.error}`);
+        }
 
-            if (response.ok) {
-                alert('Park created successfully!');
-                document.getElementById('park-name').value = '';
-                document.getElementById('park-location').value = '';
-                document.getElementById('park-size').value = '';
-            } else {
-                alert(`Error: ${data.error}`);
+        async function updatePark() {
+            if (!confirm('Are you sure you want to update this park?')) return;
+            
+            const parkId = document.getElementById('park-id').value.trim();
+            const name = document.getElementById('park-name').value.trim();
+            const location = document.getElementById('park-location').value.trim();
+            const size = document.getElementById('park-size').value.trim();
+
+            if (!parkId || !name || !location || !size) {
+                alert('Please fill in all fields including Park ID.');
+                return;
             }
+
+            const response = await fetch(`http://localhost:3001/api/park/${parkId}`, {
+                method: 'PUT',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ name, location, size })
+            });
+
+            const data = await response.json();
+            alert(response.ok ? 'Park updated successfully!' : `Error: ${data.error}`);
+        }
+
+        async function deletePark() {
+            if (!confirm('Are you sure you want to delete this park?')) return;
+            
+            const parkId = document.getElementById('park-id').value.trim();
+
+            if (!parkId) {
+                alert('Please enter a Park ID to delete.');
+                return;
+            }
+
+            const response = await fetch(`http://localhost:3001/api/park/${parkId}`, {
+                method: 'DELETE'
+            });
+
+            const data = await response.json();
+            alert(response.ok ? 'Park deleted successfully!' : `Error: ${data.error}`);
         }
     </script>
 </body>

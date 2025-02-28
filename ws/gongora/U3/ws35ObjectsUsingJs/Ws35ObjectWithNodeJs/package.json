@@ -1,0 +1,13 @@
+{
+  "name": "ws35objectwithnodejs",
+  "version": "1.0.0",
+  "description": "Objects in a web service",
+  "main": "index.js",
+  "scripts": {
+    "start":"node index.js"
+  },
+  "keywords": [],
+  "author": "Lucas Gongora",
+  "license": "ISC",
+  "type": "commonjs"
+}

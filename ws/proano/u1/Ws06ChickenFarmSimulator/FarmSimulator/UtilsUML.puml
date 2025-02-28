@@ -1,0 +1,13 @@
+@startuml
+annotation java.lang.SuppressWarnings
+class com.google.gson.Gson
+class ec.edu.espe.farmsimulator.utils.Datos
+class ec.edu.espe.farmsimulator.utils.FileManager
+class ec.edu.espe.farmsimulator.utils.JsonForm
+class java.util.Date
+class javax.swing.JFrame
+ec.edu.espe.farmsimulator.utils.Datos ..> java.util.Date
+ec.edu.espe.farmsimulator.utils.JsonForm ..> java.lang.SuppressWarnings
+ec.edu.espe.farmsimulator.utils.JsonForm ..> com.google.gson.Gson
+ec.edu.espe.farmsimulator.utils.JsonForm --|> javax.swing.JFrame
+@enduml

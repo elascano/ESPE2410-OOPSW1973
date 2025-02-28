@@ -1,0 +1,12 @@
+module.exports={
+    Dragon:require("./Dragon.cjs"),
+    DragonHead:require("./DragonHead.cjs"),
+    DragonLeg:require("./DragonLeg.cjs"),
+    DragonTail:require("./DragonTail.cjs"),
+    DragonWing:require("./DragonWing.cjs"),
+    Griffin:require("./Griffin.cjs"),
+    GriffinHead:require("./GriffinHead.cjs"),
+    GriffinLeg:require("./GriffinLeg.cjs"),
+    GriffinTail:require("./GriffinTail.cjs"),
+    GriffinWing:require("./GriffinWing.cjs")
+}
