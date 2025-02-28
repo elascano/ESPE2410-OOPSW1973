@@ -12,7 +12,7 @@ import java.awt.event.ActionListener;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 import model.Estudiante;
-import model.ManageFileConextion;
+import model.ManageFileConnection;
 import org.bson.Document;
 import View.FrmMain;
 
@@ -31,7 +31,7 @@ public class Student implements ActionListener {
 
     public void llenargrip() {
 
-        MongoCollection<Document> collection = ManageFileConextion.getConexion().getCollection("estudiantes");
+        MongoCollection<Document> collection = ManageFileConnection.getConexion().getCollection("estudiantes");
 
         DefaultTableModel tablamodel = (DefaultTableModel) this.frmMain.jtable_estudiantes.getModel();
         tablamodel.setRowCount(0);
@@ -70,7 +70,7 @@ public class Student implements ActionListener {
             estudiante.setEdad(edad);
             estudiante.setFechaNacimiento(fechaNacimientoStr);
 
-            MongoDatabase db = ManageFileConextion.getConexion();
+            MongoDatabase db = ManageFileConnection.getConexion();
             MongoCollection<Document> collection = db.getCollection("estudiantes");
 
             Document estudianteDoc = new Document("nombre", estudiante.getNombre())

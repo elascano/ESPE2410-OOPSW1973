@@ -4,8 +4,8 @@
  */
 package main;
 
-import controlador.ctl_animales;
-import vista.frm_main;
+import controller.ControllerAnimal;
+import view.FrmMain;
 
 public class MateoAnimalesMongo {
 
@@ -14,8 +14,8 @@ public class MateoAnimalesMongo {
      */
     public static void main(String[] args) {
         
-        frm_main frmMain = new frm_main();
-        ctl_animales ctlAnimales = new ctl_animales(frmMain);
+        FrmMain frmMain = new FrmMain();
+        ControllerAnimal ctlAnimales = new ControllerAnimal(frmMain);
         frmMain.show();
         
     }
