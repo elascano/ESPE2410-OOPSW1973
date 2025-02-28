@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Familias</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f5f5f5;
+    }
+    h1 {
+      text-align: center;
+    }
+    form {
+      margin-bottom: 30px;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    input[type="text"], input[type="number"], input[type="checkbox"] {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
+    }
+    .families-list {
+      margin-top: 20px;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .family-item {
+      margin-bottom: 15px;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      background-color: #fafafa;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Registrar una Familia</h1>
+
+ 
+  <form id="familyForm">
+    <input type="text" id="lastName" placeholder="Apellido" required><br>
+    <input type="number" id="members" placeholder="Número de miembros" required><br>
+    <input type="text" id="country" placeholder="País" required><br>
+    <label for="pets">¿Tiene mascotas?</label>
+    <input type="checkbox" id="pets"><br>
+    <button type="submit">Agregar Familia</button>
+  </form>
+
+
+  <div class="families-list">
+    <h2>Familias Registradas</h2>
+    <div id="familiesContainer"></div>
+  </div>
+
+  <script>
+    
+    document.getElementById('familyForm').addEventListener('submit', async function(event) {
+      event.preventDefault();
+
+      const lastName = document.getElementById('lastName').value;
+      const members = parseInt(document.getElementById('members').value, 10); 
+      const country = document.getElementById('country').value;
+      const pets = document.getElementById('pets').checked;
+
+      const familyData = { lastName, members, country, pets };
+
+   
+      console.log("Datos de familia:", familyData);
+
+      try {
+        const response = await fetch('http://localhost:3000/add-family', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(familyData)
+        });
+        
+        if (response.ok) {
+          alert('Familia añadida correctamente');
+          loadFamilies();
+        } else {
+          alert('Error al agregar familia: ' + response.statusText);
+        }
+      } catch (error) {
+        console.error('Error al conectar con el servidor:', error);
+        alert('Error de conexión');
+      }
+    });
+
+  
+    async function loadFamilies() {
+      try {
+        const response = await fetch('http://localhost:3000/get-families');
+        const families = await response.json();
+
+        const familiesContainer = document.getElementById('familiesContainer');
+        familiesContainer.innerHTML = ''; 
+
+        families.forEach(family => {
+          const familyElement = document.createElement('div');
+          familyElement.classList.add('family-item');
+          familyElement.innerHTML = `
+            <strong>Apellido:</strong> ${family.lastName} <br>
+            <strong>Número de miembros:</strong> ${family.members} <br>
+            <strong>País:</strong> ${family.country} <br>
+            <strong>¿Tiene mascotas?</strong> ${family.pets ? 'Sí' : 'No'} <br>
+          `;
+          familiesContainer.appendChild(familyElement);
+        });
+      } catch (error) {
+        console.error('Error al obtener las familias:', error);
+        alert('Error al cargar las familias');
+      }
+    }
+
+  
+    window.onload = loadFamilies;
+  </script>
+
+</body>
+</html>

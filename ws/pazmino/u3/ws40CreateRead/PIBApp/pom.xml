@@ -5,9 +5,22 @@
     <artifactId>PIBApp</artifactId>
     <version>1.0</version>
     <packaging>jar</packaging>
+    <dependencies>
+        <dependency>
+            <groupId>cn.leancloud</groupId>
+            <artifactId>mongodb-driver</artifactId>
+            <version>3.3.0-query-log-max-size</version>
+            <type>jar</type>
+        </dependency>
+        <dependency>
+            <groupId>org.mongodb</groupId>
+            <artifactId>mongodb-driver</artifactId>
+            <version>3.11.0-beta4</version>
+        </dependency>
+    </dependencies>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.release>18</maven.compiler.release>
-        <exec.mainClass>ec.edu.espe.pibapp.PIBApp</exec.mainClass>
+        <exec.mainClass>ec.edu.espe.pibapp.view.FrmPIBApp</exec.mainClass>
     </properties>
 </project>
