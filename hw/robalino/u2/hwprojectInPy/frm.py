@@ -19,6 +19,7 @@ class MongoDatabase:
         except Exception as e:
             print(f"MongoDB Connection Error: {e}")
             raise
+        
 
     def add_student(self, student):
         try:
