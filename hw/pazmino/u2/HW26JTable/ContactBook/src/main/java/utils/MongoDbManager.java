@@ -15,7 +15,7 @@ import org.bson.Document;
 
 public class MongoDbManager {
     private static final String CONNECTION_STRING = "mongodb+srv://bpazmino:bpazmino@cluster0.ot5jx.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
-    private static final String DATABASE_NAME = "CONTACTSBOOK"; 
+    private static final String DATABASE_NAME = "OOP"; 
     private static MongoClient mongoClient = null;
 
     public static void connect() {

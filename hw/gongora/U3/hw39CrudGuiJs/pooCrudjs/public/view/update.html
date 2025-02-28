@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Book</title>
+
+</head>
+<body>
+    <h1>Update Book</h1>
+    <form id="updateForm">
+        <label>ID:</label><input type="text" id="updateId" required><br><br>
+        <label>New Title:</label><input type="text" id="updateTitle"><br><br>
+        <label>New Author:</label><input type="text" id="updateAuthor"><br><br>
+        <label>New Genre:</label><input type="text" id="updateGenre"><br><br>
+        <label>New Year:</label><input type="number" id="updateYear"><br><br>
+        <button type="submit">Update</button>
+    </form>
+    <p id="updateMessage"></p>
+
+    <script src="../controller/update.js"></script>
+
+</body>
+</html>

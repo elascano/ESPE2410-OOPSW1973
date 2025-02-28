@@ -1,0 +1,45 @@
+Interview Transcript 
+The team conducted an interview with the owner of a cafeteria called Los Padmitos, where after a long talk we knew the problems she was going through, and for which we saw a way in which we could give a solution, thanks to the following interview we had with the owner of the business (Mayra Cevallos).
+
+-Matias: Well, my dear madam, how are you? Good afternoon, we are students at the University of the Armed Forces (ESPE).
+          	Currently, we are studying object oriented programming, and we are doing a project to finish our semester.
+-Benjamin: The project would be based on any problem that you may have to help you automate any inventory or problem that your business has, so we wanted to know how we could help you, some process that can be automated, some application in which you can save the information.
+          	That, mostly, you're going to be able to gather, organize and save all your important data. You're going to be able to access it in a little bit more automated-practical way. Please tell us, more or less, how your business is like, how you manage your proceedings, data, records, etc.
+-Mayra: Good morning. Well, of course I can help you with all the information.
+         	 First of all, this is a business where, as you can see, it is a cafeteria and a gallery, but it does not have an operating system where we can make a record of sales, inventory, and also where we can’t record all the products that we have.
+          	So, if you could create a document or something that could help us, I would be very happy to do so. I would be very grateful.
+-Matias: Sure, it is something we could do, right?
+          	And actually we would like to know what feature you would need it to have, also maybe, if you have some kind of accounting system or how you are running that part of the business, because we could help you with something like that as well.
+-Mayra: We don't have an operating system, everything is manual. We have sales notes where we issue this, it is a legal document and we belong to the popular business RIMPE.
+          	We don't have a sales register, so that's a little bit complicated for me to keep track of everything that we have, the products we buy and also the ones that would go out.
+          	We only have the PEPS process, which is incoming and outgoing products, but there is no inventory of everything we have.
+          	So, if you could create some kind of platform where we could easily register the incoming and outgoing products, and also the products that are no longer prepared.
+-Abner: Well, my dear sir, what we want to tell you is that this is what we are here to solve mainly accounting problems, but the main thing we want to know from you is what you have on the menu and what are the costs you spend on these products, such as the cafeteria. Especially if you could provide us with that information to more or less restructure it and make this input and output system as you are requesting.
+-Mayra: Yes, yes, I have a menu. The menu is totally vegetarian and vegan, we have quality products, we also have suppliers who deliver the products here, and we also make weekly purchases to be able to pay for the whole week.
+-Benjamin: Perfect, thank you very much.
+          	So, this would be a first approach. We would be making a model of the project, also all these kinds of orders to structure it and we would be communicating with you.
+          	At the same time, we would need you to provide us with the necessary documentation to be able to do all these kinds of things, all this automation of the information that would come in.
+          	So, we would really be in contact. It is a project that is going to be developed within this semester, so there would be several approaches to show you the progress, maybe some adjustments that can be made, and to be able to modify everything as time goes by.
+Problem 
+
+The coffee shop doesn’t have a system to  keep track of inventories and sales of the products they sell. This process is made by hand, making the tracking of the movements difficult and confusing. It is needed to create a software where an admin may upload information about the products they use; this information is related to: quantity, provider, date of registration, type of product. By the way, the software allows the admin to register how many main dishes, breakfasts, drinks, desserts, etc they are selling per day. Therefore pricing the dishes and getting involved on their procedures is needed to keep accounting
+
+Overview
+
+We will create an application that will allow detailed control and, automated in certain aspects, to manage in a more basic way the different scenarios of the cafeteria (Los Padmitos), such as the registration of the products that have  entered, control of the sales that are carrier out daily, the services offered by the place. It is a tentative plan to create an accounting system to manage all incomes, expenses, profits, payments.
+
+Background
+In order to ensure accurate records in an inventory system, there are some aspects that we must pay attention to:
+Item identification is essential to separate the products from each other. It is important to give every single item a clear description.
+Quantity, it helps to keep track of the stock.
+Pricing, knowing the buying and selling price of each product to ensure a good accounting practice.
+Document supplier information to simplify the process of reordering.
+Inventory turnover, to track how often each item is sold and which are the top selling items.
+Expiry day, in order to keep a great quality, is important to warranty the freshest products.
+All the things mentioned above are essential to keep an organized inventory and furthermore, streamlines the accounting process. 
+
+Detailed Control Application 
+Los Padmitos is a Cafeteria that has been working for 3 years, they have prospered along this time. Anyways this growth can not be measured because they haven't kept track of its accountancy very well. All the documentation they have is on pencil and paper, an old fashioned system. By this time they have decided that time has come to implement a new automated system that helps them to see what is the reality of their business if all they do is profitable and where do they have to make some changes.  
+We are in the process of gathering all the essential information.  We have made the first contact successfully. All the information about their specific procedures, purchase of supplies, rent, utility and employee payments will be provided in a short period of time.
+In order to accomplish this task successfully we are going to implement all the functionalities of OOP. We will learn and acquire the essential knowledge to be able to create a functional application that accomplishes all requirements.
+We attach their Menu to have a better outlook of what they offer and what we can make for them. 

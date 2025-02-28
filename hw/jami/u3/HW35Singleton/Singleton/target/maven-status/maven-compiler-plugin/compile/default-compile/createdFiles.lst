@@ -1,0 +1,4 @@
+ec\edu\espe\model\TaxRateCalculator.class
+ec\edu\espe\view\Singleton.class
+ec\edu\espe\controller\TaxHandlerController.class
+ec\edu\espe\view\TaxReportView.class
