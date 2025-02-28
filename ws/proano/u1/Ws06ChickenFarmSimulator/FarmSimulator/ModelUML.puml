@@ -1,0 +1,15 @@
+@startuml
+annotation java.lang.Override
+class ec.edu.espe.farmsimulator.model.Chicken
+class ec.edu.espe.farmsimulator.model.Egg
+class ec.edu.espe.farmsimulator.model.Poop
+class java.time.LocalDate
+class java.time.Period
+class java.time.ZoneId
+class java.util.Date
+ec.edu.espe.farmsimulator.model.Chicken ..> java.lang.Override
+ec.edu.espe.farmsimulator.model.Chicken ..> java.time.LocalDate
+ec.edu.espe.farmsimulator.model.Chicken ..> java.time.Period
+ec.edu.espe.farmsimulator.model.Chicken ..> java.time.ZoneId
+ec.edu.espe.farmsimulator.model.Chicken ..> java.util.Date
+@enduml

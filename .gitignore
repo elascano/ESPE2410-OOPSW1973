@@ -20,6 +20,7 @@
 *.rar
 
 
+<<<<<<< HEAD
 /hw/quiroga/U3/HW_35_Singleton/Singleton/target/
 
 /hw/quiroga/U3/HW_37_Strategy/StrategyExample/target/
@@ -53,3 +54,7 @@
 /hw/cuichan/u3/HW38DesignPatterns/Bev/target/
 /hw/cuichan/u3/HW38DesignPatterns/BeverageTest/target/
 /ws/pazmino/u3/ws40CreateRead/PIBApp/target/
+=======
+/hw/camacho/u2/Hw25Contact/ContactsBook/target/
+/ws/camacho/u3/Ws40Petshop/PetShop/nbproject/private/
+>>>>>>> d51cd0def6d5d8cb8c771a77567836ee1c185734

@@ -42,9 +42,9 @@ public class FarmSimulatorApp {
         chickens.add(chicken);
 
         CsvUtil.writeChickensToCsv("chickens.csv", chickens);
-        JsonUtil.writeChickensToJson("chickens.json", chickens);
+        JsonUtil.writeListToJson("chickens.json", chickens);
 
-        List<Chicken> chickensFromJson = JsonUtil.readChickensFromJson("chickens.json");
+        List<Chicken> chickensFromJson = JsonUtil.ReadJson("chickens.json");
 
 
         System.out.println("Chickens from JSON: " + chickensFromJson);

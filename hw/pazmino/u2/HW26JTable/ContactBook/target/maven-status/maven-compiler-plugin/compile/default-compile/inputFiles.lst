@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\Users\G406\Documents\REpository\ESPE2410-OOPSW1973\hw\pazmino\u2\HW26JTable\ContactBook\src\main\java\ec\edu\espe\contactbook\view\FrmContactBook.java
 C:\Users\G406\Documents\REpository\ESPE2410-OOPSW1973\hw\pazmino\u2\HW26JTable\ContactBook\src\main\java\ec\edu\espe\contactbook\model\Register.java
 C:\Users\G406\Documents\REpository\ESPE2410-OOPSW1973\hw\pazmino\u2\HW26JTable\ContactBook\src\main\java\ec\edu\espe\contactbook\model\RegisterTableModel.java
@@ -5,3 +6,12 @@ C:\Users\G406\Documents\REpository\ESPE2410-OOPSW1973\hw\pazmino\u2\HW26JTable\C
 C:\Users\G406\Documents\REpository\ESPE2410-OOPSW1973\hw\pazmino\u2\HW26JTable\ContactBook\src\main\java\ec\edu\espe\contactbook\view\ViewRegister.java
 C:\Users\G406\Documents\REpository\ESPE2410-OOPSW1973\hw\pazmino\u2\HW26JTable\ContactBook\src\main\java\utils\MongoDbManager.java
 C:\Users\G406\Documents\REpository\ESPE2410-OOPSW1973\hw\pazmino\u2\HW26JTable\ContactBook\src\main\java\ec\edu\espe\contactbook\controller\RegisterController.java
+=======
+C:\Users\User\OneDrive\Documentos\ESPE2410-OOPSW1973\hw\pazmino\u2\hw26JTable\ContactBook\src\main\java\ec\edu\espe\contactbook\view\ViewRegister.java
+C:\Users\User\OneDrive\Documentos\ESPE2410-OOPSW1973\hw\pazmino\u2\hw26JTable\ContactBook\src\main\java\ec\edu\espe\contactbook\controller\RegisterController.java
+C:\Users\User\OneDrive\Documentos\ESPE2410-OOPSW1973\hw\pazmino\u2\hw26JTable\ContactBook\src\main\java\ec\edu\espe\contactbook\model\Register.java
+C:\Users\User\OneDrive\Documentos\ESPE2410-OOPSW1973\hw\pazmino\u2\hw26JTable\ContactBook\src\main\java\ec\edu\espe\contactbook\view\FrmContactBook.java
+C:\Users\User\OneDrive\Documentos\ESPE2410-OOPSW1973\hw\pazmino\u2\hw26JTable\ContactBook\src\main\java\ec\edu\espe\contactbook\model\RegisterTableModel.java
+C:\Users\User\OneDrive\Documentos\ESPE2410-OOPSW1973\hw\pazmino\u2\hw26JTable\ContactBook\src\main\java\ec\edu\espe\contactbook\view\FrmRegister.java
+C:\Users\User\OneDrive\Documentos\ESPE2410-OOPSW1973\hw\pazmino\u2\hw26JTable\ContactBook\src\main\java\utils\MongoDbManager.java
+>>>>>>> d51cd0def6d5d8cb8c771a77567836ee1c185734

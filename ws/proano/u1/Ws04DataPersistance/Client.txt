@@ -1,0 +1,3 @@
+1:Esteban:0969966509:Ambato:Waiting_To_Pay
+2:Juan:093238844:Quito:Paying
+3:Pepe:0941425252:Loja:Paying

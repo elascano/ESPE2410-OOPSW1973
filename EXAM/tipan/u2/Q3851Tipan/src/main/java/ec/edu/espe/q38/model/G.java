@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
@@ -13,3 +14,20 @@ public class G implements H {
         
     };
 }
+=======
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package ec.edu.espe.q38.model;
+
+/**
+ *
+ * @author Lisbeth Tipan
+ */
+public class G implements H {
+    public static void useJ(J j){
+        
+    };
+}
+>>>>>>> d51cd0def6d5d8cb8c771a77567836ee1c185734
