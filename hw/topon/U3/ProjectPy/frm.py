@@ -10,11 +10,11 @@ from bson.objectid import ObjectId
 class MongoDatabase:
     def __init__(self):
         # Replace with your actual MongoDB connection string
-        connection_string = "mongodb+srv://arobalino:arobalino@cluster0.uhcya.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+        connection_string = "mongodb+srv://mtopon:mtopon@cluster0.nmg4z.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
         try:
             self.client = MongoClient(connection_string)
-            self.db = self.client['studentsDB']
-            self.collection = self.db['students']
+            self.db = self.client['oop']
+            self.collection = self.db['studentspy']
             print("Connected to MongoDB successfully!")
         except Exception as e:
             print(f"MongoDB Connection Error: {e}")
@@ -112,6 +112,7 @@ class StudentManagementApp(QMainWindow):
         # Database
         self.db = MongoDatabase()
         self.load_students()
+
 
     def create_input_field(self, layout, label_text):
         layout.addWidget(QLabel(label_text))
