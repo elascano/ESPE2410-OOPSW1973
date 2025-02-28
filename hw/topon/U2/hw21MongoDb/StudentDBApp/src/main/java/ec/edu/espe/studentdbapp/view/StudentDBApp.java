@@ -15,7 +15,7 @@ public class StudentDBApp {
 
     public static void main(String[] args) {
         try {
-            String uri = "mongodb+srv://mtopon:mtopon@cluster0.nmg4z.mongodb.net/?retryWrites=true&w=majority";
+            String uri = "mongodb+srv://daullcu:daullcu@cluster0.dxj9m.mongodb.net/?retryWrites=true&w=majority";
             
             MongoClient mongoClient = MongoClients.create(uri);
             
