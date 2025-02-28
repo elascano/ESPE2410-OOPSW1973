@@ -2,7 +2,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package controlador;
+package Controller;
 
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoCursor;
@@ -11,16 +11,16 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
-import modelo.Estudiante;
-import modelo.mgl_conexion;
+import model.Estudiante;
+import model.ManageFileConextion;
 import org.bson.Document;
-import vista.frm_main;
+import View.FrmMain;
 
-public class ctl_estudiante implements ActionListener {
+public class Student implements ActionListener {
 
-    public frm_main frmMain;
+    public FrmMain frmMain;
 
-    public ctl_estudiante(frm_main frmMain) {
+    public Student(FrmMain frmMain) {
         this.frmMain = frmMain;
         
         this.frmMain.btn_registrar.addActionListener(this);
@@ -31,7 +31,7 @@ public class ctl_estudiante implements ActionListener {
 
     public void llenargrip() {
 
-        MongoCollection<Document> collection = mgl_conexion.getConexion().getCollection("estudiantes");
+        MongoCollection<Document> collection = ManageFileConextion.getConexion().getCollection("estudiantes");
 
         DefaultTableModel tablamodel = (DefaultTableModel) this.frmMain.jtable_estudiantes.getModel();
         tablamodel.setRowCount(0);
@@ -70,7 +70,7 @@ public class ctl_estudiante implements ActionListener {
             estudiante.setEdad(edad);
             estudiante.setFechaNacimiento(fechaNacimientoStr);
 
-            MongoDatabase db = mgl_conexion.getConexion();
+            MongoDatabase db = ManageFileConextion.getConexion();
             MongoCollection<Document> collection = db.getCollection("estudiantes");
 
             Document estudianteDoc = new Document("nombre", estudiante.getNombre())

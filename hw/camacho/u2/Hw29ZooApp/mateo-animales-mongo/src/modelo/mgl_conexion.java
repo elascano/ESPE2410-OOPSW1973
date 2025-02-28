@@ -8,14 +8,15 @@ import com.mongodb.MongoClient;
 import com.mongodb.MongoClientURI;
 import com.mongodb.client.MongoDatabase;
 
-
 public class mgl_conexion {
  
     private static MongoClient mongoClient;
     private static MongoDatabase database;
     
+    // Constructor privado para evitar que se instancie la clase
     private mgl_conexion() {}
     
+   
     public static MongoDatabase getConexion() {
         if (mongoClient == null) {
             
@@ -24,7 +25,7 @@ public class mgl_conexion {
             MongoClientURI clientUri = new MongoClientURI(uri);
             mongoClient = new MongoClient(clientUri);
 
-            database = mongoClient.getDatabase("estudiantes"); 
+            database = mongoClient.getDatabase("animales"); 
         }
         
         return database;

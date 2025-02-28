@@ -4,11 +4,12 @@
  */
 package modelo;
 
-public class Estudiante {
+public class Animal {
+    
 
     private String nombre;
-    private String cedula;
-    private String edad;
+    private String especie;
+    private String raza;
     private String fechaNacimiento;
 
     public String getNombre() {
@@ -19,20 +20,20 @@ public class Estudiante {
         this.nombre = nombre;
     }
 
-    public String getCedula() {
-        return cedula;
+    public String getEspecie() {
+        return especie;
     }
 
-    public void setCedula(String cedula) {
-        this.cedula = cedula;
+    public void setEspecie(String especie) {
+        this.especie = especie;
     }
 
-    public String getEdad() {
-        return edad;
+    public String getRaza() {
+        return raza;
     }
 
-    public void setEdad(String edad) {
-        this.edad = edad;
+    public void setRaza(String raza) {
+        this.raza = raza;
     }
 
     public String getFechaNacimiento() {
@@ -43,6 +44,5 @@ public class Estudiante {
         this.fechaNacimiento = fechaNacimiento;
     }
 
-    
     
 }

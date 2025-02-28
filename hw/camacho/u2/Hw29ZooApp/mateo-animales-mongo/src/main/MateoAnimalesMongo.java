@@ -4,22 +4,19 @@
  */
 package main;
 
-import Controller.Student;
-import View.FrmMain;
+import controlador.ctl_animales;
+import vista.frm_main;
 
-public class MateoEstudianteMongo {
+public class MateoAnimalesMongo {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-
-
-        FrmMain frmMain = new FrmMain();
-        Student ctlEstudiante = new Student(frmMain);
         
+        frm_main frmMain = new frm_main();
+        ctl_animales ctlAnimales = new ctl_animales(frmMain);
         frmMain.show();
-                
         
     }
     
