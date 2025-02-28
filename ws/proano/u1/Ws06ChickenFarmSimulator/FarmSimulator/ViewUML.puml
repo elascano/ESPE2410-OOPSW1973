@@ -1,0 +1,21 @@
+@startuml
+class ec.edu.espe.farmsimulator.model.Chicken
+class ec.edu.espe.farmsimulator.utils.JsonForm
+class ec.edu.espe.farmsimulator.view.FarmSimulatorApp
+class ec.edu.espe.farmsimulator.view.Menu
+class java.util.Date
+class java.util.Scanner
+class java.util.Set
+class javax.swing.SwingUtilities
+ec.edu.espe.farmsimulator.view.FarmSimulatorApp ..> ec.edu.espe.farmsimulator.model.Chicken
+ec.edu.espe.farmsimulator.view.FarmSimulatorApp ..> ec.edu.espe.farmsimulator.utils.JsonForm
+ec.edu.espe.farmsimulator.view.FarmSimulatorApp ..> java.util.Date
+ec.edu.espe.farmsimulator.view.FarmSimulatorApp ..> java.util.Scanner
+ec.edu.espe.farmsimulator.view.FarmSimulatorApp ..> javax.swing.SwingUtilities
+ec.edu.espe.farmsimulator.view.Menu ..> ec.edu.espe.farmsimulator.model.Chicken
+ec.edu.espe.farmsimulator.view.Menu ..> ec.edu.espe.farmsimulator.utils.JsonForm
+ec.edu.espe.farmsimulator.view.Menu ..> java.util.Date
+ec.edu.espe.farmsimulator.view.Menu ..> java.util.Scanner
+ec.edu.espe.farmsimulator.view.Menu ..> java.util.Set
+ec.edu.espe.farmsimulator.view.Menu ..> javax.swing.SwingUtilities
+@enduml
