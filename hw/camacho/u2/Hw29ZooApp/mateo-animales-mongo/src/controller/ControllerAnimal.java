@@ -1,8 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
-package controlador;
+package controller;
 
 import com.mongodb.client.MongoCollection;
 import com.mongodb.client.MongoCursor;
@@ -12,15 +8,15 @@ import java.awt.event.ActionListener;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 import org.bson.Document;
-import modelo.Animal;
-import modelo.mgl_conexion;
-import vista.frm_main;
+import model.Animal;
+import model.MongoManageConnection;
+import view.FrmMain;
 
-public class ctl_animales implements ActionListener {
+public class ControllerAnimal implements ActionListener {
 
-    public frm_main frmMain;
+    public FrmMain frmMain;
 
-    public ctl_animales(frm_main frmMain) {
+    public ControllerAnimal(FrmMain frmMain) {
         this.frmMain = frmMain;
 
         this.frmMain.btn_registrar.addActionListener(this);
@@ -31,7 +27,7 @@ public class ctl_animales implements ActionListener {
 
     public void llenargrip() {
 
-        MongoCollection<Document> collection = mgl_conexion.getConexion().getCollection("animales");
+        MongoCollection<Document> collection = MongoManageConnection.getConexion().getCollection("animales");
 
         DefaultTableModel tablamodel = (DefaultTableModel) this.frmMain.jtable_animales.getModel();
         tablamodel.setRowCount(0);
@@ -70,7 +66,7 @@ public class ctl_animales implements ActionListener {
             animal.setRaza(raza);
             animal.setFechaNacimiento(fechaNacimientoStr);
 
-            MongoDatabase db = mgl_conexion.getConexion();
+            MongoDatabase db = MongoManageConnection.getConexion();
             MongoCollection<Document> collection = db.getCollection("animales");
 
             Document animalDoc = new Document("nombre", animal.getNombre())
