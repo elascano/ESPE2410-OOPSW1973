@@ -1,1 +1,4 @@
-ec\edu\espe\hw30uri\HW30URI.class
+ec\edu\espe\hw30uri\model\Project.class
+ec\edu\espe\hw30uri\controller\ProjectController.class
+utils\MongoDBConnection.class
+ec\edu\espe\hw30uri\view\URIsApp.class
