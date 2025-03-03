@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD con JavaScript y MongoDB</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+        
+        .form-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        label {
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #555;
+        }
+        
+        input, select {
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        
+        .buttons {
+            grid-column: span 2;
+            display: flex;
+            gap: 10px;
+            justify-content: flex-end;
+        }
+        
+        button {
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        
+        button:hover {
+            background-color: #45a049;
+        }
+        
+        button.cancel {
+            background-color: #f44336;
+        }
+        
+        button.cancel:hover {
+            background-color: #d32f2f;
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+        
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+        
+        .actions {
+            display: flex;
+            gap: 5px;
+        }
+        
+        .edit-btn, .delete-btn {
+            padding: 5px 10px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        
+        .edit-btn {
+            background-color: #2196F3;
+            color: white;
+        }
+        
+        .delete-btn {
+            background-color: #f44336;
+            color: white;
+        }
+        
+        .alert {
+            padding: 10px;
+            background-color: #f8d7da;
+            color: #721c24;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            display: none;
+        }
+        
+        .success {
+            background-color: #d4edda;
+            color: #155724;
+        }
+        
+        .loading {
+            display: none;
+            text-align: center;
+            margin: 20px 0;
+        }
+        
+        .loading::after {
+            content: "⏳";
+            animation: rotate 1s infinite linear;
+            display: inline-block;
+            font-size: 24px;
+        }
+        
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Gestión de Usuarios con MongoDB</h1>
+        
+        <div id="alert" class="alert"></div>
+        <div id="loading" class="loading"></div>
+        
+        <form id="user-form">
+            <div class="form-container">
+                <div class="form-group">
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="age">Edad</label>
+                    <input type="number" id="age" min="0" required>
+                </div>
+                <div class="form-group">
+                    <label for="role">Rol</label>
+                    <select id="role">
+                        <option value="admin">Administrador</option>
+                        <option value="user">Usuario</option>
+                        <option value="guest">Invitado</option>
+                    </select>
+                </div>
+                <div class="buttons">
+                    <button type="button" id="cancel-btn" class="cancel" style="display: none;">Cancelar</button>
+                    <button type="submit" id="save-btn">Guardar</button>
+                </div>
+            </div>
+        </form>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Email</th>
+                    <th>Edad</th>
+                    <th>Rol</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="user-list">
+                <!-- Los usuarios se cargarán aquí -->
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+        // Configuración API
+        const API_URL = 'http://localhost:5000/api';
+        
+        // Módulo de Datos (Model)
+        const UserModel = (function() {
+            // Obtener todos los usuarios
+            async function getAllUsers() {
+                try {
+                    const response = await fetch(`${API_URL}/users`);
+                    if (!response.ok) {
+                        throw new Error('Error al obtener usuarios');
+                    }
+                    return await response.json();
+                } catch (error) {
+                    console.error('Error:', error);
+                    throw error;
+                }
+            }
+            
+            // Crear un nuevo usuario
+            async function createUser(user) {
+                try {
+                    const response = await fetch(`${API_URL}/users`, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(user)
+                    });
+                    
+                    if (!response.ok) {
+                        throw new Error('Error al crear usuario');
+                    }
+                    
+                    return await response.json();
+                } catch (error) {
+                    console.error('Error:', error);
+                    throw error;
+                }
+            }
+            
+            // Actualizar un usuario existente
+            async function updateUser(user) {
+                try {
+                    const response = await fetch(`${API_URL}/users/${user._id}`, {
+                        method: 'PUT',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(user)
+                    });
+                    
+                    if (!response.ok) {
+                        throw new Error('Error al actualizar usuario');
+                    }
+                    
+                    return await response.json();
+                } catch (error) {
+                    console.error('Error:', error);
+                    throw error;
+                }
+            }
+            
+            // Eliminar un usuario
+            async function deleteUser(id) {
+                try {
+                    const response = await fetch(`${API_URL}/users/${id}`, {
+                        method: 'DELETE'
+                    });
+                    
+                    if (!response.ok) {
+                        throw new Error('Error al eliminar usuario');
+                    }
+                    
+                    return await response.json();
+                } catch (error) {
+                    console.error('Error:', error);
+                    throw error;
+                }
+            }
+            
+            // API pública
+            return {
+                getAll: getAllUsers,
+                create: createUser,
+                update: updateUser,
+                delete: deleteUser
+            };
+        })();
+        
+        // Módulo de UI (View)
+        const UserView = (function() {
+            // Elementos del DOM
+            const formElements = {
+                form: document.getElementById('user-form'),
+                nameInput: document.getElementById('name'),
+                emailInput: document.getElementById('email'),
+                ageInput: document.getElementById('age'),
+                roleInput: document.getElementById('role'),
+                saveBtn: document.getElementById('save-btn'),
+                cancelBtn: document.getElementById('cancel-btn'),
+                userList: document.getElementById('user-list'),
+                alert: document.getElementById('alert'),
+                loading: document.getElementById('loading')
+            };
+            
+            // Limpiar el formulario
+            function clearForm() {
+                formElements.form.reset();
+                formElements.cancelBtn.style.display = 'none';
+                formElements.form.removeAttribute('data-edit-id');
+                formElements.saveBtn.textContent = 'Guardar';
+            }
+            
+            // Mostrar un mensaje de alerta
+            function showAlert(message, isSuccess = false) {
+                formElements.alert.textContent = message;
+                formElements.alert.style.display = 'block';
+                
+                if (isSuccess) {
+                    formElements.alert.classList.add('success');
+                } else {
+                    formElements.alert.classList.remove('success');
+                }
+                
+                // Ocultar después de 3 segundos
+                setTimeout(() => {
+                    formElements.alert.style.display = 'none';
+                }, 3000);
+            }
+            
+            // Mostrar/ocultar indicador de carga
+            function toggleLoading(show) {
+                formElements.loading.style.display = show ? 'block' : 'none';
+            }
+            
+            // Renderizar la lista de usuarios
+            function renderUserList(users) {
+                formElements.userList.innerHTML = '';
+                
+                users.forEach(user => {
+                    const row = document.createElement('tr');
+                    
+                    // Crear las celdas con los datos del usuario
+                    row.innerHTML = `
+                        <td>${user._id}</td>
+                        <td>${user.name}</td>
+                        <td>${user.email}</td>
+                        <td>${user.age}</td>
+                        <td>${mapRoleName(user.role)}</td>
+                        <td class="actions">
+                            <button class="edit-btn" data-id="${user._id}">Editar</button>
+                            <button class="delete-btn" data-id="${user._id}">Eliminar</button>
+                        </td>
+                    `;
+                    
+                    formElements.userList.appendChild(row);
+                });
+            }
+            
+            // Mapear el valor del rol a un nombre amigable
+            function mapRoleName(role) {
+                const roles = {
+                    'admin': 'Administrador',
+                    'user': 'Usuario',
+                    'guest': 'Invitado'
+                };
+                
+                return roles[role] || role;
+            }
+            
+            // Llenar el formulario con los datos del usuario para editar
+            function fillFormForEdit(user) {
+                formElements.nameInput.value = user.name;
+                formElements.emailInput.value = user.email;
+                formElements.ageInput.value = user.age;
+                formElements.roleInput.value = user.role;
+                
+                formElements.form.setAttribute('data-edit-id', user._id);
+                formElements.saveBtn.textContent = 'Actualizar';
+                formElements.cancelBtn.style.display = 'block';
+            }
+            
+            // Obtener los datos del formulario
+            function getFormData() {
+                return {
+                    name: formElements.nameInput.value.trim(),
+                    email: formElements.emailInput.value.trim(),
+                    age: parseInt(formElements.ageInput.value),
+                    role: formElements.roleInput.value
+                };
+            }
+            
+            // Verificar si el formulario está en modo edición
+            function isEditMode() {
+                return formElements.form.hasAttribute('data-edit-id');
+            }
+            
+            // Obtener el ID del usuario en edición
+            function getEditId() {
+                return formElements.form.getAttribute('data-edit-id');
+            }
+            
+            // API pública
+            return {
+                elements: formElements,
+                clearForm: clearForm,
+                showAlert: showAlert,
+                toggleLoading: toggleLoading,
+                renderUserList: renderUserList,
+                fillFormForEdit: fillFormForEdit,
+                getFormData: getFormData,
+                isEditMode: isEditMode,
+                getEditId: getEditId
+            };
+        })();
+        
+        // Módulo Controlador (Controller)
+        const UserController = (function(model, view) {
+            // Inicializar la aplicación
+            function init() {
+                // Cargar y mostrar usuarios
+                loadUsers();
+                
+                // Configurar los event listeners
+                setupEventListeners();
+            }
+            
+            // Cargar y mostrar la lista de usuarios
+            async function loadUsers() {
+                try {
+                    view.toggleLoading(true);
+                    const users = await model.getAll();
+                    view.renderUserList(users);
+                } catch (error) {
+                    view.showAlert('Error al cargar usuarios: ' + error.message);
+                } finally {
+                    view.toggleLoading(false);
+                }
+            }
+            
+            // Configurar los event listeners
+            function setupEventListeners() {
+                // Manejar el envío del formulario
+                view.elements.form.addEventListener('submit', handleFormSubmit);
+                
+                // Manejar el botón de cancelar
+                view.elements.cancelBtn.addEventListener('click', handleCancelClick);
+                
+                // Delegación de eventos para botones de editar y eliminar
+                view.elements.userList.addEventListener('click', handleUserListClick);
+            }
+            
+            // Manejar el envío del formulario
+            async function handleFormSubmit(event) {
+                event.preventDefault();
+                
+                const userData = view.getFormData();
+                
+                if (!validateUserData(userData)) {
+                    view.showAlert('Por favor, complete todos los campos correctamente');
+                    return;
+                }
+                
+                try {
+                    view.toggleLoading(true);
+                    
+                    if (view.isEditMode()) {
+                        // Actualizar usuario existente
+                        userData._id = view.getEditId();
+                        await model.update(userData);
+                        view.showAlert('Usuario actualizado correctamente', true);
+                    } else {
+                        // Crear nuevo usuario
+                        await model.create(userData);
+                        view.showAlert('Usuario creado correctamente', true);
+                    }
+                    
+                    view.clearForm();
+                    await loadUsers();
+                } catch (error) {
+                    view.showAlert(error.message);
+                } finally {
+                    view.toggleLoading(false);
+                }
+            }
+            
+            // Validar los datos del usuario
+            function validateUserData(userData) {
+                if (!userData.name || !userData.email || !userData.age || !userData.role) {
+                    return false;
+                }
+                
+                // Validación básica de email
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailRegex.test(userData.email)) {
+                    return false;
+                }
+                
+                // Validación de edad
+                if (isNaN(userData.age) || userData.age < 0) {
+                    return false;
+                }
+                
+                return true;
+            }
+            
+            // Manejar clic en botón de cancelar
+            function handleCancelClick() {
+                view.clearForm();
+            }
+            
+            // Manejar clics en la lista de usuarios (editar/eliminar)
+            async function handleUserListClick(event) {
+                const target = event.target;
+                
+                if (target.classList.contains('edit-btn')) {
+                    const userId = target.getAttribute('data-id');
+                    try {
+                        view.toggleLoading(true);
+                        const users = await model.getAll();
+                        const user = users.find(u => u._id === userId);
+                        
+                        if (user) {
+                            view.fillFormForEdit(user);
+                        }
+                    } catch (error) {
+                        view.showAlert('Error al obtener datos del usuario: ' + error.message);
+                    } finally {
+                        view.toggleLoading(false);
+                    }
+                } else if (target.classList.contains('delete-btn')) {
+                    const userId = target.getAttribute('data-id');
+                    handleDeleteClick(userId);
+                }
+            }
+            
+            // Manejar clic en botón de eliminar
+            async function handleDeleteClick(userId) {
+                if (confirm('¿Estás seguro de eliminar este usuario?')) {
+                    try {
+                        view.toggleLoading(true);
+                        await model.delete(userId);
+                        view.showAlert('Usuario eliminado correctamente', true);
+                        await loadUsers();
+                    } catch (error) {
+                        view.showAlert('Error al eliminar usuario: ' + error.message);
+                    } finally {
+                        view.toggleLoading(false);
+                    }
+                }
+            }
+            
+            // API pública
+            return {
+                init: init
+            };
+        })(UserModel, UserView);
+        
+        // Iniciar la aplicación
+        document.addEventListener('DOMContentLoaded', UserController.init);
+    </script>
+</body>
+</html>
