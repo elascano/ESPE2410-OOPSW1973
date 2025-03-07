@@ -4,10 +4,9 @@ from typing import List
 try:
     from ec.edu.espe.contact_book.model.contact import Contact 
 except ImportError:
-    from ec.edu.espe.contact_book.model.contact import Contact  # Alternativa si el modelo está en el mismo directorio
+    from ec.edu.espe.contact_book.model.contact import Contact  
 
 class MongoConnection:
-    """Clase para manejar la conexión a MongoDB."""
     
     _client = None  # Cliente MongoDB como variable estática
     
@@ -19,17 +18,15 @@ class MongoConnection:
         return MongoConnection._client["OOP"]
 
 class MongoDbManager:
-    """Clase para gestionar operaciones en la base de datos."""
     
     @staticmethod
     def connect():
-        """Obtiene la colección CONTACTSBOOK de la base de datos OOP."""
         database = MongoConnection.get_database()
         return database["CONTACTSBOOK"]
 
     @staticmethod
     def add(contact):
-        """Agrega un contacto a la base de datos."""
+    
         collection = MongoDbManager.connect()
         
         try:
