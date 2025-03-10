@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veterinaria - Registro de Animales</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Registro de Animales</h1>
+
+    <form id="animal-form">
+        <input type="text" id="name" placeholder="Nombre del Animal" required>
+        <input type="number" id="weight" placeholder="Peso (kg)" required>
+        <select id="type">
+            <option value="dog">Perro</option>
+            <option value="cat">Gato</option>
+        </select>
+        <button type="submit">Registrar</button>
+    </form>
+
+    <h2>Lista de Animales</h2>
+    <ul id="animal-list"></ul>
+
+    <script src="script.js"></script>
+</body>
+</html>
