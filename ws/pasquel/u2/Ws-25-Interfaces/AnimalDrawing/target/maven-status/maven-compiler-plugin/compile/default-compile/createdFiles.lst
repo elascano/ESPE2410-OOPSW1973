@@ -1,0 +1,7 @@
+ec\edu\espe\interfaces\controller\Mammal.class
+ec\edu\espe\interfaces\controller\Tiger.class
+ec\edu\espe\interfaces\controller\Condor.class
+ec\edu\espe\interfaces\view\Sketcher.class
+ec\edu\espe\interfaces\controller\Lion.class
+ec\edu\espe\interfaces\controller\Animal.class
+ec\edu\espe\interfaces\controller\Bird.class
