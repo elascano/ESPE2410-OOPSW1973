@@ -131,6 +131,12 @@ public class FrmContact extends javax.swing.JFrame {
 
         jLabel9.setText("Comments:");
 
+        txtId.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtIdActionPerformed(evt);
+            }
+        });
+
         cmbxSex.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "male", "female" }));
 
         cmbxGender.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "man", "woman", "homosexual" }));
@@ -344,6 +350,10 @@ public class FrmContact extends javax.swing.JFrame {
 
 
     }//GEN-LAST:event_btnDeleteActionPerformed
+
+    private void txtIdActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtIdActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtIdActionPerformed
 
     /**
      * @param args the command line arguments
