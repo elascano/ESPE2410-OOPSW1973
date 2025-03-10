@@ -16,10 +16,10 @@ export default class SortingContext {
     }
 
     setSortStrategy(size) {
-        if (size > 2 && size < 5) {
+        if (size >= 2 && size <= 5) {
             console.log("Using Bubble sort");
             return {sorting:new BubbleSort(), sortAlgorithm: "BubbleSort"};
-        } else if (size >= 6 && size < 10) {
+        } else if (size >= 6 && size <= 10) {
             console.log("Using Insertion sort");
             return {sorting:new InsertionSort(), sortAlgorithm: "InsertionSort"};
         } else {
