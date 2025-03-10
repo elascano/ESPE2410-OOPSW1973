@@ -19,11 +19,13 @@ async function addSorting(event) {
         return;
     }
 
-    const arrayUnsortedToCalculate = unsorted.split(",")
-
+    let arrayUnsortedToCalculate = unsorted.split(",")
+    arrayUnsortedToCalculate= arrayUnsortedToCalculate.map(number => Number(number))
+    
     const size = arrayUnsortedToCalculate.length;
 
     const { arraySorted, sortAlgorithm } = new SortingContext().sort(arrayUnsortedToCalculate)
+    
     const sorted = arraySorted.join(",")
 
     const sorting = { unsorted, size, sortAlgorithm, sorted };
