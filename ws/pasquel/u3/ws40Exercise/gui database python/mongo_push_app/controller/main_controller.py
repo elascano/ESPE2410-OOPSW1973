@@ -24,3 +24,12 @@ class MainController:
 
     def list_objects(self):
         return self.model.list_objects()
+
+#strategy python
+#bubble sort 2 5
+#insertion sort 6 10 
+#quick sort 11+
+#gui input elements to be sorted
+#text field separated by commas
+#every time an array is sorted saved in a mongo db collection
+#show sorted array
