@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Application</title>
+</head>
+<body>
+    <h1>Sorting Application</h1>
+
+    <input type="text" id="numbers" placeholder="1,2,3,4,5">
+    <button onclick="sortNumbers()">Sort</button>
+
+    <h2>Sorted Array:</h2>
+    <p id="result"></p>
+    <p id="status"></p>
+
+    <script>
+        function sortNumbers() {
+            let input = document.getElementById("numbers").value;
+            let array = input.split(",").map(num => parseFloat(num.trim()));
+
+            if (array.some(isNaN)) {
+                document.getElementById("result").innerText = "Please enter only valid numbers.";
+                return;
+            }
+
+            array.sort((a, b) => a - b);
+            document.getElementById("result").innerText = "Sorted: " + array.join(", ");
+
+            
+            fetch("http://localhost:3006/save", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ numbers: array })
+            })
+            .then(response => response.json())
+            .then(data => {
+                console.log("Saved in MongoDB:", data);
+                document.getElementById("status").innerText = "Data successfully saved in MongoDB!";
+            })
+            .catch(error => {
+                console.error("Error:", error);
+                document.getElementById("status").innerText = "Error saving data.";
+            });
+        }
+    </script>
+</body>
+</html>
+
