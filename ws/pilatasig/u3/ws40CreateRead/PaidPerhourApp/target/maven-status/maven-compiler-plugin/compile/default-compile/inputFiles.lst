@@ -1,3 +1,6 @@
-C:\Users\Usuario\ESPE2410-OOPSW1973\ws\pilatasig\u3\PaidPerhourApp\src\main\java\ec\edu\espe\paidperhourapp\model\Worker.java
-C:\Users\Usuario\ESPE2410-OOPSW1973\ws\pilatasig\u3\PaidPerhourApp\src\main\java\ec\edu\espe\paidperhourapp\view\InsertData.java
-C:\Users\Usuario\ESPE2410-OOPSW1973\ws\pilatasig\u3\PaidPerhourApp\src\main\java\utils\MongoDBManager.java
+C:\Users\Usuario\Desktop\PaidPerhourApp\src\main\java\ec\edu\espe\paidperhourapp\controller\BaseController.java
+C:\Users\Usuario\Desktop\PaidPerhourApp\src\main\java\ec\edu\espe\paidperhourapp\controller\WorkerController.java
+C:\Users\Usuario\Desktop\PaidPerhourApp\src\main\java\ec\edu\espe\paidperhourapp\model\Worker.java
+C:\Users\Usuario\Desktop\PaidPerhourApp\src\main\java\ec\edu\espe\paidperhourapp\view\InsertData.java
+C:\Users\Usuario\Desktop\PaidPerhourApp\src\main\java\ec\edu\espe\paidperhourapp\view\WorkersTableFrm.java
+C:\Users\Usuario\Desktop\PaidPerhourApp\src\main\java\utils\MongoDBConnection.java

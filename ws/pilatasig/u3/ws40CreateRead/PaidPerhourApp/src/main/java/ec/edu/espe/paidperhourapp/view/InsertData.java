@@ -1,19 +1,20 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
- */
 package ec.edu.espe.paidperhourapp.view;
 
+import ec.edu.espe.paidperhourapp.controller.WorkerController;
 import ec.edu.espe.paidperhourapp.model.Worker;
 import javax.swing.JOptionPane;
-import utils.MongoDBManager;
 
 /**
  *
  * @author LABS-DCCO
  */
 public class InsertData extends javax.swing.JFrame {
-
+    WorkerController workerController= new WorkerController();
+    private String id;
+    private String name;
+    private int workedHours;
+    private float paidPerHour;
+    private float pay;
     /**
      * Creates new form InsertData
      */
@@ -184,16 +185,18 @@ public class InsertData extends javax.swing.JFrame {
     }//GEN-LAST:event_txtNameActionPerformed
 
     private void saveButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_saveButtonActionPerformed
-        String id= txtId.getText();
-        String name = txtName.getText();
-        int workedHours= Integer.parseInt(cmbWorkedHour.getSelectedItem().toString());
-        float paidperHour= Float.parseFloat(cmbPaidPerHour.getSelectedItem().toString());
+        id= txtId.getText();
+        name = txtName.getText();
+        workedHours= Integer.parseInt(cmbWorkedHour.getSelectedItem().toString());
+        paidPerHour= Float.parseFloat(cmbPaidPerHour.getSelectedItem().toString());
+        pay= WorkerController.calculatePay(workedHours, paidPerHour);
         
-        Worker worker= new Worker(id, name, workedHours, paidperHour);
+        Worker worker;
+        worker= new Worker(id, name, workedHours, paidPerHour, pay);
         
         boolean isSaved;
         
-        isSaved = MongoDBManager.addContact(worker);
+        isSaved = workerController.saveWorker(worker);
     if (isSaved) {
     JOptionPane.showMessageDialog(rootPane, "Successfully saved: " + worker.toString());
     } else {
@@ -206,9 +209,6 @@ public class InsertData extends javax.swing.JFrame {
      * @param args the command line arguments
      */
     public static void main(String args[]) {
-        final String connectionString = "mongodb+srv://dapilatasig:dapilatasig@cluster0.1qaby.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
-        final String dbName = "OOP_DP";
-        MongoDBManager.connect(connectionString, dbName);
         
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">

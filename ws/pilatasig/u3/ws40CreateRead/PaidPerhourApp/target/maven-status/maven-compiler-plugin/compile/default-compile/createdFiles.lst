@@ -1,6 +1,12 @@
-ec\edu\espe\paidperhourapp\view\InsertData.class
-ec\edu\espe\paidperhourapp\view\InsertData$1.class
-ec\edu\espe\paidperhourapp\model\Worker.class
-ec\edu\espe\paidperhourapp\view\InsertData$3.class
+ec\edu\espe\paidperhourapp\view\WorkersTableFrm$2.class
 ec\edu\espe\paidperhourapp\view\InsertData$2.class
-utils\MongoDBManager.class
+ec\edu\espe\paidperhourapp\view\InsertData.class
+ec\edu\espe\paidperhourapp\controller\WorkerController.class
+ec\edu\espe\paidperhourapp\view\WorkersTableFrm.class
+ec\edu\espe\paidperhourapp\view\InsertData$1.class
+utils\MongoDBConnection.class
+ec\edu\espe\paidperhourapp\model\Worker.class
+ec\edu\espe\paidperhourapp\view\WorkersTableFrm$1.class
+ec\edu\espe\paidperhourapp\controller\BaseController.class
+ec\edu\espe\paidperhourapp\view\InsertData$3.class
+ec\edu\espe\paidperhourapp\view\WorkersTableFrm$3.class
