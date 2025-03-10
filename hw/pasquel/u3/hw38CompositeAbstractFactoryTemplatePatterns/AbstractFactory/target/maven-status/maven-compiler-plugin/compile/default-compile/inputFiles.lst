@@ -1,0 +1,11 @@
+C:\Users\marlo\ESPE2410-OOPSW1973\hw\pasquel\u3\hw38CompositeAbstractFactoryTemplatePatterns\AbstractFactory\src\main\java\ec\edu\espe\abstractfactory\controller\GUIFactory.java
+C:\Users\marlo\ESPE2410-OOPSW1973\hw\pasquel\u3\hw38CompositeAbstractFactoryTemplatePatterns\AbstractFactory\src\main\java\ec\edu\espe\abstractfactory\controller\LinuxFactory.java
+C:\Users\marlo\ESPE2410-OOPSW1973\hw\pasquel\u3\hw38CompositeAbstractFactoryTemplatePatterns\AbstractFactory\src\main\java\ec\edu\espe\abstractfactory\controller\OSReader.java
+C:\Users\marlo\ESPE2410-OOPSW1973\hw\pasquel\u3\hw38CompositeAbstractFactoryTemplatePatterns\AbstractFactory\src\main\java\ec\edu\espe\abstractfactory\controller\WinFactory.java
+C:\Users\marlo\ESPE2410-OOPSW1973\hw\pasquel\u3\hw38CompositeAbstractFactoryTemplatePatterns\AbstractFactory\src\main\java\ec\edu\espe\abstractfactory\model\Button.java
+C:\Users\marlo\ESPE2410-OOPSW1973\hw\pasquel\u3\hw38CompositeAbstractFactoryTemplatePatterns\AbstractFactory\src\main\java\ec\edu\espe\abstractfactory\model\LinuxButton.java
+C:\Users\marlo\ESPE2410-OOPSW1973\hw\pasquel\u3\hw38CompositeAbstractFactoryTemplatePatterns\AbstractFactory\src\main\java\ec\edu\espe\abstractfactory\model\LinuxMenu.java
+C:\Users\marlo\ESPE2410-OOPSW1973\hw\pasquel\u3\hw38CompositeAbstractFactoryTemplatePatterns\AbstractFactory\src\main\java\ec\edu\espe\abstractfactory\model\Menu.java
+C:\Users\marlo\ESPE2410-OOPSW1973\hw\pasquel\u3\hw38CompositeAbstractFactoryTemplatePatterns\AbstractFactory\src\main\java\ec\edu\espe\abstractfactory\model\WinButton.java
+C:\Users\marlo\ESPE2410-OOPSW1973\hw\pasquel\u3\hw38CompositeAbstractFactoryTemplatePatterns\AbstractFactory\src\main\java\ec\edu\espe\abstractfactory\model\WinMenu.java
+C:\Users\marlo\ESPE2410-OOPSW1973\hw\pasquel\u3\hw38CompositeAbstractFactoryTemplatePatterns\AbstractFactory\src\main\java\ec\edu\espe\abstractfactory\view\ClientApp.java

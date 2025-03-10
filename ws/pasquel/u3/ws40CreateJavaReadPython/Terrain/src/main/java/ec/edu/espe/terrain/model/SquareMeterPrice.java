@@ -1,12 +1,7 @@
-
 package ec.edu.espe.terrain.model;
 
-/**
- *
- * @author LABS-DCCO
- */
-    public class SquareMeterPrice {
-    private static SquareMeterPrice instance;
+public class SquareMeterPrice {
+    private static final SquareMeterPrice INSTANCE = new SquareMeterPrice();
     private int pricePerSquareMeter;
 
     private SquareMeterPrice() {
@@ -14,10 +9,7 @@ package ec.edu.espe.terrain.model;
     }
 
     public static SquareMeterPrice getInstance() {
-        if (instance == null) {
-            instance = new SquareMeterPrice();
-        }
-        return instance;
+        return INSTANCE;
     }
 
     public int getPricePerSquareMeter() {
@@ -28,4 +20,3 @@ package ec.edu.espe.terrain.model;
         this.pricePerSquareMeter = pricePerSquareMeter;
     }
 }
-
