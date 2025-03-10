@@ -1,0 +1,123 @@
+from tkinter import *
+from pymongo import MongoClient
+from tkinter import messagebox
+from typing import List
+from abc import ABC, abstractmethod
+
+# Conexión a MongoDB
+client = MongoClient("mongodb+srv://afproanio:afproanio@cluster0.luxrh.mongodb.net/")
+db = client["ProañoStrategy"]
+collection = db["ProañoSortedArray"]
+
+# Definición de clases de ordenación (de acuerdo con el código proporcionado)
+class SortingStrategy(ABC):
+    @abstractmethod
+    def sort(self, data: List[int]) -> List[int]:
+        pass
+
+class BubbleSort(SortingStrategy):
+    def sort(self, data: List[int]) -> List[int]:
+        n = len(data)
+        for i in range(n):
+            for j in range(0, n - i - 1):
+                if data[j] > data[j + 1]:
+                    data[j], data[j + 1] = data[j + 1], data[j]
+        return data
+
+class InsertionSort(SortingStrategy):
+    def sort(self, data: List[int]) -> List[int]:
+        for i in range(1, len(data)):
+            key = data[i]
+            j = i - 1
+            while j >= 0 and key < data[j]:
+                data[j + 1] = data[j]
+                j -= 1
+            data[j + 1] = key
+        return data
+
+class QuickSort(SortingStrategy):
+    def sort(self, data: List[int]) -> List[int]:
+        if len(data) <= 1:
+            return data
+        pivot = data[len(data) // 2]
+        left = [x for x in data if x < pivot]
+        middle = [x for x in data if x == pivot]
+        right = [x for x in data if x > pivot]
+        return self.sort(left) + middle + self.sort(right)
+
+class SortContext:
+    def __init__(self, strategy: SortingStrategy):
+        self.strategy = strategy
+
+    def set_strategy(self, strategy: SortingStrategy):
+        self.strategy = strategy
+
+    def execute_strategy(self, data: List[int]) -> List[int]:
+        return self.strategy.sort(data)
+
+# Función para seleccionar la estrategia de ordenación según el tamaño del arreglo
+def select_strategy(size: int) -> SortingStrategy:
+    if 2 <= size <= 5:
+        return BubbleSort()
+    elif 6 <= size <= 10:
+        return InsertionSort()
+    else:
+        return QuickSort()
+
+# Función para guardar en MongoDB
+def save_to_mongo(unsorted: List[int], sorted_data: List[int], size: int, algorithm: str):
+    record = {
+        "unsorted": unsorted,
+        "size": size,
+        "sort_algorithm": algorithm,
+        "sorted": sorted_data
+    }
+    collection.insert_one(record)
+    messagebox.showinfo("Éxito", "Datos guardados en MongoDB.")
+
+# Función para ordenar el arreglo
+def ordenar_arreglo():
+    try:
+        size = int(txtSize.get())
+        if size < 2:
+            messagebox.showwarning("Advertencia", "El tamaño debe ser al menos 2.")
+            return
+        array = list(map(int, txtArray.get().split()))
+        if len(array) != size:
+            messagebox.showwarning("Advertencia", "El número de elementos no coincide con el tamaño del arreglo.")
+            return
+        
+        strategy = select_strategy(size)
+        context = SortContext(strategy)
+        sorted_array = context.execute_strategy(array.copy())
+
+        # Mostrar el arreglo ordenado
+        lblResult.config(text=f"Arreglo ordenado: {sorted_array}")
+        
+        # Guardar los datos en MongoDB
+        save_to_mongo(array, sorted_array, size, strategy.__class__.__name__)
+    except ValueError:
+        messagebox.showerror("Error", "Ingrese valores válidos para el arreglo y tamaño.")
+
+# Ventana principal
+ppanel = Tk()
+ppanel.title("Ordenador de Arreglos")
+ppanel.geometry("500x400")
+ppanel.resizable(False, False)
+
+# Crear los widgets
+Label(ppanel, text="Ingrese el tamaño del arreglo (mínimo 2):").pack(pady=10)
+txtSize = Entry(ppanel, width=15)
+txtSize.pack(pady=5)
+
+Label(ppanel, text="Ingrese los números separados por espacios:").pack(pady=10)
+txtArray = Entry(ppanel, width=40)
+txtArray.pack(pady=5)
+
+Button(ppanel, text="Ordenar y Guardar", command=ordenar_arreglo).pack(pady=20)
+
+lblResult = Label(ppanel, text="Arreglo ordenado: ", font=("Arial", 12))
+lblResult.pack(pady=10)
+
+# Ejecutar la interfaz
+ppanel.mainloop()
