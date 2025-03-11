@@ -1,7 +1,7 @@
 
-import BubbleSort from "../model/BubbleSort.js";
-import InsertionSort from "../model/InsertionSort.js";
-import  QuickSort from "../model/QuickSort.js";
+import BubbleSort from "./BubbleSort.js";
+import InsertionSort from "./InsertionSort.js";
+import  QuickSort from "./QuickSort.js";
 
 export default class SortingContext {
     constructor() {

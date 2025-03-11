@@ -1,4 +1,5 @@
 import SortingContext from "./SortingContext.js";
+
 const API_URL = "http://localhost:3008/sortings";
 
 document.getElementById("addForm").addEventListener("submit", function (event) {
@@ -11,11 +12,13 @@ const regex = /^\d+(,\d+)+$/;
 
 async function addSorting(event) {
     event.preventDefault();
+    message.innerHTML=""
 
     const unsorted = document.getElementById("arrayUnsorted").value;
 
     if (!regex.test(unsorted)) {
         message.innerHTML = "Enter the valid array, e.g: 1,2,3,4";
+        message.style.color = "red";
         return;
     }
 
@@ -53,6 +56,7 @@ async function addSorting(event) {
 
 async function displaySorting(unsorted, size, sortAlgorithm, sorted) {
     const tableBody = document.getElementById("sortingTable");
+    tableBody.innerHTML=""
     const row = document.createElement("tr");
     row.innerHTML = `
                 <td>${unsorted}</td>
