@@ -69,7 +69,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.release>17</maven.compiler.release> <!-- Use Java 17 -->
-        <exec.mainClass>ec.edu.espe.interestrate.view.FrmInterestRate</exec.mainClass> <!-- Main class -->
+        <exec.mainClass>ec.edu.espe.interestrate.view.FrmInvestment</exec.mainClass> <!-- Main class -->
     </properties>
 
 </project>
