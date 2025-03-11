@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sorting App</title>
+</head>
+<link rel="stylesheet" href="styles.css">
+<body>
+    <h2>Enter Numbers to Sort (comma-separated)</h2>
+    <input type="text" id="numbers" placeholder="e.g. 5,8,3,2">
+    <button onclick="sortNumbers()">Sort</button>
+    <p id="result"></p>
+    <p id="algorithm"></p> <!-- Aquí mostraremos el algoritmo utilizado -->
+    
+    <script>
+        async function sortNumbers() {
+            let numbers = document.getElementById("numbers").value;
+            let response = await fetch("/sort", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ numbers })
+            });
+
+            let data = await response.json();
+
+            // Mostrar el resultado de la ordenación
+            document.getElementById("result").innerText = `Sorted: ${data.sorted}`;
+
+            // Mostrar el algoritmo de ordenamiento utilizado
+            document.getElementById("algorithm").innerText = `Sort Algorithm Used: ${data["sort algorithm"]}`;
+        }
+    </script>
+</body>
+</html>

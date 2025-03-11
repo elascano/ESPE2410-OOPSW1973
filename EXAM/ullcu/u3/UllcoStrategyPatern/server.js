@@ -1,12 +1,8 @@
 const express = require("express");
 const bodyParser = require("body-parser");
-const cors = require("cors");  // Importamos cors
 const SortingController = require("./controllers/SortingController");
 const app = express();
-const port = 3005;  // Puerto local donde estará tu servidor
-
-// Middleware para permitir solicitudes desde cualquier origen (en desarrollo)
-app.use(cors());  // Activamos CORS
+const port = 8000;  // Puerto local donde estará tu servidor
 
 // Middleware para parsear el cuerpo de la solicitud
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -17,6 +13,7 @@ app.use(express.static("views"));  // Servir archivos HTML, CSS, JS desde la car
 
 // Crear una instancia del controlador
 const controller = new SortingController();
+console.log(SortingController);
 
 // Ruta para manejar la ordenación
 app.post("/sort", (req, res) => controller.handleSort(req, res));
