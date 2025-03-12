@@ -19,29 +19,26 @@ class SortingController:
 
     def sort_numbers(self):
         try:
-            # Convertir la entrada de números en una lista de enteros
             numbers = list(map(int, self.view.numbers_entry.get().split(",")))
             algorithm = self.view.algorithm_var.get()
 
-            # Mapeo de algoritmos con los nombres de las opciones del OptionMenu
+           
             strategy_map = {
                 "Bubble Sort": BubbleSort(),
                 "Insertion Sort": InsertionSort(),
                 "Quick Sort": QuickSort()
             }
 
-            # Verificar si el algoritmo seleccionado existe en el mapa
             strategy = strategy_map.get(algorithm)
             if not strategy:
-                messagebox.showerror("Error", "Seleccione un algoritmo válido")
+                messagebox.showerror("Error", "Select a valid algorithm")
                 return
 
             context = SortingContext(strategy)
             sorted_numbers = context.sort(numbers)
 
-            # Guardar en la base de datos y mostrar el resultado
             self.model.save_sorting(numbers, sorted_numbers, algorithm)
-            self.view.label_result.config(text=f"Ordenado: {sorted_numbers}")
-            messagebox.showinfo("Éxito", "Datos guardados en MongoDB")
+            self.view.label_result.config(text=f"Order of Numbers : {sorted_numbers}")
+            messagebox.showinfo("Success", "Data saved in MongoDB")
         except ValueError:
-            messagebox.showerror("Error", "Ingrese números válidos separados por coma")
+            messagebox.showerror("Error", "Enter valid numbers separated by comma")
