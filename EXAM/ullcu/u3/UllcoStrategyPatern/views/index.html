@@ -1,33 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Sorting App</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Application</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<link rel="stylesheet" href="styles.css">
 <body>
-    <h2>Enter Numbers to Sort (comma-separated)</h2>
-    <input type="text" id="numbers" placeholder="e.g. 5,8,3,2">
-    <button onclick="sortNumbers()">Sort</button>
-    <p id="result"></p>
-    <p id="algorithm"></p> <!-- Aquí mostraremos el algoritmo utilizado -->
-    
+    <!-- Líneas de neón en los lados -->
+    <div class="neon-border left"></div>
+    <div class="neon-border right"></div>
+
+    <!-- Contenedor principal -->
+    <div class="container">
+        <h2>Enter the sequence of numbers to sort</h2>
+        <label for="numbers">Type numbers separated by commas:</label>
+        <input type="text" id="numbers" placeholder="e.g., 5,8,3,2">
+        <br>
+        <button class="btn-sort" onclick="sortNumbers()">Sort Now</button>
+        <div id="loading" class="loading">
+            <div class="spinner"></div>
+            Sorting...
+        </div>
+        <p id="result"></p>
+        <p id="algorithm"></p> <!-- Sorting algorithm display -->
+    </div>
+
+    <!-- Fondo con partículas animadas -->
+    <div class="particles"></div>
+
     <script>
         async function sortNumbers() {
             let numbers = document.getElementById("numbers").value;
-            let response = await fetch("/sort", {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ numbers })
-            });
+            let resultElem = document.getElementById("result");
+            let algorithmElem = document.getElementById("algorithm");
+            let loadingElem = document.getElementById("loading");
 
-            let data = await response.json();
+            resultElem.innerText = "";
+            algorithmElem.innerText = "";
+            loadingElem.style.display = "flex"; // Show loading animation
 
-            // Mostrar el resultado de la ordenación
-            document.getElementById("result").innerText = `Sorted: ${data.sorted}`;
+            try {
+                let response = await fetch("/sort", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ numbers })
+                });
 
-            // Mostrar el algoritmo de ordenamiento utilizado
-            document.getElementById("algorithm").innerText = `Sort Algorithm Used: ${data["sort algorithm"]}`;
+                let data = await response.json();
+
+                // Display the results
+                resultElem.innerText = `Sorted: ${data.sorted}`;
+                algorithmElem.innerText = `Sorting Algorithm: ${data["sort algorithm"]}`;
+            } catch (error) {
+                resultElem.innerText = "❌ Error sorting the numbers.";
+            } finally {
+                loadingElem.style.display = "none"; // Hide loading animation
+            }
         }
+
+        // Generar partículas dinámicas
+        function generateParticles() {
+            const particlesContainer = document.querySelector(".particles");
+            for (let i = 0; i < 20; i++) {
+                let particle = document.createElement("div");
+                particle.classList.add("particle");
+                particle.style.left = `${Math.random() * 100}vw`;
+                particle.style.animationDuration = `${Math.random() * 5 + 3}s`;
+                particle.style.width = `${Math.random() * 10 + 5}px`;
+                particle.style.height = particle.style.width;
+                particlesContainer.appendChild(particle);
+            }
+        }
+
+        generateParticles();
     </script>
 </body>
 </html>

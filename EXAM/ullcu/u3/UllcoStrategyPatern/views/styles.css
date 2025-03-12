@@ -1,39 +1,126 @@
+/* Fondo animado */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    font-family: 'Arial', sans-serif;
+    background-color: #121212;
+    color: #fff;
     text-align: center;
-    margin: 50px;
+    margin: 0;
+    padding: 50px;
+    overflow: hidden; /* Para evitar que las partículas se desborden */
 }
 
+/* Contenedor con efecto neón */
+.container {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 0px 20px rgba(0, 255, 255, 0.3);
+    display: inline-block;
+    backdrop-filter: blur(15px);
+    border: 2px solid rgba(0, 255, 255, 0.5);
+    position: relative;
+    z-index: 2;
+}
+
+/* Título llamativo con efecto neón */
 h2 {
-    color: #333;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #0ff;
+    text-shadow: 0 0 5px #0ff, 0 0 10px #00f, 0 0 20px #00f, 0 0 40px #00f;
+    animation: glowText 1.5s infinite alternate ease-in-out;
+    letter-spacing: 2px;
 }
 
-input {
-    padding: 10px;
-    width: 300px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
+/* Animación de brillo en el título */
+@keyframes glowText {
+    from {
+        text-shadow: 0 0 5px #0ff, 0 0 10px #00f, 0 0 20px #00f, 0 0 40px #00f;
+    }
+    to {
+        text-shadow: 0 0 10px #0ff, 0 0 20px #0ff, 0 0 30px #00f, 0 0 50px #00f;
+    }
 }
 
-button {
-    padding: 10px 15px;
-    background-color: #28a745;
+/* Botón mejorado con efecto futurista */
+.btn-sort {
+    padding: 12px 20px;
+    background: linear-gradient(45deg, #00f, #0ff);
     color: white;
-    border: none;
-    border-radius: 5px;
     font-size: 16px;
+    border: none;
+    border-radius: 8px;
     cursor: pointer;
-    margin-left: 10px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 0px 15px rgba(0, 255, 255, 0.5);
 }
 
-button:hover {
-    background-color: #218838;
+.btn-sort:hover {
+    transform: scale(1.1);
+    background: linear-gradient(45deg, #0ff, #00f);
+    box-shadow: 0px 0px 25px rgba(0, 255, 255, 1);
 }
 
-p {
-    font-size: 18px;
-    color: #555;
-    margin-top: 20px;
+/* Partículas animadas */
+.particles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.particle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: rgba(0, 255, 255, 0.7);
+    border-radius: 50%;
+    opacity: 0;
+    animation: floatParticles 8s infinite ease-in-out;
+}
+
+@keyframes floatParticles {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100vh);
+        opacity: 0;
+    }
+}
+
+/* Líneas de neón en los lados */
+.neon-border {
+    position: fixed;
+    width: 5px;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 229, 255, 0.5), rgba(0, 229, 255, 0.1));
+    box-shadow: 0px 0px 15px rgba(0, 229, 255, 0.8);
+}
+
+.neon-border.left {
+    left: 10px;
+    animation: glow 2s infinite alternate ease-in-out;
+}
+
+.neon-border.right {
+    right: 10px;
+    animation: glow 2s infinite alternate ease-in-out;
+}
+
+@keyframes glow {
+    from {
+        box-shadow: 0px 0px 10px rgba(0, 229, 255, 0.5);
+    }
+    to {
+        box-shadow: 0px 0px 30px rgba(0, 229, 255, 1);
+    }
 }
